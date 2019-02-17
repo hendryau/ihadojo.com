@@ -39,9 +39,9 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
               <a class="dropdown-item" routerLink="association/membership">Become a Member</a>
               <a class="dropdown-item" routerLink="association/documents">Documents & Forms</a>
               <div class="dropdown-divider"></div>
-              <h1 class="dropdown-header">Tookhachi 2019 Resources</h1>
-              <a class="dropdown-item" target="_blank" href="http://ihatookachi2019.com/">Tookhachi2019.com</a>
-              <a class="dropdown-item" routerLink="association/tookhachi/roster">Roster</a>
+              <h1 class="dropdown-header">Tookachi 2019 Resources</h1>
+              <a class="dropdown-item" target="_blank" href="http://ihatookachi2019.com/">Tookachi2019.com</a>
+              <a class="dropdown-item" routerLink="association/tookachi/roster">Roster</a>
             </div>
           </li>
           <li class="nav-item">

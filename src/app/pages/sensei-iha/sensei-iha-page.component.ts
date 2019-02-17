@@ -96,6 +96,18 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
         Okinawan residing in the United States. His rank is certified by the
         Okinawa Shorin-ryu Karate-do Association.</p>
       </iha-section>
+      <iha-section [title]="'Essential Teachings of Shidokan Karatedo'" [subTitle]="'By Sensei Iha'">
+        <img src="assets/biographies/iha/iha-essential-teachings.jpg" class="mx-auto img-fluid d-block mb-3 w-75">
+        <!-- TODO get literal translation -->
+        <ol>
+          <li>Do not show your ability or intention. Be modest in behavior and natural in movement.</li>
+          <li>No excessive motion, just natural motion.</li>
+          <li>Natural movement has no tension.</li>
+          <li>Cooperating during practice (with a partner) leads to natural movement, while small
+          and unseen, yields great martial benefits. It creates an elegance in movement.</li>
+        </ol>
+      </iha-section>
+      <!-- Iha's career list (similar to miyahiras) -->
       <iha-section [title]="'An Interview with Sensei Iha, 1992'" [subTitle]="'by Ernest Estrada'" [hType]="'h2'">
         <p><i><b>Interviewer:</b></i> Sensei, it appears that you favor using the
         makiwara punching post. Can you tell me a little about its use?</p>
@@ -108,110 +120,92 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
         solar plexus (the bottom of the breast bone).</p>
 
         <p>The shorin-ryu practitioner would stand up in the kihon dachi
-          (basic short stance) and throw the punch at the board. The goju-ryu
-          practitioner would punch from a shikko dachi (square stance).</p>
+        (basic short stance) and throw the punch at the board. The goju-ryu
+        practitioner would punch from a shikko dachi (square stance).</p>
 
         <p>The dojo usually had two kinds of makiwara. One was a soft/pliant
-          makiwara and the other one was usually a stiff/hard makiwara. The soft
-          one was used to develop speed and form while the stiff one was used to
-          develop power. Both had to be used. If they were not, then you would
-          develop problems with the shoulder. Nowadays, most Okinawan
-          practitioners use only the Shuri-style makiwara because the
-          Naha-makiwara is too difficult and hard to use.</p>
+        makiwara and the other one was usually a stiff/hard makiwara. The soft
+        one was used to develop speed and form while the stiff one was used to
+        develop power. Both had to be used. If they were not, then you would
+        develop problems with the shoulder. Nowadays, most Okinawan
+        practitioners use only the Shuri-style makiwara because the
+        Naha-makiwara is too difficult and hard to use.</p>
 
         <p>The soft makiwara is off center about five inches. The
-          measurement is from the tip of the thumb to the tip of the forefinger.
-          By punching the soft makiwara, you end up with the board in an upright
-          position -- this way you make sure that you are using the correct
-          knuckles.</p>
+        measurement is from the tip of the thumb to the tip of the forefinger.
+        By punching the soft makiwara, you end up with the board in an upright
+        position -- this way you make sure that you are using the correct
+        knuckles.</p>
 
-        <p>
-          <i><b>Interviewer:</b></i> Can you give me some training pointers in
-          the practice of shorin-ryu?
-        </p>
+        <p><i><b>Interviewer:</b></i> Can you give me some training pointers in
+          the practice of shorin-ryu?</p>
 
-        <p>
-          <i><b>Iha:</b></i> There are many. Those that come to mind are... well,
-          the punching fist must be horizontal to the ground. The elbow strike is
-          also horizontal to the ground. The knife hand block begins like a
-          windshield wiper and does NOT come back to the shoulder. All shorin-ryu
-          kicks are done with the toes. Sometimes the second toe wraps itself
-          around the big toe to reinforce it for kicking.
-        </p>
+        <p><i><b>Iha:</b></i> There are many. Those that come to mind are... well,
+        the punching fist must be horizontal to the ground. The elbow strike is
+        also horizontal to the ground. The knife hand block begins like a
+        windshield wiper and does NOT come back to the shoulder. All shorin-ryu
+        kicks are done with the toes. Sometimes the second toe wraps itself
+        around the big toe to reinforce it for kicking.</p>
 
         <p>The nukite (spear hand) can be done to any part of the body but
-          preferably to a soft section. It is a quick motion and you can hit from
-          different directions. The idea is that you strike with the fingertips.
-          In the knife hand block the hand is not bent but kept straight. Some
-          other styles like to bend the block at the wrist. This is much too weak
-          and can damage your hand if you really block hard.</p>
+        preferably to a soft section. It is a quick motion and you can hit from
+        different directions. The idea is that you strike with the fingertips.
+        In the knife hand block the hand is not bent but kept straight. Some
+        other styles like to bend the block at the wrist. This is much too weak
+        and can damage your hand if you really block hard.</p>
 
         <p>Okinawan karate must have focus in order to be called Okinawan
-          karate. Without focus you are doing nothing but sport.</p>
+        karate. Without focus you are doing nothing but sport.</p>
 
-        <p>
-          <i><b>Interviewer:</b></i> Sensei, can you say something about your
-          gojushiho kata?
-        </p>
+        <p><i><b>Interviewer:</b></i> Sensei, can you say something about your
+        Gojushiho kata?</p>
 
         <!-- TODO add annotation for nakama, nakazato, tokuda-->
-        <p>
-          <i><b>Iha:</b></i> Nakama's gojushiho and Nakazato's gojushiho are the
-          same. They both use the wedge type block. The Tokuda gojushiho is a
-          block punch - this is the style that Miyahira-sensei teaches. This
-          makes much more sense.
-        </p>
+        <p><i><b>Iha:</b></i> Nakama's gojushiho and Nakazato's gojushiho are the
+        same. They both use the wedge type block. The Tokuda gojushiho is a
+        block punch - this is the style that Miyahira-sensei teaches. This
+        makes much more sense.</p>
 
-        <p>
-          <i><b>Interviewer:</b></i> Are there "secrets" in the teachings of
-          shorin-ryu?
-        </p>
+        <p><i><b>Interviewer:</b></i> Are there "secrets" in the teachings of
+        shorin-ryu?</p>
 
-        <p>
-          <i><b>Iha:</b></i> One of the secrets of shorin-ryu is called the "tan
-          gokui." This means the "secret of the lower abdomen." Shorin-ryu
-          focuses on natural breathing and not forced or fast breathing. The
-          inhalation is slow so as not to show your opponent the rhythm of your
-          breathing. You never fully exhale your breath but hold a reserve of air
-          in the lower part of your abdomen. Shorin-ryu teaches one to focus on
-          one's breathing and to learn to control it.
-        </p>
+        <p><i><b>Iha:</b></i> One of the secrets of shorin-ryu is called the "tan
+        gokui." This means the "secret of the lower abdomen." Shorin-ryu
+        focuses on natural breathing and not forced or fast breathing. The
+        inhalation is slow so as not to show your opponent the rhythm of your
+        breathing. You never fully exhale your breath but hold a reserve of air
+        in the lower part of your abdomen. Shorin-ryu teaches one to focus on
+        one's breathing and to learn to control it.</p>
 
-        <p>
-          <i><b>Interviewer:</b></i> Sensei, can you tell me about
-          Chibana-sensei. I see that you received your Shihan Menkyo (Teaching
-          License) from Chibana-sensei.
-        </p>
+        <p><i><b>Interviewer:</b></i> Sensei, can you tell me about
+        Chibana-sensei. I see that you received your Shihan Menkyo (Teaching
+        License) from Chibana-sensei.</p>
 
-        <p>
-          <i><b>Iha:</b></i> Yes, Chibana-sensei. Well, Chibana-sensei always
-          trained hard. Even when he reached eighty years of age he like to do
-          things strongly. Only after the cancer began eating him away did he
-          slow down. He was strong as an old man and could still kick and do
-          things with power. He was amazing.
-        </p>
+        <p><i><b>Iha:</b></i> Yes, Chibana-sensei. Well, Chibana-sensei always
+        trained hard. Even when he reached eighty years of age he like to do
+        things strongly. Only after the cancer began eating him away did he
+        slow down. He was strong as an old man and could still kick and do
+        things with power. He was amazing.</p>
 
         <p>One of Chibana-sensei's favorite sayings was that a "martial
-          artist must also be a man of letters." This means that a martial artist
-          must also study the writing arts. An example would be calligraphy,
-          writing books, the fine arts, painting, etc. Chibana-sensei would
-          always stress the body and the mind. The martial artist must also
-          exercise the mind through education, research and writing.</p>
+        artist must also be a man of letters." This means that a martial artist
+        must also study the writing arts. An example would be calligraphy,
+        writing books, the fine arts, painting, etc. Chibana-sensei would
+        always stress the body and the mind. The martial artist must also
+        exercise the mind through education, research and writing.</p>
 
         <p>You celebrate the death of Chibana-sensei through a "Taisai"
-          every year. You have a party. The master's picture is placed on a table
-          and you burn incense. You have a party with food and drink. The
-          master's spirit comes to each remembrance wherever it may be held. The
-          most important Taisais are the 1st, 2nd and 3rd year. Then the 10th,
-          13th, 20th, 23rd, 30th and 33rd. If the individual is remembered on the
-          33rd anniversary then the spirit can enter the "gate." The spirit can
-          then rest from its wanderings.</p>
+        every year. You have a party. The master's picture is placed on a table
+        and you burn incense. You have a party with food and drink. The
+        master's spirit comes to each remembrance wherever it may be held. The
+        most important Taisais are the 1st, 2nd and 3rd year. Then the 10th,
+        13th, 20th, 23rd, 30th and 33rd. If the individual is remembered on the
+        33rd anniversary then the spirit can enter the "gate." The spirit can
+        then rest from its wanderings.</p>
 
-        <p>
-          <i><b>Interviewer:</b></i> Your first teacher was Gusukuma Shinpan. Not
-          much has been said about him in books. Can you tell me something about
-          Gusukuma-sensei?
-        </p>
+        <p><i><b>Interviewer:</b></i> Your first teacher was Gusukuma Shinpan. Not
+        much has been said about him in books. Can you tell me something about
+        Gusukuma-sensei?</p>
 
         <p>
           <i><b>Iha:</b></i> Gusukuma Shinpan-sensei was known for his great

@@ -6,7 +6,7 @@ import {FilterComponent} from '../../../filter/filter.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <iha-filter
-      [filterTitle]="'Tookhachi Roster'"
+      [filterTitle]="'Tookachi Roster'"
       [array]="roster"
       [itemTemplate]="rosterTemplate"
       [nothingFoundMessage]="'No one found.'"
@@ -39,7 +39,7 @@ import {FilterComponent} from '../../../filter/filter.component';
         <div class="card mb-3">
           <div class="card-body">
             <div class="card-text">
-              <img *ngIf="item.photo" class="float-left mr-3" height="125px" src="{{'assets/tookhachi/photos/' + item.photo}}">
+              <img *ngIf="item.photo" class="float-left mr-3" height="125px" src="{{'assets/tookachi/photos/' + item.photo}}">
               <div class="h5">{{item.first_name}} {{item.last_name}}</div>
               <div>{{item.dojo}}</div>
               <div *ngIf="item.country || item.city_state">{{item.city_state}} {{item.country}}</div>

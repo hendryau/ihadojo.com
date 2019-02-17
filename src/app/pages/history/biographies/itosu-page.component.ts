@@ -24,6 +24,7 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
         <p>Karate is not of Confucian or Buddhist origin. Shorin and Shorei
           schools were originally introduced from China into Okinawa. Each of the
           two styles has its strength, thus both should be retained.</p>
+        <img class="img-fluid mb-3" src="assets/biographies/itosu/ten-articles-of-karate.jpg">
         <ol>
           <li>You should not practice karate only for the purpose of
           developing your physical strength. What is essential is to serve your

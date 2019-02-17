@@ -277,7 +277,8 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
   },
   {
     date: "1963",
-    content: "Seikichi Iha promoted to 5th Dan, Shihan. <sup>6</sup>", // TODO get a photo of his shihan certificate
+    imageUrl: "assets/timeline/iha-shihan.jpg",
+    content: "Seikichi Iha promoted to 5th Dan, Shihan. <sup>6</sup>",
   },
   {
     date: "August 30th, 1964", // TODO This memorial has since be relocated to {?}
@@ -299,11 +300,13 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
   },
   {
     date: "1965",
+    imageUrl: "assets/timeline/gonzales-iha.jpg",
     content: `<p>Seikichi Iha served as adviser to Latino Gonzales dojo in Manila,
       Philippines for 11 months. (Ferdinand Marcos became president of the
       Philippines during that time). <sup>14</sup></p><p>Iha returned to Okinawa and
       taught karate to Marines in Futenma. Promoted to 6th Dan. Opened dojo in
       hometown of Nishihara. <sup>6</sup></p>`,
+    // TODO ask sensei... is this akiyoshi shiromas same dojo?
   },
   {
     date: "1966",
@@ -327,7 +330,7 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
   {
     date : "April, 1968",
     content: `Interview with Seikichi Iha, Seizun Kina and Kensai Taba published in
-      April issue of "Black Belt" magazine.`,
+      April issue of <i>Black Belt</i> magazine.`,
     imageUrl: "assets/timeline/black-belt-magazine-1968.jpg"
   },
   {
@@ -434,6 +437,6 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
   // TODO kip barker promoted to 9th dan
   {
     date: "August, 2019",
-    content: "Seikichi Iha celebrated his Tookhachi (87th birthday).",
+    content: "Seikichi Iha celebrated his Tookachi (87th birthday).",
   }
 ];

@@ -31,7 +31,7 @@ import {ChibanaPageComponent} from './pages/history/biographies/chibana-page.com
 import {MiyahiraPageComponent} from './pages/history/biographies/miyahira-page.component';
 import {GlossaryPageComponent} from './pages/glossary/glossary-page.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import {RosterPageComponent} from './pages/association/tookhachi/roster-page.component';
+import {RosterPageComponent} from './pages/association/tookachi/roster-page.component';
 import {FilterComponent} from './filter/filter.component';
 
 @NgModule({

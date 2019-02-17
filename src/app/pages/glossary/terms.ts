@@ -241,6 +241,11 @@ export const TERMS: GlossaryTerm[] = [
     term: "kiyoson",
     content: "cooperation",
   },
+  {
+    term: "nukite",
+    content: `Meaning <i>Spear hand</i>. Nukite-tsuki means spear hand
+      thrust. Nukite-uke means spear hand block.`,
+  }
 ];
 
 /*

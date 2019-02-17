@@ -50,7 +50,7 @@ export const EVENTS: IhaEvent[] = [
     imageUrl: "assets/events/shuri-castle.jpg",
     content: `
       Sensei Iha's Tookhachi (88th birthday) celebration.
-      Visit <a href="http://ihatookhachi2019.com">ihatookhachi2019.com</a> for more info.
+      Visit <a href="http://ihatookachi2019.com">ihatookachi2019.com</a> for more info.
     `
   },
 ];

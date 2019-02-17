@@ -17,7 +17,7 @@ import {GusukumaPageComponent} from './pages/history/biographies/gusukuma-page.c
 import {ChibanaPageComponent} from './pages/history/biographies/chibana-page.component';
 import {MiyahiraPageComponent} from './pages/history/biographies/miyahira-page.component';
 import {GlossaryPageComponent} from './pages/glossary/glossary-page.component';
-import {RosterPageComponent} from './pages/association/tookhachi/roster-page.component';
+import {RosterPageComponent} from './pages/association/tookachi/roster-page.component';
 
 // TODO add legacy routes
 const appRoutes = [
@@ -39,7 +39,7 @@ const appRoutes = [
   },
   {
     component: RosterPageComponent,
-    path: "association/tookhachi/roster",
+    path: "association/tookachi/roster",
   },
   {
     component: TimelinePageComponent,

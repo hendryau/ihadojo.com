@@ -128,6 +128,7 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
           <!--what he is saying. Hopefully, you will not only read this but study it...-->
           <!--it applies not only to the style I practice but to all traditional-->
           <!--martial arts.)</p>-->
+        <!-- TODO picture of doujin (humanity) kanji and miyazato etymology analysis -->
       </iha-section>
     </iha-section>
   `
