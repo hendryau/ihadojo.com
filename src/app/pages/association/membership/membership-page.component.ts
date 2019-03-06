@@ -5,8 +5,8 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
   template: `
     <iha-section [title]="'Membership'">
       <p>The Beikoku Shidokan Association encompasses active members
-        training in over 30 affiliated dojos located throughout North America,
-        as well as overseas.</p>
+        training in over <a routerLink="/association/affiliate-dojos">30 affiliated dojos</a>
+        located throughout North America, as well as overseas.</p>
 
       <p>Headquartered in Lansing, Michigan USA, the Association's president is
         Seikichi Iha, Hanshi 10th Dan. Iha Sensei's often-stated goal is the

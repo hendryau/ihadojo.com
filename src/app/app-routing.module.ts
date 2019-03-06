@@ -19,15 +19,52 @@ import {MiyahiraPageComponent} from "./pages/history/biographies/miyahira-page.c
 import {GlossaryPageComponent} from "./pages/glossary/glossary-page.component";
 import {RosterPageComponent} from "./pages/association/tookachi/roster-page.component";
 
-// TODO add legacy routes
 const appRoutes = [
+  // home
+  {
+    path: "index.html", // legacy route
+    redirectTo: "",
+    pathMatch: "full"
+  },
+  {
+    path: "index", // legacy route
+    redirectTo: "",
+    pathMatch: "full"
+  },
+  {
+    path: "sitemap.html", // legacy route
+    redirectTo: "",
+    pathMatch: "full"
+  },
+  {
+    path: "sitemap", // legacy route
+    redirectTo: "",
+    pathMatch: "full"
+  },
   {
     component: HomePageComponent,
     path: "",
   },
+
+  // association
+  {
+    path: "association.html", // legacy route
+    redirectTo: "association/membership",
+    pathMatch: "full"
+  },
+  {
+    path: "association", // legacy route
+    redirectTo: "association/membership",
+    pathMatch: "full"
+  },
   {
     component: MembershipPageComponent,
     path: "association/membership",
+  },
+  {
+    path: "association/documents.html", // legacy route
+    redirectTo: "association/documents",
+    pathMatch: "full"
   },
   {
     component: DocumentsPageComponent,
@@ -41,6 +78,18 @@ const appRoutes = [
     component: RosterPageComponent,
     path: "association/tookachi/roster",
   },
+
+  // history
+  {
+    path: "history.html", // legacy route
+    redirectTo: "history/timeline",
+    pathMatch: "full"
+  },
+  {
+    path: "history", // legacy route
+    redirectTo: "history/timeline",
+    pathMatch: "full"
+  },
   {
     component: TimelinePageComponent,
     path: "history/timeline",
@@ -49,47 +98,153 @@ const appRoutes = [
     component: LineagePageComponent,
     path: "history/lineage",
   },
+
+  // matsumura
+  {
+    path: "biographies/matsumura", // legacy route
+    redirectTo: "history/matsumura-sokon",
+    pathMatch: "full"
+  },
+  {
+    path: "biographies/matsumura.html", // legacy route
+    redirectTo: "history/matsumura-sokon",
+    pathMatch: "full"
+  },
   {
     component: MatsumuraPageComponent,
     path: "history/matsumura-sokon",
+  },
+
+  // itosu
+  {
+    path: "biographies/itosu", // legacy route
+    redirectTo: "history/itosu-anko",
+    pathMatch: "full"
+  },
+  {
+    path: "biographies/itosu.html", // legacy route
+    redirectTo: "history/itosu-anko",
+    pathMatch: "full"
   },
   {
     component: ItosuPageComponent,
     path: "history/itosu-anko",
   },
+
+  // gusukuma
+  {
+    path: "biographies/gusukuma", // legacy route
+    redirectTo: "history/gusukuma-shinpan",
+    pathMatch: "full"
+  },
+  {
+    path: "biographies/gusukuma.html", // legacy route
+    redirectTo: "history/gusukuma-shinpan",
+    pathMatch: "full"
+  },
   {
     component: GusukumaPageComponent,
     path: "history/gusukuma-shinpan",
+  },
+
+  // chibana
+  {
+    path: "biographies/chibana", // legacy route
+    redirectTo: "history/chibana-choshin",
+    pathMatch: "full"
+  },
+  {
+    path: "biographies/chibana.html", // legacy route
+    redirectTo: "history/chibana-choshin",
+    pathMatch: "full"
   },
   {
     component: ChibanaPageComponent,
     path: "history/chibana-choshin",
   },
+
+  // miyahira
+  {
+    path: "biographies/miyahira", // legacy route
+    redirectTo: "history/miyahira-katsuya",
+    pathMatch: "full"
+  },
+  {
+    path: "biographies/miyahira.html", // legacy route
+    redirectTo: "history/miyahira-katsuya",
+    pathMatch: "full"
+  },
   {
     component: MiyahiraPageComponent,
     path: "history/miyahira-katsuya",
+  },
+
+  // nts
+  {
+    path: "nts.html", // legacy route
+    redirectTo: "nts",
+    pathMatch: "full"
   },
   {
     component: NtsPageComponent,
     path: "nts",
   },
+
+  // events
+  {
+    path: "events.html",
+    redirectTo: "events",
+    pathMatch: "full"
+  },
   {
     component: EventsPageComponent,
     path: "events",
+  },
+
+  // glossary
+  {
+    path: "glossary.html",
+    redirectTo: "glossary",
+    pathMatch: "full"
   },
   {
     component: GlossaryPageComponent,
     path: "glossary",
   },
-  // TODO 404 page
+
+  // original okinawa karate
+  {
+    path: "hombu", // legacy route
+    redirectTo: "original-okinawa-karate",
+    pathMatch: "full"
+  },
+  {
+    path: "hombu.html", // legacy route
+    redirectTo: "original-okinawa-karate",
+    pathMatch: "full"
+  },
   {
     component: OriginalOkinawaKaratePageComponent,
     path: "original-okinawa-karate",
+  },
+
+  {
+    path: "biographies/sensei.html", // legacy route
+    redirectTo: "sensei-iha",
+    pathMatch: "full"
+  },
+  {
+    path: "biographies/sensei", // legacy route
+    redirectTo: "sensei-iha",
+    pathMatch: "full"
   },
   {
     component: SenseiIhaPageComponent,
     path: "sensei-iha",
   }
+
+
+  // TODO 404 page
 ];
 
 @NgModule({
