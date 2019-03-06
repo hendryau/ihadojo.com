@@ -2,15 +2,16 @@ import {
   AfterViewInit,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
-  Component, HostListener,
+  Component,
+  HostListener,
   QueryList,
   Renderer2,
-  ViewChildren
-} from '@angular/core';
-import {IhaEvent} from '../../../event/events';
-import {TIMELINE_EVENTS} from './timeline-events';
-import {ResponsiveService} from '../../../services/responsive.service';
-import {EventComponent} from '../../../event/event.component';
+  ViewChildren,
+} from "@angular/core";
+import {IhaEvent} from "../../../event/events";
+import {TIMELINE_EVENTS} from "./timeline-events";
+import {ResponsiveService} from "../../../services/responsive.service";
+import {EventComponent} from "../../../event/event.component";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

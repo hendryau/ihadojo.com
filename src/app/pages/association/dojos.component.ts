@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {DOJOS, IhaDojo} from './dojos';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from "@angular/core";
+import {DOJOS, IhaDojo} from "./dojos";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

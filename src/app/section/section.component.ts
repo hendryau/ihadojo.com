@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input, TemplateRef} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, TemplateRef} from "@angular/core";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

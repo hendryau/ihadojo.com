@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges} from '@angular/core';
-import {IhaEvent} from './events';
+import {ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges} from "@angular/core";
+import {IhaEvent} from "./events";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

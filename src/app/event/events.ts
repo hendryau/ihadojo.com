@@ -53,4 +53,19 @@ export const EVENTS: IhaEvent[] = [
       Visit <a href="http://ihatookachi2019.com">ihatookachi2019.com</a> for more info.
     `
   },
+  {
+    title: "East Coast Seminar",
+    location: "Maywood Karate, 49 West Pleasant Ave, Maywood NJ",
+    date: "4/12/2019",
+    endDate: "4/13/2019",
+    content: "Hosted by Maywood Dojo, celebrating their 30th Anniversary."
+  },
+  {
+    title: "Canada Seminar",
+    location: "Grand River Karate, 53 Allen St. E., Waterloo, ON, Canada",
+    date: "5/31/2019",
+    endDate: "6/1/2019",
+    content: `Hosted by Grand River Dojo, celebrating their 25th Anniversary 
+      and 15 years with Beikoku Shidokan.`
+  },
 ];

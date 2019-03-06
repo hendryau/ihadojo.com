@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {EVENTS} from '../../event/events';
+import {ChangeDetectionStrategy, Component} from "@angular/core";
+import {EVENTS} from "../../event/events";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

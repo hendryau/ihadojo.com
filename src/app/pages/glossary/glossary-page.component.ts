@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {TERMS, GlossaryTerm} from './terms';
+import {ChangeDetectionStrategy, Component} from "@angular/core";
+import {GlossaryTerm, TERMS} from "./terms";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

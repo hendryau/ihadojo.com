@@ -1,4 +1,4 @@
-import {IhaEvent} from '../../../event/events';
+import {IhaEvent} from "../../../event/events";
 
 
 // TODO significant NTSs

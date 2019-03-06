@@ -1,6 +1,6 @@
-import {ChangeDetectionStrategy, Component, ViewChild} from '@angular/core';
-import {DojoPerson, ROSTER} from './roster';
-import {FilterComponent} from '../../../filter/filter.component';
+import {ChangeDetectionStrategy, Component, ViewChild} from "@angular/core";
+import {DojoPerson, ROSTER} from "./roster";
+import {FilterComponent} from "../../../filter/filter.component";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

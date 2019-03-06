@@ -9,15 +9,15 @@ import {DocumentsPageComponent} from "./pages/association/documents/documents-pa
 import {SenseiIhaPageComponent} from "./pages/sensei-iha/sensei-iha-page.component";
 import {AffiliateDojosPageComponent} from "./pages/association/affiliate-dojos/affiliate-dojos-page.component";
 import {MembershipPageComponent} from "./pages/association/membership/membership-page.component";
-import {TimelinePageComponent} from './pages/history/timeline/timeline-page.component';
-import {LineagePageComponent} from './pages/history/lineage/lineage-page.component';
-import {MatsumuraPageComponent} from './pages/history/biographies/matsumura-page.component';
-import {ItosuPageComponent} from './pages/history/biographies/itosu-page.component';
-import {GusukumaPageComponent} from './pages/history/biographies/gusukuma-page.component';
-import {ChibanaPageComponent} from './pages/history/biographies/chibana-page.component';
-import {MiyahiraPageComponent} from './pages/history/biographies/miyahira-page.component';
-import {GlossaryPageComponent} from './pages/glossary/glossary-page.component';
-import {RosterPageComponent} from './pages/association/tookachi/roster-page.component';
+import {TimelinePageComponent} from "./pages/history/timeline/timeline-page.component";
+import {LineagePageComponent} from "./pages/history/lineage/lineage-page.component";
+import {MatsumuraPageComponent} from "./pages/history/biographies/matsumura-page.component";
+import {ItosuPageComponent} from "./pages/history/biographies/itosu-page.component";
+import {GusukumaPageComponent} from "./pages/history/biographies/gusukuma-page.component";
+import {ChibanaPageComponent} from "./pages/history/biographies/chibana-page.component";
+import {MiyahiraPageComponent} from "./pages/history/biographies/miyahira-page.component";
+import {GlossaryPageComponent} from "./pages/glossary/glossary-page.component";
+import {RosterPageComponent} from "./pages/association/tookachi/roster-page.component";
 
 // TODO add legacy routes
 const appRoutes = [

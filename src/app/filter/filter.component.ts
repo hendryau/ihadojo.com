@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges, TemplateRef} from '@angular/core';
-import {FormControl} from '@angular/forms';
+import {ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges, TemplateRef} from "@angular/core";
+import {FormControl} from "@angular/forms";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
