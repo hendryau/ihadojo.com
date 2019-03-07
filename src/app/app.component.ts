@@ -24,8 +24,8 @@ import {NavigationEnd, Router} from "@angular/router";
       display: block;
     }
 
-    footer a {
-      display: block;
+    footer * {
+      padding: 5px 15px 5px 15px;
     }
   `],
   template: `
@@ -58,9 +58,9 @@ import {NavigationEnd, Router} from "@angular/router";
         </div>
       </div>
     </main>
-    <footer class="bg-dark p-1 fixed-bottom">
+    <footer class="bg-dark p-1">
       <div class="text-center text-white-50">
-        Beikoku Shidokan © {{currentYear}}
+        <span>Beikoku Shidokan © {{currentYear}}</span>
         <a class="text-white" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
       </div>
     </footer>

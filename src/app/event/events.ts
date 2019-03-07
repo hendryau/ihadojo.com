@@ -8,7 +8,7 @@ export interface IhaEvent {
   url?: string;
 }
 
-export const LAST_UPDATED = "1/20/2019";
+export const LAST_UPDATED = "3/06/2019";
 
 export const EVENTS: IhaEvent[] = [
   {
@@ -47,9 +47,9 @@ export const EVENTS: IhaEvent[] = [
     location: "Naha, Okinawa",
     endDate: "8/30/2019",
     url: "http://ihatookhachi2019.com",
-    imageUrl: "assets/events/shuri-castle.jpg",
+    imageUrl: "assets/events/tookachi_logo.png",
     content: `
-      Sensei Iha's Tookhachi (88th birthday) celebration.
+      Sensei Iha's Tookachi (88th birthday) celebration.
       Visit <a href="http://ihatookachi2019.com">ihatookachi2019.com</a> for more info.
     `
   },

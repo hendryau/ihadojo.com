@@ -1,5 +1,6 @@
 import {ChangeDetectionStrategy, Component} from "@angular/core";
 import {EVENTS, IhaEvent, LAST_UPDATED} from "../../event/events";
+import {DateService} from "../../services/date.service";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -29,26 +30,15 @@ import {EVENTS, IhaEvent, LAST_UPDATED} from "../../event/events";
 })
 export class EventsPageComponent {
 
-  private readonly yesterday: Date;
-
   public readonly upcomingEvents: IhaEvent[];
   public readonly pastEvents: IhaEvent[];
-
   public readonly lastUpdated = LAST_UPDATED;
 
-  constructor() {
-    this.yesterday = new Date();
-    this.yesterday.setDate(this.yesterday.getDate() - 1);
-
-    this.upcomingEvents = EVENTS.filter(evt => {
-      const date = new Date(evt.endDate || evt.date);
-      return date > this.yesterday;
-    });
-
-    this.pastEvents = EVENTS.filter(evt => {
-      const date = new Date(evt.endDate || evt.date);
-      return date <= this.yesterday;
-    });
+  constructor(
+    dateService: DateService,
+  ) {
+    this.upcomingEvents = dateService.upcomingEvents(EVENTS);
+    this.pastEvents = dateService.pastEvents(EVENTS);
   }
 
 }

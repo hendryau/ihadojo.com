@@ -1,5 +1,6 @@
 import {ChangeDetectionStrategy, Component} from "@angular/core";
-import {EVENTS} from "../../event/events";
+import {EVENTS, IhaEvent} from "../../event/events";
+import {DateService} from "../../services/date.service";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -41,6 +42,14 @@ import {EVENTS} from "../../event/events";
 })
 export class HomePageComponent {
 
-  public events = EVENTS.slice(0, 3);
+  public readonly events: IhaEvent[];
+
+  public readonly eventCount: number = 3;
+
+  constructor(dateService: DateService) {
+    this.events = dateService
+      .upcomingEvents(EVENTS)
+      .slice(0, this.eventCount);
+  }
 
 }

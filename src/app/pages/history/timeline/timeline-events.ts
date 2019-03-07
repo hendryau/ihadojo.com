@@ -437,6 +437,7 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
   // TODO kip barker promoted to 9th dan
   {
     date: "August, 2019",
+    imageUrl: "assets/timeline/tookachi_logo.png",
     content: "Seikichi Iha celebrated his Tookachi (87th birthday).",
   }
 ];

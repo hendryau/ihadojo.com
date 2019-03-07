@@ -33,6 +33,7 @@ import {GlossaryPageComponent} from "./pages/glossary/glossary-page.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {RosterPageComponent} from "./pages/association/tookachi/roster-page.component";
 import {FilterComponent} from "./filter/filter.component";
+import {DateService} from "./services/date.service";
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import {FilterComponent} from "./filter/filter.component";
   ],
   providers: [
     ResponsiveService,
+    DateService,
   ],
   bootstrap: [
     AppComponent
