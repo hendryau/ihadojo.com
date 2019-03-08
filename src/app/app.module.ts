@@ -5,7 +5,7 @@ import {AppRoutingModule} from "./app-routing.module";
 
 import {AppComponent} from "./app.component";
 import {EventComponent} from "./event/event.component";
-import {NavbarComponent} from "./navbar/navbar.component";
+import {NavbarComponent} from "./navigation/nav-bar.component";
 import {SectionComponent} from "./section/section.component";
 import {EventsComponent} from "./event/events.component";
 import {ResponsiveImageComponent} from "./responsive-image/responsive-image.component";
@@ -34,6 +34,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {RosterPageComponent} from "./pages/association/tookachi/roster-page.component";
 import {FilterComponent} from "./filter/filter.component";
 import {DateService} from "./services/date.service";
+import {NavItemComponent} from "./navigation/nav-item.component";
+import {DropdownNavItemComponent} from "./navigation/dropdown-nav-item.component";
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import {DateService} from "./services/date.service";
     EventComponent,
     EventsComponent,
     NavbarComponent,
+    NavItemComponent,
+    DropdownNavItemComponent,
     ResponsiveImageComponent,
     HomePageComponent,
     EventsPageComponent,

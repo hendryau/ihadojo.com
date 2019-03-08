@@ -6,8 +6,9 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
   // TODO set .active on active navbar item
   template: `
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <a class="navbar-brand" routerLink="/">Home <!-- TODO beikoku icon --></a>
-
+      <div data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="navbar-brand" routerLink="/">Home <!-- TODO beikoku icon --></a>
+      </div>
       <button class="navbar-toggler"
               type="button"
               data-toggle="collapse"
@@ -20,12 +21,8 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="'original-okinawa-karate'">Lansing Dojo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="'sensei-iha'">Sensei Iha</a>
-          </li>
+          <iha-nav-item [routerLink]="'original-okinawa-karate'">Lansing Dojo</iha-nav-item>
+          <iha-nav-item [routerLink]="'sensei-iha'">Sensei Iha</iha-nav-item>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"
                id="navbarDropdownMenuLink"
@@ -35,18 +32,16 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
               Association
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" routerLink="association/affiliate-dojos">Affiliate Dojos</a>
-              <a class="dropdown-item" routerLink="association/membership">Become a Member</a>
-              <a class="dropdown-item" routerLink="association/documents">Documents & Forms</a>
+              <iha-dropdown-nav-item [routerLink]="'association/affiliate-dojos'">Affiliate Dojos</iha-dropdown-nav-item>
+              <iha-dropdown-nav-item [routerLink]="'association/membership'">Become a Member</iha-dropdown-nav-item>
+              <iha-dropdown-nav-item [routerLink]="'association/documents'">Documents & Forms</iha-dropdown-nav-item>
               <div class="dropdown-divider"></div>
               <h1 class="dropdown-header">Tookachi 2019 Resources</h1>
               <a class="dropdown-item" target="_blank" href="http://ihatookachi2019.com/">Tookachi2019.com</a>
-              <a class="dropdown-item" routerLink="association/tookachi/roster">Roster</a>
+              <iha-dropdown-nav-item [routerLink]="'association/tookachi/roster'">Roster</iha-dropdown-nav-item>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="events">Events</a>
-          </li>
+          <iha-nav-item [routerLink]="'events'">Events</iha-nav-item>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"
                id="navbarDropdownMenuLink"
@@ -56,20 +51,18 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
               History
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" routerLink="history/timeline">Timeline</a>
+              <iha-dropdown-nav-item [routerLink]="'history/timeline'">Timeline</iha-dropdown-nav-item>
               <!--<a class="dropdown-item" routerLink="history/lineage">Lineage</a>--> <!--TODO-->
-              <a class="dropdown-item" routerLink="history/matsumura-sokon">Matsumura Sokon</a>
-              <a class="dropdown-item" routerLink="history/itosu-anko">Itosu Anko</a>
-              <a class="dropdown-item" routerLink="history/gusukuma-shinpan">Gusukuma Shinpan</a>
+              <iha-dropdown-nav-item [routerLink]="'history/matsumura-sokon'">Matsumura Sokon</iha-dropdown-nav-item>
+              <iha-dropdown-nav-item [routerLink]="'history/itosu-anko'">Itosu Anko</iha-dropdown-nav-item>
+              <iha-dropdown-nav-item [routerLink]="'history/gusukuma-shinpan'">Gusukuma Shinpan</iha-dropdown-nav-item>
               <!--<a class="dropdown-item" [routerLink]="''">Tokuda Anbun</a>--> <!--TODO-->
               <!--<a class="dropdown-item" [routerLink]="''">Motobu Choki</a>--> <!--TODO-->
-              <a class="dropdown-item" routerLink="history/chibana-choshin">Chibana Choshin</a>
-              <a class="dropdown-item" routerLink="history/miyahira-katsuya">Miyahira Katsuya</a>
+              <iha-dropdown-nav-item [routerLink]="'history/chibana-chosin'">Chibana Choshin</iha-dropdown-nav-item>
+              <iha-dropdown-nav-item [routerLink]="'history/miyahira-katsuya'">Miyahira Katsuya</iha-dropdown-nav-item>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="glossary">Glossary</a>
-          </li>
+          <iha-nav-item [routerLink]="'glossary'">Glossary</iha-nav-item>
         </ul>
       </div>
     </nav>
