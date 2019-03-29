@@ -26,6 +26,11 @@ export const EVENTS: IhaEvent[] = [
     date: "04/06/2019",
   },
   {
+    title: "Okinawa Kenjin Kai Spring Party",
+    date: "5/04/2019",
+    location: "Charlotte VFW Hall"
+  },
+  {
     title: "Dan Test",
     date: "05/18/2019",
   },

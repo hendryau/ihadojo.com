@@ -303,20 +303,6 @@ export const DOJOS: IhaDojo[] = [
 
   {
     type: "fukushibu",
-    instructors: [{"name": "Larry Bowlby", "rank": "4th Dan"}],
-    name: "London Shidokan",
-    address: "1472 Dundas Street London, Ontario Canada N5W 3B9",
-    phone: "(519) 495-7039",
-    url: "londonshidokan.com",
-    email: "ljbowlby@rogers.com",
-    location: {
-      lat: 42.993063,
-      lng: -81.217423
-    }
-  },
-
-  {
-    type: "fukushibu",
     instructors: [{"name": "Jason Azzarone", "rank": "4th Dan"}],
     name: "Shidokan Tampa",
     address: "Tampa, Florida USA",
@@ -344,8 +330,8 @@ export const DOJOS: IhaDojo[] = [
   {
     type: "fukushibu",
     instructors: [{"name": "J.J. Martinez", "rank": "4th Dan"}],
-    name: "Shidokan Columbia",
-    address: "Bogota, Columbia",
+    name: "Shidokan Colombia",
+    address: "Bogota, Colombia",
     email: "jjmartinezt@gmail.com"
   },
 
