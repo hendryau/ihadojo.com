@@ -5,9 +5,6 @@ import {FilterComponent} from "../../../filter/filter.component";
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSNgaCMZsGY5TnWhHIRgxeomOoknwOd4s1MyD55B10Rm612w/viewform?embedded=true"
-      width="640" height="6277" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     <iha-filter
       [filterTitle]="'Tookachi Roster'"
       [array]="roster"
