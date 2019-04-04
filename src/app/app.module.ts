@@ -36,6 +36,7 @@ import {FilterComponent} from "./filter/filter.component";
 import {DateService} from "./services/date.service";
 import {NavItemComponent} from "./navigation/nav-item.component";
 import {DropdownNavItemComponent} from "./navigation/dropdown-nav-item.component";
+import {TookachiRegistrationPageComponent} from "./pages/association/tookachi/tookachi-registration-page.component";
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import {DropdownNavItemComponent} from "./navigation/dropdown-nav-item.component
     SenseiIhaPageComponent,
     GlossaryPageComponent,
     RosterPageComponent,
+    TookachiRegistrationPageComponent,
   ],
   imports: [
     BrowserModule,
