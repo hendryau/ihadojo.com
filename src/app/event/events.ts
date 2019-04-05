@@ -15,11 +15,12 @@ export const EVENTS: IhaEvent[] = [
     title: "Sensei Iha Okinawa Visit",
     date: "12/27/2018",
     endDate: "02/14/2019",
-    location: "none"
+    location: "none",
   },
   {
     title: "Midwest Pre-Test",
     date: "03/09/2019",
+    location: "Hombu Dojo",
   },
   {
     title: "Midwest Pre-Test (voting)",
@@ -73,5 +74,6 @@ export const EVENTS: IhaEvent[] = [
     endDate: "6/1/2019",
     content: `Hosted by Grand River Dojo, celebrating their 25th Anniversary
       and 15 years with Beikoku Shidokan.`,
+    url: "http://grandriverkarate.com",
   },
 ];
