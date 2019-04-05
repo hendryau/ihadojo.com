@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Deploy
 `ng build --prod --base-href="https://hendryau.github.io/ihadojo-rewrite/"`
-`npx ngh --branch=master --no-silent`
+`npx ngh --no-silent`
 
 ## Further help
 
