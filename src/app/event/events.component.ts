@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges} from "@angular/core";
+import {ChangeDetectionStrategy, Component, Input} from "@angular/core";
 import {IhaEvent} from "./events";
 
 @Component({
@@ -18,14 +18,9 @@ import {IhaEvent} from "./events";
     <p *ngIf="events?.length === 0">{{noEventMessage}}</p>
   `
 })
-export class EventsComponent implements OnChanges {
+export class EventsComponent {
 
   @Input() public events: IhaEvent[];
   @Input() public noEventMessage: string = "No Events";
 
-  public ngOnChanges(changes: SimpleChanges): void {
-    if (changes.hasOwnProperty("events")) {
-      this.events = this.events.sort((a, b) => new Date(a.date) > new Date(b.date) ? 1 : -1);
-    }
-  }
 }

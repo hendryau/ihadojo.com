@@ -24,6 +24,7 @@ export const EVENTS: IhaEvent[] = [
   {
     title: "Midwest Pre-Test (voting)",
     date: "04/06/2019",
+    location: "Hombu Dojo",
   },
   {
     title: "Okinawa Kenjin Kai Spring Party",
@@ -51,26 +52,26 @@ export const EVENTS: IhaEvent[] = [
     date: "8/21/2019",
     location: "Naha, Okinawa",
     endDate: "8/30/2019",
-    url: "http://ihatookhachi2019.com",
-    imageUrl: "assets/events/tookachi_logo.png",
+    url: "http://ihatookachi2019.com",
+    imageUrl: "assets/events/tookachi_event.jpg",
     content: `
       Sensei Iha's Tookachi (88th birthday) celebration.
-      Visit <a href="http://ihatookachi2019.com">ihatookachi2019.com</a> for more info.
-    `
+    `,
   },
   {
     title: "East Coast Seminar",
     location: "Maywood Karate, 49 West Pleasant Ave, Maywood NJ",
     date: "4/12/2019",
     endDate: "4/13/2019",
-    content: "Hosted by Maywood Dojo, celebrating their 30th Anniversary."
+    content: `Hosted by Maywood Dojo, celebrating their 30th Anniversary.`,
+    url: "http://maywoodkarate.com",
   },
   {
     title: "Canada Seminar",
     location: "Grand River Karate, 53 Allen St. E., Waterloo, ON, Canada",
     date: "5/31/2019",
     endDate: "6/1/2019",
-    content: `Hosted by Grand River Dojo, celebrating their 25th Anniversary 
-      and 15 years with Beikoku Shidokan.`
+    content: `Hosted by Grand River Dojo, celebrating their 25th Anniversary
+      and 15 years with Beikoku Shidokan.`,
   },
 ];

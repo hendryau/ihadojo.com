@@ -44,6 +44,7 @@ import {NavigationEnd, Router} from "@angular/router";
             [xlWidth]="200" [mWidth]="100"
             [imageSrc]="'assets/ropes.png'"
             [imageAlt]="'Beikoku Shidokan Logo'"
+            [url]="'/'"
           ></iha-responsive-image>
         </div>
       </div>

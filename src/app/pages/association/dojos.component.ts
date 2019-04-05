@@ -23,9 +23,9 @@ import {DOJOS, IhaDojo} from "./dojos";
           <a *ngIf="dojo.phone" href="tel:{{dojo.phone}}" class="card-link">{{dojo.phone}}</a>
         </div>
       </div>
-      <ng-container *ngIf="dojos.length === 0">
-        <p>No Dojos on record.</p>
-      </ng-container>
+    </ng-container>
+    <ng-container *ngIf="dojos.length === 0">
+      <p>No {{type | titlecase}} Dojos on record.</p>
     </ng-container>
   `
 })

@@ -10,8 +10,6 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
       <p>Sensei Iha has taught out of Lansing, Michigan since the 1976. He leads an <i>annual</i> Training
         Seminar in Lansing, where Karate friends from all over the globe come to visit and learn from him.
         He frequently travels to teach and share Karate around the world.</p>
-
-      <p>There isn't a better place to learn traditional Karate, period.</p>
       <iha-section [title]="'Schedule'" [hType]="'h2'">
         <table class="table table-striped table-bordered table-responsive">
           <thead class="thead-light">
@@ -84,7 +82,8 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
             you to attend any/every class you choose.</p>
         </iha-section>
         <iha-section [hType]="'h3'" [title]="'Youth Classes'">
-          <p>Youth classes are held Tuesdays and Thursday from 4:30-5:30 pm. Recommended age range is 8-13.</p>
+          <p>Youth classes are held Tuesdays and Thursday from 4:30-5:30 pm. The recommended age range is 8-13, but exceptions
+          can be made for younger, eager students.</p>
         </iha-section>
         <iha-section [hType]="'h3'" [title]="'Kobudo (Weapons) Classes'">
           <p>Kobudo classes are held Tuesday and Thursday evening immediately following the regular class.
@@ -96,7 +95,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <p><b>2018 East Michigan Avenue, Lansing MI 48912</b>.</p>
         <p>If this is not near you, Sensei Iha has over 30 branch dojos across
           the USA, check the list of <a routerLink="/association/affiliate-dojos">affiliate dojos</a>
-          and see if there is something closer.
+          to find your closest dojo.
         </p>
         <!-- TODO MAP -->
       </iha-section>
@@ -113,7 +112,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         </iha-section>
         <iha-section [hType]="'h3'" [title]="'Meet us in Person'">
           <p>Visitors are always welcome to stop in during class hours and observe and
-            talk to one of our instructors, No appointment necessary. Please use the front door.</p>
+            talk to an instructor, no appointment necessary. Please use the front door.</p>
           <p>If this is your first time to the dojo, feel free to just watch, or bring comfortable clothing
             if you want to participate in a <b>trial class</b>. If you are interested in taking a trial class,
             please arrive at least ten minutes before class begins so that we can meet you and get you situated.</p>

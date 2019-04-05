@@ -5,10 +5,17 @@ import {ResponsiveService} from "../services/responsive.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: "iha-responsive-image",
   template: `
-    <img width="{{currentWidth}}" alt="{{imageAlt}}" src="{{imageSrc}}">
+    <a *ngIf="url else imgWithoutAnchor" href="{{url}}">
+      <ng-container [ngTemplateOutlet]="imgWithoutAnchor"></ng-container>
+    </a>
+    <ng-template #imgWithoutAnchor>
+      <img width="{{currentWidth}}" alt="{{imageAlt}}" src="{{imageSrc}}">
+    </ng-template>
   `
 })
 export class ResponsiveImageComponent implements OnInit {
+
+  @Input() url: string;
 
   @Input() imageSrc: string;
   @Input() imageAlt: string;
