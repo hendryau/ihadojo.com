@@ -23,7 +23,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Deploy
-`ng build --prod --base-href="http://ihadojo.com"`
+`ng build --prod --base-href="https://ihadojo.com"`
 `npx ngh --no-silent`
 
 ## Further help

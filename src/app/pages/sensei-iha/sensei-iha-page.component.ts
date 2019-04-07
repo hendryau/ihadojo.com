@@ -4,7 +4,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <iha-section [title]="'Sensei Seikichi Iha'" [subTitle]="'Hanshi, 10th Dan'">
-      <p> <img src="assets/biographies/iha/iha-kip2.JPG" class="float-left mr-3 w-50"><!-- TODO shrink photo -->
+      <p> <img src="assets/biographies/iha/iha-kip2.JPG" class="float-left mr-3 w-50">
       A <i>teacher of teachers</i>, Sensei Seikichi Iha began his karate
       training in Okinawa more than 60 years ago, studying under the renowned
       masters, Sensei Shinpan Gusukuma, and Sensei Katsuya Miyahira.</p>

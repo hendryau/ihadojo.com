@@ -54,7 +54,7 @@ export const EVENTS: IhaEvent[] = [
     location: "Naha, Okinawa",
     endDate: "8/30/2019",
     url: "http://ihatookachi2019.com",
-    imageUrl: "assets/events/tookachi_event.jpg",
+    imageUrl: "assets/events/tookachi_event.png",
     content: `
       Sensei Iha's Tookachi (88th birthday) celebration.
     `,

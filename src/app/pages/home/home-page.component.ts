@@ -29,10 +29,9 @@ import {DateService} from "../../services/date.service";
         </p>
       </iha-section>
     </iha-section>
-    <!--<iha-section [title]="'News'">-->
-      <!--<p>Beikoku Shidokan is celebrating Sensei Iha's 88th Birthday (Tookhachi)-->
-        <!--in Okinawa August 21st - August 29th, 2019.</p>-->
-    <!--</iha-section>-->
+    <iha-section [title]="'Okinawa 2019'">
+      <p>Package Registration is now available, <a routerLink="association/tookachi/package-registration">register here</a>.</p>
+    </iha-section>
     <iha-section [title]="'Upcoming Events'">
       <iha-events [events]="events"></iha-events>
       <p>Events for the entire year can be <a routerLink="events">found here</a>.</p>

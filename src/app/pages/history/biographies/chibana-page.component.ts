@@ -9,6 +9,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         [hType]="'h2'"
         [subTitle]="'by Katsuya Miyahira, Chairman, Okinawan Shorin Ryu Karate Association, March 22, 1972'"
       >
+        <img src="assets/biographies/chibana/chibana.jpg" class="mx-auto d-block" width="250px">
         <p>Choshin Chibana was born June 5, 1885, in the Torihori district
           of Shuri. At the age of 15, Chibana placed himself under the tutelage
           of Anko Itosu, the preeminent Karate master of the day. For the next 13
