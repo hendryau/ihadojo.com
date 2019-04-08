@@ -14,7 +14,7 @@ import {DateService} from "../../services/date.service";
     <iha-section [title]="'About'">
       <p>This is the official website of Seikichi Iha, Hanshi 10th Dan. Sensei Iha has operated his
         dojo in mid-michigan since the late 70s. Born in Okinawa, Sensei Iha has taught traditional
-        Okinawan Karatedo for more than 60 years all around the world (including Okinawa, Guam, the Phillipines,
+        Okinawan Karatedo for more than 60 years all around the world (including Okinawa, Guam, the Philippines,
         and across the United States). He leads an organization of over 30 dojos from around the world.</p>
       <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'Sensei Iha\\'s Dojo'" [hType]="'h3'">
         <p>Original Okinawa Karate, Sensei Iha's base of operations and the home dojo of the
@@ -24,12 +24,15 @@ import {DateService} from "../../services/date.service";
         <p>Sensei Iha has over 30 dojos that report to him from around the world. Check the list of
           <a routerLink="association/affiliate-dojos">affiliate dojos</a> here to find the one
           nearest you. Is your dojo looking to be apart of a great organization? Beikoku Shidokan
-          is open to welcoming new dojos into the orgnaziation. If your dojo is interested,
+          is open to welcoming new dojos into the organization. If your dojo is interested,
           <a href="mailto:mail@ihadojo.com">Let us know.</a>
         </p>
       </iha-section>
     </iha-section>
-    <iha-section [title]="'Okinawa 2019'">
+    <iha-section [title]="'Okinawa 2019'" [titleTemplate]="okinawaTitle">
+      <ng-template #okinawaTitle>
+        <img src="assets/events/tookachi_logo.png" class="mx-auto ml-1" width="75px">
+      </ng-template>
       <p>Package Registration is now available, <a routerLink="association/tookachi/package-registration">register here</a>.</p>
     </iha-section>
     <iha-section [title]="'Upcoming Events'">
