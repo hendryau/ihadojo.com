@@ -17,7 +17,7 @@ import {DOJOS, IhaDojo} from "./dojos";
             </ng-container>
           </div>
           <div *ngIf="dojo.address" class="card-text mb-2">{{dojo.address}}</div>
-          <a *ngIf="dojo.url" href="{{dojo.url}}" class="card-link">{{dojo.url}}</a>
+          <a *ngIf="dojo.url" href="{{dojo.http + dojo.url}}" class="card-link">{{dojo.url}}</a>
           <a *ngIf="dojo.email" href="mailto:{{dojo.email}}" class="card-link">{{dojo.email}}</a>
           <a *ngIf="dojo.email2" href="mailto:{{dojo.email2}}" class="card-link">{{dojo.email2}}</a>
           <a *ngIf="dojo.phone" href="tel:{{dojo.phone}}" class="card-link">{{dojo.phone}}</a>
