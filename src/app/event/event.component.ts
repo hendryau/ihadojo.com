@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild} from "@angular/core";
+import {ChangeDetectionStrategy, Component, ElementRef, Input, OnChanges, SimpleChanges, ViewChild} from "@angular/core";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -12,10 +12,10 @@ import {ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild} from "
         </h3>
         <div class="card-subtitle mb-2 text-muted" *ngIf="date">
           <ng-container *ngIf="!endDate && date !== endDate; else multipleDays">
-            {{date | date:'MMMM d, y'}}
+            {{date | date:dateFormatString}}
           </ng-container>
           <ng-template #multipleDays>
-            {{date | date: 'MMMM d'}} - {{endDate | date: 'MMMM d, y'}}
+            {{date | date:dateFormatString}} - {{endDate | date:endDateFormatString}}
           </ng-template>
         </div>
         <div class="card-text mb-2" [innerHtml]="content"></div>
@@ -27,10 +27,11 @@ import {ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild} from "
     </div>
   `
 })
-export class EventComponent {
+export class EventComponent implements OnChanges {
 
   @Input() public title: string;
   @Input() public date: string;
+  @Input() public time: string;
   @Input() public location: string;
   @Input() public endDate: string;
   @Input() public content: string;
@@ -39,8 +40,32 @@ export class EventComponent {
 
   @ViewChild("cardRef") cardRef: ElementRef;
 
+  public dateFormatString: string;
+  public endDateFormatString: string;
+
   constructor(
     public elementRef: ElementRef,
   ) { }
+
+  public ngOnChanges(changes: SimpleChanges): void {
+    const startDate = new Date(this.date);
+
+    if (startDate.getHours() > 0) {
+      this.dateFormatString = "MMMM d, y, h:mm:ss a";
+    } else {
+      this.dateFormatString = "MMMM d, y";
+    }
+
+    if (!!this.endDate) {
+      const endDate = new Date(this.endDate);
+      if (startDate.getDay() === endDate.getDay() &&
+          startDate.getMonth() === endDate.getMonth() &&
+          startDate.getFullYear() === endDate.getFullYear()) {
+        this.endDateFormatString = "h:mm:ss a";
+      } else {
+        this.endDateFormatString = "MMMM d, y";
+      }
+    }
+  }
 
 }

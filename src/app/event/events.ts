@@ -30,11 +30,33 @@ export const EVENTS: IhaEvent[] = [
   {
     title: "Okinawa Kenjin Kai Spring Party",
     date: "5/04/2019",
-    location: "Charlotte VFW Hall"
+    location: "Charlotte VFW Hall",
+  },
+  {
+    title: "Shidokan Training Seminar",
+    date: "2019-05-17T18:00:00",
+    endDate: "2019-05-17T20:00:00",
+    location: "Holt Junior High School Gym. 1784 Aurelius Rd, Holt MI 48842",
+  },
+  {
+    title: "Instructor Meeting",
+    date: "2019-05-17T20:30:00",
+    endDate: "2019-05-17T22:00:00",
+    location: "Holt Dojo. 2002 Cedar St., Holt MI 48842",
+    content: "Instructors invited to meeting: Hanshi, Kyoshi, Shibu, Fuku.",
+  },
+  {
+    title: "Instructor Training",
+    date: "2019-05-18T09:30:00",
+    endDate: "2019-05-18T10:50:00",
+    location: "Hope Middle School Gym, 2020 Park Ln, Holt, MI 48842",
+    content: "Instructors Invited to Training: Hanshi, Kyoshi, Shihan, Shibu, Fuku."
   },
   {
     title: "Dan Test",
-    date: "05/18/2019",
+    date: "2019-05-18T12:00:00",
+    location: "Hope Middle School Gym, 2020 Park Ln, Holt, MI 48842",
+    content: "Testing candidates may arrive to warm up at 11:00am."
   },
   {
     title: "Midwest Pre-Test",
