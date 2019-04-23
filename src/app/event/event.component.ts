@@ -51,7 +51,7 @@ export class EventComponent implements OnChanges {
     const startDate = new Date(this.date);
 
     if (startDate.getHours() > 0) {
-      this.dateFormatString = "MMMM d, y, h:mm:ss a";
+      this.dateFormatString = "MMMM d, y, h:mm a";
     } else {
       this.dateFormatString = "MMMM d, y";
     }
@@ -61,7 +61,7 @@ export class EventComponent implements OnChanges {
       if (startDate.getDay() === endDate.getDay() &&
           startDate.getMonth() === endDate.getMonth() &&
           startDate.getFullYear() === endDate.getFullYear()) {
-        this.endDateFormatString = "h:mm:ss a";
+        this.endDateFormatString = "h:mm a";
       } else {
         this.endDateFormatString = "MMMM d, y";
       }
