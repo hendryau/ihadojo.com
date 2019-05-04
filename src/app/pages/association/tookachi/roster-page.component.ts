@@ -128,10 +128,10 @@ export class RosterPageComponent {
         return 0;
       }
       if (p1.rank_type === "dan") {
-        return p1.rank < p2.rank ? 1 : -1; // highest dan rank first
+        return Number.parseInt(p1.rank, 0) < Number.parseInt(p2.rank, 0) ? 1 : -1; // highest dan rank first
       }
       if (p1.rank_type === "kyu") {
-        return p1.rank < p2.rank ? -1 : 1; // highest kyu rank first
+        return Number.parseInt(p1.rank, 0) < Number.parseInt(p2.rank, 0) ? -1 : 1; // highest kyu rank first
       }
     }
     if (p1.rank_type === "dan") {
