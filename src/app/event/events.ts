@@ -36,7 +36,7 @@ export const EVENTS: IhaEvent[] = [
     title: "Shidokan Training Seminar",
     date: "2019-05-17T18:00:00",
     endDate: "2019-05-17T20:00:00",
-    location: "Holt Junior High School Gym. 1784 Aurelius Rd, Holt MI 48842",
+    location: "Holt High School Gym, Main Campus. 5885 Holt Rd, Holt MI 48842",
   },
   {
     title: "Instructor Meeting",
@@ -50,13 +50,19 @@ export const EVENTS: IhaEvent[] = [
     date: "2019-05-18T09:30:00",
     endDate: "2019-05-18T10:50:00",
     location: "Hope Middle School Gym, 2020 Park Ln, Holt, MI 48842",
-    content: "Instructors Invited to Training: Hanshi, Kyoshi, Shihan, Shibu, Fuku."
+    content: "Instructors Invited to Training: Hanshi, Kyoshi, Shihan, Shibu, Fuku.",
   },
   {
     title: "Dan Test",
     date: "2019-05-18T12:00:00",
     location: "Hope Middle School Gym, 2020 Park Ln, Holt, MI 48842",
-    content: "Testing candidates may arrive to warm up at 11:00am."
+    content: "Testing candidates may arrive to warm up at 11:00am.",
+  },
+  {
+    title: "Post Test Banquet",
+    date: "2019-05-18T16:00:00",
+    location: "Fireside Grille, 6951 Lansing Rd, Dimondale, MI 48821",
+    content: "RSVP by Wednesday May 15th, 5:00pm.",
   },
   {
     title: "Midwest Pre-Test",
