@@ -8,7 +8,7 @@ export interface IhaEvent {
   url?: string;
 }
 
-export const LAST_UPDATED = "3/06/2019";
+export const LAST_UPDATED = "5/15/2019";
 
 export const EVENTS: IhaEvent[] = [
   {

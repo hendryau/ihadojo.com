@@ -433,6 +433,87 @@ export let ROSTER: DojoPerson[] =
     "country": "USA",
     "rank": "3",
     "rank_type": "kyu"
+  }, {
+    "photo": "Fortunato_Restagno.jpg",
+    "first_name": "Fortunato",
+    "last_name": "Restagno",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "6",
+    "rank_type": "dan"
+  }, {
+    "photo": "Doug_Cowan.jpg",
+    "first_name": "Douglas",
+    "last_name": "Cowen",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "3",
+    "rank_type": "dan"
+  }, {
+    "photo": "Klaus_Stegner.jpg",
+    "first_name": "Klaus",
+    "last_name": "Stegner",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "3",
+    "rank_type": "dan"
+  }, {
+    "photo": "Bob_Davis.jpg",
+    "first_name": "Bob",
+    "last_name": "Davis",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "3",
+    "rank_type": "dan"
+  }, {
+    "photo": "Steven_Jessup.jpg",
+    "first_name": "Steve",
+    "last_name": "Jessup",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "2",
+    "rank_type": "dan"
+  }, {
+    "photo": "Tricia_Burbidge.jpg",
+    "first_name": "Tricia",
+    "last_name": "Burbidge",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "1",
+    "rank_type": "kyu"
+  }, {
+    "photo": "Megan_McKechnie.jpg",
+    "first_name": "Megan",
+    "last_name": "McKechnie",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "1",
+    "rank_type": "kyu"
+  }, {
+    "photo": "Laura_Marks.jpg",
+    "first_name": "Laura",
+    "last_name": "Marks",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "4",
+    "rank_type": "kyu"
+  }, {
+    "photo": "Dave_Marks.jpg",
+    "first_name": "David",
+    "last_name": "Marks",
+    "dojo": "Grand River Karate",
+    "city_state": "Waterloo, Ontario",
+    "country": "Canada",
+    "rank": "",
+    "rank_type": ""
   }]
 ;
 

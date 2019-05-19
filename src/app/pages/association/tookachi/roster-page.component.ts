@@ -69,7 +69,11 @@ export class RosterPageComponent {
       return true;
     } else if (person.country && person.country.toLowerCase().indexOf(text) >= 0) {
       return true;
+    } else if (person.city_state && person.city_state.toLowerCase().indexOf(text) >= 0) {
+      return true;
     } else if (person.rank && person.rank.toLowerCase().indexOf(text) >= 0) {
+      return true;
+    } else if (person.dojo && person.dojo.toLowerCase().indexOf(text) >= 0) {
       return true;
     } else {
       return false;
