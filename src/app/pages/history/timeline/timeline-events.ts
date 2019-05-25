@@ -361,6 +361,7 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
   },
   {
     date: "1974",
+    imageUrl: "assets/timeline/demo.jpg",
     content: `In the fall, Seikichi Iha moved to Lansing,
     Michigan with Toshiyuki Itokazu (Uechi-ryu). Harold Armour,
     a senior student in Tadashi Yamashita's Lansing branch dojo
@@ -370,8 +371,8 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
     of the senior instructors. <sup>14</sup>`,
   },
   {
-    // TODO photo with old sign
     date: "1976",
+    imageUrl: "assets/timeline/70s-Dojo-Front.jpg",
     content: `Seikichi Iha moved dojo to current Lansing location and
       formed the Beikoku Shidokan Association. The association was formally recognized by Katsuya
       Miyahira in July of 1996. <sup>14</sup>`,
@@ -411,6 +412,7 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
       Okinawa Shorin-ryu Shidokan Demonstration, Naha. <sup>8</sup>`,
   },
   {
+    imageUrl: "assets/timeline/miyahira-20th.jpg",
     date: "March, 1996",
     content: `Beikoku Shidokan Karate-do 20th Anniversary Celebration
       in East Lansing, Michigan. Katsuya Miyahira visited Michigan to
