@@ -16,24 +16,26 @@ import {FilterComponent} from "../../../filter/filter.component";
     >
       <ng-template #sortButtons>
         <button
-          (click)="sortByRank = !sortByRank; filterComponent.applyFilter()"
+          (click)="sort('rank'); filterComponent.applyFilter()"
           (keyup.enter)="sortByRank = !sortByRank; filterComponent.applyFilter()"
-          class="btn btn-secondary"
+          class="btn sort-btn"
           [ngClass]="sortByRank ? 'active' : ''">
-          Rank
+          Rank <i *ngIf ="sortByRank" class="fa fa-sort-desc"></i>
         </button>
         <button
-          (click)="sortByDojo = !sortByDojo; filterComponent.applyFilter()"
+          (click)="sort('dojo'); filterComponent.applyFilter()"
           (keyup.enter)="sortByDojo = !sortByDojo; filterComponent.applyFilter()"
-          class="btn btn-secondary"
+          class="btn sort-btn"
           [ngClass]="sortByDojo ? 'active' : ''">
-          Dojo</button>
+          Dojo <i *ngIf="sortByDojo" class="fa fa-sort-desc"></i>
+        </button>
         <button
-          (click)="sortByName = !sortByName; filterComponent.applyFilter()"
+          (click)="sort('name'); filterComponent.applyFilter()"
           (keyup.enter)="sortByName = !sortByName; filterComponent.applyFilter()"
-          class="btn btn-secondary"
+          class="btn sort-btn"
           [ngClass]="sortByName ? 'active' : ''">
-          Name</button>
+          Name <i *ngIf="sortByName" class="fa fa-sort-desc"></i>
+        </button>
       </ng-template>
       <ng-template #rosterTemplate let-item="item">
         <div class="card mb-3">
@@ -41,9 +43,9 @@ import {FilterComponent} from "../../../filter/filter.component";
             <div class="card-text">
               <img *ngIf="item.photo" class="float-left mr-3" height="125px" src="{{'assets/tookachi/photos/' + item.photo}}">
               <div class="h5">{{item.first_name}} {{item.last_name}}</div>
+              <div *ngIf="item.rank">{{item.rank}} {{item.rank_type}}</div>
               <div>{{item.dojo}}</div>
               <div *ngIf="item.country || item.city_state">{{item.city_state}} {{item.country}}</div>
-              <div *ngIf="item.rank">{{item.rank}} {{item.rank_type}}</div>
             </div>
           </div>
         </div>
@@ -62,22 +64,48 @@ export class RosterPageComponent {
   @ViewChild(FilterComponent)
   public filterComponent: FilterComponent<DojoPerson>;
 
-  public filterRoster = (text: string, person: DojoPerson): boolean => {
-    if (person.first_name && person.first_name.toLowerCase().indexOf(text) >= 0) {
-      return true;
-    } else if (person.last_name && person.last_name.toLowerCase().indexOf(text) >= 0) {
-      return true;
-    } else if (person.country && person.country.toLowerCase().indexOf(text) >= 0) {
-      return true;
-    } else if (person.city_state && person.city_state.toLowerCase().indexOf(text) >= 0) {
-      return true;
-    } else if (person.rank && person.rank.toLowerCase().indexOf(text) >= 0) {
-      return true;
-    } else if (person.dojo && person.dojo.toLowerCase().indexOf(text) >= 0) {
-      return true;
-    } else {
-      return false;
+  public sort(type: "dojo" | "name" | "rank"): void {
+    switch (type) {
+      case "dojo":
+        this.sortByDojo = !this.sortByDojo;
+        break;
+      case "name":
+        this.sortByName = !this.sortByName;
+        break;
+      case "rank":
+        this.sortByRank = !this.sortByRank;
+        break;
     }
+
+    // always at least sort by name
+    if (!(this.sortByName || this.sortByRank || this.sortByDojo)) {
+      this.sortByName = true;
+    }
+  }
+
+  public filterRoster = (text: string, person: DojoPerson): boolean => {
+    let filterString = "";
+
+    if (person.first_name) {
+      filterString += "|" + person.first_name.toLowerCase();
+    }
+    if (person.last_name) {
+      filterString += "|" + person.last_name.toLowerCase();
+    }
+    if (person.country) {
+      filterString += "|" + person.country.toLowerCase();
+    }
+    if (person.city_state) {
+      filterString += "|" + person.city_state.toLowerCase();
+    }
+    if (person.rank) {
+      filterString += "|" +  `${person.rank} ${person.rank_type}`;
+    }
+    if (person.dojo) {
+      filterString += "|" + person.dojo;
+    }
+
+    return filterString.indexOf(text) >= 0;
   }
 
   public comparePerson = (p1: DojoPerson, p2: DojoPerson): number => {

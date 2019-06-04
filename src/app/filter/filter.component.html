@@ -3,7 +3,7 @@
     <div
       *ngIf="filterFunc"
       class="input-group mb-3"
-      [ngClass]="buttonTemplate ? 'col-md-8' : 'col-md-12'"
+      [ngClass]="buttonTemplate ? 'col-md-7' : 'col-md-12'"
     >
       <input
         type="text"
@@ -20,7 +20,7 @@
         >Clear</button>
       </div>
     </div>
-    <div class="col-md-4 mb-3" *ngIf="buttonTemplate">
+    <div class="col-md-5 mb-3" *ngIf="buttonTemplate">
       <div class="btn-group w-100">
         <ng-container [ngTemplateOutlet]="buttonTemplate"></ng-container>
       </div>
