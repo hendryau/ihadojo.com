@@ -1379,6 +1379,15 @@ export let ROSTER: DojoPerson[] =
     "rank_type": "dan",
     "photo": "Mason Senak.jpg"
   }, {
+    "first_name": "Kaitlin",
+    "last_name": "Moran",
+    "dojo": "Maywood",
+    "city_state": "Maywood, New Jersey",
+    "country": "USA",
+    "rank": "",
+    "rank_type": "",
+    "photo": "Kaitlin Moran.jpg"
+  }, {
     "first_name": "Lauren",
     "last_name": "Moran",
     "dojo": "Maywood",

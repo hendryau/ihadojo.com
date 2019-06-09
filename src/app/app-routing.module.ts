@@ -18,7 +18,6 @@ import {ChibanaPageComponent} from "./pages/history/biographies/chibana-page.com
 import {MiyahiraPageComponent} from "./pages/history/biographies/miyahira-page.component";
 import {GlossaryPageComponent} from "./pages/glossary/glossary-page.component";
 import {RosterPageComponent} from "./pages/association/tookachi/roster-page.component";
-import {EventPackageRegistrationPageComponent} from "./pages/association/tookachi/event-package-registration-page.component";
 
 const appRoutes = [
   // home
@@ -78,10 +77,6 @@ const appRoutes = [
   {
     component: RosterPageComponent,
     path: "association/tookachi/roster",
-  },
-  {
-    component: EventPackageRegistrationPageComponent,
-    path: "association/tookachi/package-registration",
   },
 
   // history
