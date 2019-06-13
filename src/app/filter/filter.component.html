@@ -1,0 +1,43 @@
+<iha-section [title]="filterTitle">
+  <div class="row">
+    <div
+      *ngIf="filterFunc"
+      class="input-group mb-3"
+      [ngClass]="buttonTemplate ? 'col-md-7' : 'col-md-12'"
+    >
+      <input
+        type="text"
+        class="form-control"
+        [attr.placeholder]="filterPlaceholderText"
+        [formControl]="filterControl"
+      >
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          (click)="clear()"
+          (keyup.enter)="clear()"
+        >Clear</button>
+      </div>
+    </div>
+    <div class="col-md-5 mb-3" *ngIf="buttonTemplate">
+      <div class="btn-group w-100">
+        <ng-container [ngTemplateOutlet]="buttonTemplate"></ng-container>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="filteredArray.length !== array.length" class="row mb-3">
+    <div class="col-md-12">Displaying {{filteredArray.length}} of {{array.length}} people.</div>
+  </div>
+  <div class="{{arrayDivClass}}">
+    <ng-container *ngFor="let item of filteredArray">
+      <ng-container
+        [ngTemplateOutlet]="itemTemplate"
+        [ngTemplateOutletContext]="{item: item}"
+      ></ng-container>
+    </ng-container>
+  </div>
+  <div *ngIf="!filteredArray.length" class="text-center">
+    {{nothingFoundMessage}}
+  </div>
+</iha-section>
