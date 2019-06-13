@@ -26,6 +26,9 @@
       </div>
     </div>
   </div>
+  <div *ngIf="filteredArray.length !== array.length" class="row mb-3">
+    <div class="col-md-12">Displaying {{filteredArray.length}} of {{array.length}} people.</div>
+  </div>
   <div class="{{arrayDivClass}}">
     <ng-container *ngFor="let item of filteredArray">
       <ng-container

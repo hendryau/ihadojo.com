@@ -36,6 +36,7 @@ import {FilterComponent} from "./filter/filter.component";
 import {DateService} from "./services/date.service";
 import {NavItemComponent} from "./navigation/nav-item.component";
 import {DropdownNavItemComponent} from "./navigation/dropdown-nav-item.component";
+import {NumSuffixPipe} from "./pipes/num-suffix.pipe";
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import {DropdownNavItemComponent} from "./navigation/dropdown-nav-item.component
     SenseiIhaPageComponent,
     GlossaryPageComponent,
     RosterPageComponent,
+    NumSuffixPipe,
   ],
   imports: [
     BrowserModule,

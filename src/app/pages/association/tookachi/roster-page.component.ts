@@ -4,6 +4,12 @@ import {FilterComponent} from "../../../filter/filter.component";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
+  styles: [`
+    iha-filter {
+      display: block;
+      margin-bottom: 300px;
+    }
+  `],
   template: `
     <iha-filter
       [filterTitle]="'Tookachi Roster'"
@@ -43,7 +49,7 @@ import {FilterComponent} from "../../../filter/filter.component";
             <div class="card-text">
               <img *ngIf="item.photo" class="float-left mr-3" height="125px" src="{{'assets/tookachi/photos/' + item.photo}}">
               <div class="h5">{{item.first_name}} {{item.last_name}}</div>
-              <div *ngIf="item.rank">{{item.rank}} {{item.rank_type}}</div>
+              <div *ngIf="item.rank">{{item.rank | numSuffix}} {{item.rank_type}}</div>
               <div>{{item.dojo}}</div>
               <div *ngIf="item.country || item.city_state">{{item.city_state}} {{item.country}}</div>
             </div>
@@ -99,10 +105,10 @@ export class RosterPageComponent {
       filterString += "|" + person.city_state.toLowerCase();
     }
     if (person.rank) {
-      filterString += "|" +  `${person.rank} ${person.rank_type}`;
+      filterString += "|" + `${person.rank} ${person.rank_type}`;
     }
     if (person.dojo) {
-      filterString += "|" + person.dojo;
+      filterString += "|" + person.dojo.toLowerCase();
     }
 
     return filterString.indexOf(text) >= 0;
@@ -159,23 +165,33 @@ export class RosterPageComponent {
       if (p1.rank_type === "" || p1.rank === p2.rank) {
         return 0;
       }
-      if (p1.rank_type === "dan") {
+      if (p1.rank_type === "dan" || p1.rank_type === "jr dan") {
         return Number.parseInt(p1.rank, 0) < Number.parseInt(p2.rank, 0) ? 1 : -1; // highest dan rank first
       }
       if (p1.rank_type === "kyu") {
         return Number.parseInt(p1.rank, 0) < Number.parseInt(p2.rank, 0) ? -1 : 1; // highest kyu rank first
       }
+    } else {
+      if (p1.rank_type === "dan") {
+        return -1; // p2 is no rank kyu, or jr dan
+      }
+      if (p2.rank_type === "dan") {
+        return 1; // p1 is no rank, kyu, or jr dan
+      }
+      if (p1.rank_type === "kyu") {
+        return -1; // p2 is no rank or jr dan
+      }
+      if (p2.rank_type === "kyu") {
+        return 1; // p1 is no rank or jr dan
+      }
+      if (p1.rank_type === "jr dan") {
+        return -1; // p2 is no rank
+      }
+      if (p2.rank_type === "jr dan") {
+        return 1; // p2 is no rank
+      }
+      return 0;
     }
-    if (p1.rank_type === "dan") {
-      return -1; // p2 is either no rank or kyu
-    }
-    if (p2.rank_type === "dan") {
-      return 1; // p1 is either no rank or kyu
-    }
-    if (p1.rank_type === "kyu") {
-      return (<string>p2.rank_type === "dan") ? 1 : -1; // either p2 is dan or no rank
-    }
-    return 1; // p1 has no rank, p2 has a rank;
   }
 
 }

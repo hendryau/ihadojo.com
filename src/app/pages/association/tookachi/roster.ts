@@ -6,14 +6,14 @@ export interface DojoPerson {
   country: string;
   dojo: string;
   rank?: string;
-  rank_type?: "kyu" | "dan" | "";
+  rank_type?: "kyu" | "dan" | "jr dan" | "";
 }
 
 export let ROSTER: DojoPerson[] =
   [{
     "first_name": "Seikichi",
     "last_name": "Iha",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "10",
@@ -22,7 +22,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Eric",
     "last_name": "Dhanak",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "3",
@@ -31,7 +31,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Sherry",
     "last_name": "Dhanak",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "",
@@ -40,7 +40,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Dan",
     "last_name": "Reidy",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Charlotte, Michigan",
     "country": "USA",
     "rank": "1",
@@ -49,16 +49,16 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Jim",
     "last_name": "Hoaglin",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
-    "rank": "3",
+    "rank": "4",
     "rank_type": "dan",
     "photo": "jim_hoaglin.jpg"
   }, {
     "first_name": "Emmalee",
     "last_name": "Adelman",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "4",
@@ -67,7 +67,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Sara",
     "last_name": "Adelman",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "4",
@@ -76,7 +76,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Isabel",
     "last_name": "Boona",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "5",
@@ -85,7 +85,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Melissa",
     "last_name": "Lonsberry",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "4",
@@ -94,7 +94,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Gary",
     "last_name": "Newton",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "5",
@@ -103,7 +103,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Mike",
     "last_name": "Grant",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "5",
@@ -112,7 +112,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "John",
     "last_name": "Bono",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Grand Rapids, Michigan",
     "country": "USA",
     "rank": "5",
@@ -121,7 +121,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Dan",
     "last_name": "Kasishke",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "6",
@@ -130,8 +130,8 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Fred",
     "last_name": "Mansfield",
-    "dojo": "Hombu",
-    "city_state": "Lansing, Michigan",
+    "dojo": "Hombu Dojo",
+    "city_state": "Boston, Massachusetts",
     "country": "USA",
     "rank": "5",
     "rank_type": "dan",
@@ -139,7 +139,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Aldo",
     "last_name": "Martinez",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "7",
@@ -148,7 +148,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Stuart",
     "last_name": "McCracken",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "5",
@@ -157,7 +157,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "David",
     "last_name": "McCreight",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "6",
@@ -166,7 +166,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Abby",
     "last_name": "Schwartz",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "5",
@@ -175,8 +175,8 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Diana",
     "last_name": "Spring",
-    "dojo": "Hombu",
-    "city_state": "Lansing, Michigan",
+    "dojo": "Hombu Dojo",
+    "city_state": "Owosso, Michigan",
     "country": "USA",
     "rank": "4",
     "rank_type": "dan",
@@ -184,8 +184,8 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Patrick",
     "last_name": "Spring",
-    "dojo": "Hombu",
-    "city_state": "Lansing, Michigan",
+    "dojo": "Hombu Dojo",
+    "city_state": "Owosso, Michigan",
     "country": "USA",
     "rank": "1",
     "rank_type": "dan",
@@ -193,7 +193,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Josh",
     "last_name": "Wald-Kerr",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "4",
@@ -202,7 +202,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Pattrick",
     "last_name": "Yockey",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "1",
@@ -211,34 +211,25 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Mike",
     "last_name": "Nugent",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Ann Arbor, Michigan",
     "country": "USA",
     "rank": "6",
     "rank_type": "dan",
     "photo": "mike_nugent.jpg"
   }, {
-    "first_name": "Kayla",
-    "last_name": "Stomack",
-    "dojo": "Hombu",
-    "city_state": "Lansing, Michigan",
-    "country": "USA",
-    "rank": "1",
-    "rank_type": "dan",
-    "photo": ""
-  }, {
     "first_name": "Lynn",
     "last_name": "Tanner",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
-    "rank": "3",
+    "rank": "4",
     "rank_type": "dan",
     "photo": "lynn_tanner.jpg"
   }, {
     "first_name": "Frank",
     "last_name": "Samples",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Lansing, Michigan",
     "country": "USA",
     "rank": "7",
@@ -247,7 +238,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Austin",
     "last_name": "Hendry",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Ann Arbor, Michigan",
     "country": "USA",
     "rank": "5",
@@ -256,7 +247,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Grey",
     "last_name": "Hendry",
-    "dojo": "Hombu",
+    "dojo": "Hombu Dojo",
     "city_state": "Ann Arbor, Michigan",
     "country": "USA",
     "rank": "",
@@ -265,7 +256,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Jim",
     "last_name": "Kass",
-    "dojo": "Alaska Shido-kan",
+    "dojo": "Alaska Shidokan",
     "city_state": "Kenai, Alaska",
     "country": "USA",
     "rank": "8",
@@ -274,7 +265,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Sandy",
     "last_name": "Kass",
-    "dojo": "Alaska Shido-kan",
+    "dojo": "Alaska Shidokan",
     "city_state": "Kenai, Alaska",
     "country": "USA",
     "rank": "",
@@ -283,7 +274,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Keeven",
     "last_name": "Macik",
-    "dojo": "Alaska Shido-kan",
+    "dojo": "Alaska Shidokan",
     "city_state": "Kenai, Alaska",
     "country": "USA",
     "rank": "2",
@@ -292,7 +283,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Hannele",
     "last_name": "Zubeck",
-    "dojo": "Alaska Shido-kan",
+    "dojo": "Alaska Shidokan",
     "city_state": "Kenai, Alaska",
     "country": "USA",
     "rank": "1",
@@ -301,7 +292,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Maija",
     "last_name": "Zubeck",
-    "dojo": "Alaska Shido-kan",
+    "dojo": "Alaska Shidokan",
     "city_state": "Kenai, Alaska",
     "country": "USA",
     "rank": "1",
@@ -310,7 +301,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Roberto",
     "last_name": "Curtis",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Alexandria, Virginia",
     "country": "USA",
     "rank": "8",
@@ -319,7 +310,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Robert",
     "last_name": "Pangelinan",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Lorton, Virginia",
     "country": "USA",
     "rank": "6",
@@ -328,7 +319,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Maria",
     "last_name": "Pangelinan",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Lorton, Virginia",
     "country": "USA",
     "rank": "2",
@@ -337,7 +328,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Arthur",
     "last_name": "Flax",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Gaithersburg, Maryland",
     "country": "USA",
     "rank": "3",
@@ -346,7 +337,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Denise",
     "last_name": "Coursey",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Alexandria, Virginia",
     "country": "USA",
     "rank": "2",
@@ -355,7 +346,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Matt",
     "last_name": "Coursey",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Alexandria, Virginia",
     "country": "USA",
     "rank": "1",
@@ -364,7 +355,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Margot",
     "last_name": "Paz",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Alexandria, Virginia",
     "country": "USA",
     "rank": "1",
@@ -373,7 +364,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Martha",
     "last_name": "Moralez",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Alexandria, Virginia",
     "country": "USA",
     "rank": "",
@@ -382,7 +373,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Noell",
     "last_name": "Dunlap McMichael",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Arlington, Virginia",
     "country": "USA",
     "rank": "1",
@@ -391,7 +382,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Noah",
     "last_name": "McMichael",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Arlington, Virginia",
     "country": "USA",
     "rank": "",
@@ -400,7 +391,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Daniel",
     "last_name": "Reese",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Burke, Virginia",
     "country": "USA",
     "rank": "1",
@@ -409,7 +400,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Daniel",
     "last_name": "Kumar",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Alexandria, Virginia",
     "country": "USA",
     "rank": "1",
@@ -418,7 +409,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Bryan",
     "last_name": "Hudson",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Alexandria, Virginia",
     "country": "USA",
     "rank": "1",
@@ -427,7 +418,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Sean",
     "last_name": "McCloskey",
-    "dojo": "Virginia",
+    "dojo": "Virginia Shidokan",
     "city_state": "Alexandria, Virginia",
     "country": "USA",
     "rank": "3",
@@ -994,7 +985,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Mark",
     "last_name": "McCloud",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "8",
@@ -1003,7 +994,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Jason",
     "last_name": "Yuhasz",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "DeWitt, MI",
     "country": "USA",
     "rank": "4",
@@ -1012,7 +1003,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Brendan",
     "last_name": "Goodrich",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Mason, MI",
     "country": "USA",
     "rank": "3",
@@ -1021,7 +1012,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Scott",
     "last_name": "Kramer",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Charlotte, MI",
     "country": "USA",
     "rank": "3",
@@ -1030,7 +1021,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Danny",
     "last_name": "McCloud",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "3",
@@ -1039,7 +1030,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Ben",
     "last_name": "Powell",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "3",
@@ -1048,7 +1039,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Tiernan",
     "last_name": "Heinrich",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "2",
@@ -1057,7 +1048,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Paige",
     "last_name": "Aldrich",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "1",
@@ -1066,7 +1057,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Robert",
     "last_name": "Aldrich",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "1",
@@ -1075,7 +1066,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Eric",
     "last_name": "Culp",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "1",
@@ -1084,7 +1075,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Logan",
     "last_name": "Wilder",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "1",
@@ -1093,7 +1084,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Crystal",
     "last_name": "Young",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "East Lansing, MI",
     "country": "USA",
     "rank": "1",
@@ -1102,7 +1093,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Katelyn",
     "last_name": "Aldrich",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "2",
@@ -1111,7 +1102,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Katie",
     "last_name": "Yuhasz",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "DeWitt, MI",
     "country": "USA",
     "rank": "3",
@@ -1120,7 +1111,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Grace",
     "last_name": "Thompson",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Dimondale, MI",
     "country": "USA",
     "rank": "4",
@@ -1129,7 +1120,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Tiffany",
     "last_name": "Aldrich",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Holt, MI",
     "country": "USA",
     "rank": "",
@@ -1138,7 +1129,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Megan",
     "last_name": "Goodrich",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Mason, MI",
     "country": "USA",
     "rank": "",
@@ -1147,7 +1138,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Melody",
     "last_name": "Thompson",
-    "dojo": "Holt",
+    "dojo": "Holt Dojo",
     "city_state": "Dimondale, MI",
     "country": "USA",
     "rank": "",
@@ -1156,7 +1147,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Caryl",
     "last_name": "Akamichi",
-    "dojo": "Hombu",
+    "dojo": "Shidokan SoCal",
     "city_state": "Long Beach, California",
     "country": "USA",
     "rank": "6",
@@ -1372,7 +1363,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Mason",
     "last_name": "Senak",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "7",
@@ -1381,7 +1372,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Kaitlin",
     "last_name": "Moran",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "",
@@ -1390,7 +1381,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Lauren",
     "last_name": "Moran",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "",
@@ -1399,7 +1390,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Dave",
     "last_name": "Senak",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "8",
@@ -1408,7 +1399,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Susan",
     "last_name": "Volker",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "",
@@ -1417,7 +1408,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Nina",
     "last_name": "Senak",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "",
@@ -1426,7 +1417,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Michael",
     "last_name": "Senak",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "8",
@@ -1435,7 +1426,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Matthew",
     "last_name": "Senak",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "5",
@@ -1444,7 +1435,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Jessica",
     "last_name": "Senak",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "",
@@ -1453,7 +1444,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Tom",
     "last_name": "Kearns",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "3",
@@ -1462,7 +1453,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Chris",
     "last_name": "Kearns",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "2",
@@ -1471,7 +1462,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Gabe",
     "last_name": "Valdes",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "2",
@@ -1480,7 +1471,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Demitrius",
     "last_name": "Valdes",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "2",
@@ -1489,7 +1480,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Thomas",
     "last_name": "Esemplare",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "7",
@@ -1498,7 +1489,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Carolyn",
     "last_name": "McDermott",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "",
@@ -1507,7 +1498,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Michele",
     "last_name": "McDermott",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "",
@@ -1516,12 +1507,138 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Mitch",
     "last_name": "Cooperman",
-    "dojo": "Maywood",
+    "dojo": "Maywood Shidokan",
     "city_state": "Maywood, New Jersey",
     "country": "USA",
     "rank": "7",
     "rank_type": "dan",
     "photo": "Mitchell Cooperman.jpg"
+  }, {
+    "first_name": "Robert",
+    "last_name": "Chartier",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "7",
+    "rank_type": "dan",
+    "photo": "Chartier,Rob.JPG"
+  }, {
+    "first_name": "Laura",
+    "last_name": "Chartier",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "7",
+    "rank_type": "dan",
+    "photo": "Chartier,Laura.JPG"
+  }, {
+    "first_name": "Matthew",
+    "last_name": "Boettcher",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "4",
+    "rank_type": "dan",
+    "photo": "Boettcher,Matt.JPG"
+  }, {
+    "first_name": "Harold",
+    "last_name": "Garagiola",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "2",
+    "rank_type": "dan",
+    "photo": ""
+  }, {
+    "first_name": "Corryne",
+    "last_name": "Garagiola",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "",
+    "rank_type": "",
+    "photo": ""
+  }, {
+    "first_name": "Raina",
+    "last_name": "Young",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "1",
+    "rank_type": "dan",
+    "photo": "Young,Raina.JPG"
+  }, {
+    "first_name": "Mike",
+    "last_name": "Young",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "",
+    "rank_type": "",
+    "photo": "young,mike.jpg"
+  }, {
+    "first_name": "Paola",
+    "last_name": "Smith",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "1",
+    "rank_type": "kyu",
+    "photo": "Smith,Paola.JPG"
+  }, {
+    "first_name": "Mike",
+    "last_name": "Smith",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "",
+    "rank_type": "",
+    "photo": "Smith,Mike.jpg"
+  }, {
+    "first_name": "John",
+    "last_name": "Monaghan",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "2",
+    "rank_type": "dan",
+    "photo": "Monaghan,John.JPG"
+  }, {
+    "first_name": "Michiko",
+    "last_name": "Laboda",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "2",
+    "rank_type": "kyu",
+    "photo": "Laboda,Michiko.JPG"
+  }, {
+    "first_name": "Christopher",
+    "last_name": "Laboda",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "2",
+    "rank_type": "kyu",
+    "photo": "Laboda,Chris.JPG"
+  }, {
+    "first_name": "Forrest",
+    "last_name": "Ream",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "1",
+    "rank_type": "jr dan",
+    "photo": "Ream,Forrest.JPG"
+  }, {
+    "first_name": "Kayla",
+    "last_name": "Stomack",
+    "dojo": "Clawson Dojo",
+    "city_state": "Detroit, Michigan",
+    "country": "USA",
+    "rank": "1",
+    "rank_type": "dan",
+    "photo": "Stomack,Kayla.JPG"
   }]
 ;
 
