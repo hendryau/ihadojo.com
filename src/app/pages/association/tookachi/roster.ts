@@ -1648,6 +1648,96 @@ export let ROSTER: DojoPerson[] =
     "rank": "1",
     "rank_type": "dan",
     "photo": "Stomack,Kayla.JPG"
+  }, {
+    "first_name": "Yuji",
+    "last_name": "Uza",
+    "dojo": "Chicago Shidokan",
+    "city_state": "Chicago, Illinois",
+    "country": "USA",
+    "rank": "6",
+    "rank_type": "dan",
+    "photo": ""
+  }, {
+    "first_name": "Igor",
+    "last_name": "Janicevic",
+    "dojo": "Chicago Shidokan",
+    "city_state": "Chicago, Illinois",
+    "country": "USA",
+    "rank": "",
+    "rank_type": "",
+    "photo": ""
+  }, {
+    "first_name": "Chopra",
+    "last_name": "Nikhil",
+    "dojo": "Bloomfield Shidokan",
+    "city_state": "Bloomfield, Michigan",
+    "country": "USA",
+    "rank": "1",
+    "rank_type": "dan",
+    "photo": ""
+  }, {
+    "first_name": "Chopra",
+    "last_name": "Niketh",
+    "dojo": "Bloomfield Shidokan",
+    "city_state": "Bloomfield, Michigan",
+    "country": "USA",
+    "rank": "1",
+    "rank_type": "dan",
+    "photo": ""
+  }, {
+    "first_name": "Dominick",
+    "last_name": "Shoha",
+    "dojo": "Bloomfield Shidokan",
+    "city_state": "Bloomfield, Michigan",
+    "country": "USA",
+    "rank": "1",
+    "rank_type": "dan",
+    "photo": ""
+  }, {
+    "first_name": "Lou",
+    "last_name": "Shoha",
+    "dojo": "Bloomfield Shidokan",
+    "city_state": "Bloomfield, Michigan",
+    "country": "USA",
+    "rank": "7",
+    "rank_type": "dan",
+    "photo": ""
+  }, {
+    "first_name": "Steve",
+    "last_name": "Shoha",
+    "dojo": "Bloomfield Shidokan",
+    "city_state": "Bloomfield, Michigan",
+    "country": "USA",
+    "rank": "5",
+    "rank_type": "dan",
+    "photo": ""
+  }, {
+    "first_name": "Scott",
+    "last_name": "Curtis",
+    "dojo": "Grand Rapids Shidokan",
+    "city_state": "Grand Rapids, Michigan",
+    "country": "USA",
+    "rank": "",
+    "rank_type": "",
+    "photo": ""
+  }, {
+    "first_name": "Allen",
+    "last_name": "Mayne",
+    "dojo": "Grand Rapids Shidokan",
+    "city_state": "Grand Rapids, Michigan",
+    "country": "USA",
+    "rank": "8",
+    "rank_type": "",
+    "photo": ""
+  }, {
+    "first_name": "Mark",
+    "last_name": "Talbot",
+    "dojo": "Grand Rapids Shidokan",
+    "city_state": "Grand Rapids, Michigan",
+    "country": "USA",
+    "rank": "",
+    "rank_type": "",
+    "photo": ""
   }]
 ;
 
