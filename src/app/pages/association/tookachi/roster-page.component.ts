@@ -17,30 +17,30 @@ import {FilterComponent} from "../../../filter/filter.component";
       [itemTemplate]="rosterTemplate"
       [nothingFoundMessage]="'No one found.'"
       [filterFunc]="filterRoster"
-      [compareFunc]="comparePerson"
+      [compareFunc]="comparePerson.bind(this)"
       [buttonTemplate]="sortButtons"
     >
       <ng-template #sortButtons>
         <button
-          (click)="sort('rank'); filterComponent.applyFilter()"
-          (keyup.enter)="sortByRank = !sortByRank; filterComponent.applyFilter()"
+          (click)="sortType = 'rank'; filterComponent.applyFilter()"
+          (keyup.enter)="sortType = 'rank'; filterComponent.applyFilter()"
           class="btn sort-btn"
-          [ngClass]="sortByRank ? 'active' : ''">
-          Rank <i *ngIf ="sortByRank" class="fa fa-sort-desc"></i>
+          [ngClass]="sortType === 'rank' ? 'active' : ''">
+          Rank <i *ngIf ="sortType === 'rank'" class="fa fa-sort-desc"></i>
         </button>
         <button
-          (click)="sort('dojo'); filterComponent.applyFilter()"
-          (keyup.enter)="sortByDojo = !sortByDojo; filterComponent.applyFilter()"
+          (click)="sortType = 'dojo'; filterComponent.applyFilter()"
+          (keyup.enter)="sortType = 'dojo'; filterComponent.applyFilter()"
           class="btn sort-btn"
-          [ngClass]="sortByDojo ? 'active' : ''">
-          Dojo <i *ngIf="sortByDojo" class="fa fa-sort-desc"></i>
+          [ngClass]="sortType === 'dojo' ? 'active' : ''">
+          Dojo <i *ngIf="sortType === 'dojo'" class="fa fa-sort-desc"></i>
         </button>
         <button
-          (click)="sort('name'); filterComponent.applyFilter()"
-          (keyup.enter)="sortByName = !sortByName; filterComponent.applyFilter()"
+          (click)="sortType = 'name'; filterComponent.applyFilter()"
+          (keyup.enter)="sortType = 'name'; filterComponent.applyFilter()"
           class="btn sort-btn"
-          [ngClass]="sortByName ? 'active' : ''">
-          Name <i *ngIf="sortByName" class="fa fa-sort-desc"></i>
+          [ngClass]="sortType === 'name' ? 'active' : ''">
+          Name <i *ngIf="sortType === 'name'" class="fa fa-sort-desc"></i>
         </button>
       </ng-template>
       <ng-template #rosterTemplate let-item="item">
@@ -63,31 +63,10 @@ export class RosterPageComponent {
 
   public roster = ROSTER;
 
-  public sortByDojo: boolean = false;
-  public sortByName: boolean = true;
-  public sortByRank: boolean = true;
+  public sortType: "dojo" | "name" | "rank";
 
   @ViewChild(FilterComponent)
   public filterComponent: FilterComponent<DojoPerson>;
-
-  public sort(type: "dojo" | "name" | "rank"): void {
-    switch (type) {
-      case "dojo":
-        this.sortByDojo = !this.sortByDojo;
-        break;
-      case "name":
-        this.sortByName = !this.sortByName;
-        break;
-      case "rank":
-        this.sortByRank = !this.sortByRank;
-        break;
-    }
-
-    // always at least sort by name
-    if (!(this.sortByName || this.sortByRank || this.sortByDojo)) {
-      this.sortByName = true;
-    }
-  }
 
   public filterRoster = (text: string, person: DojoPerson): boolean => {
     let filterString = "";
@@ -114,33 +93,42 @@ export class RosterPageComponent {
     return filterString.indexOf(text) >= 0;
   }
 
-  public comparePerson = (p1: DojoPerson, p2: DojoPerson): number => {
+  public comparePerson(p1: DojoPerson, p2: DojoPerson): number {
     const rank = this.compareRank(p1, p2);
     const name = this.compareName(p1, p2);
     const dojo = this.compareDojo(p1, p2);
 
-    if (this.sortByRank) {
+    if (this.sortType === "rank") {
       if (rank === 0) {
-        if (this.sortByName && name !== 0) {
+        if (name !== 0) {
           return name;
         }
-        if (this.sortByDojo && dojo !== 0) {
+        if (dojo !== 0) {
           return dojo;
         }
       }
       return rank;
-    }
-
-    if (this.sortByName) {
+    } else if (this.sortType === "name") {
       if (name === 0) {
-        if (this.sortByDojo && dojo !== 0) {
+        if (rank !== 0) {
+          return rank;
+        }
+        if (dojo !== 0) {
           return dojo;
         }
       }
       return name;
+    } else if (this.sortType === "dojo") {
+      if (dojo === 0) {
+        if (rank !== 0) {
+          return rank;
+        }
+        if (name !== 0) {
+          return name;
+        }
+      }
+      return dojo;
     }
-
-    return this.sortByDojo ? dojo : 0;
   }
 
   private compareDojo = (p1: DojoPerson, p2: DojoPerson): number => {

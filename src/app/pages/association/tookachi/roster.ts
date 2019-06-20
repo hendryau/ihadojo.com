@@ -155,6 +155,15 @@ export let ROSTER: DojoPerson[] =
     "rank_type": "dan",
     "photo": "stuart_mccracken.jpg"
   }, {
+    "first_name": "Marian",
+    "last_name": "Reiter",
+    "dojo": "Hombu Dojo",
+    "city_state": "Lansing, Michigan",
+    "country": "USA",
+    "rank": "6",
+    "rank_type": "dan",
+    "photo": "marian_reiter.jpg"
+  }, {
     "first_name": "David",
     "last_name": "McCreight",
     "dojo": "Hombu Dojo",
