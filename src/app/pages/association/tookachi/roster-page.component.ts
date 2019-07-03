@@ -63,7 +63,7 @@ export class RosterPageComponent {
 
   public roster = ROSTER;
 
-  public sortType: "dojo" | "name" | "rank";
+  public sortType: "dojo" | "name" | "rank" = "rank";
 
   @ViewChild(FilterComponent)
   public filterComponent: FilterComponent<DojoPerson>;
