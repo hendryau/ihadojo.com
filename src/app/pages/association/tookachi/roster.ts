@@ -1667,8 +1667,8 @@ export let ROSTER: DojoPerson[] =
     "rank_type": "",
     "photo": ""
   }, {
-    "first_name": "Chopra",
-    "last_name": "Nikhil",
+    "first_name": "Nikhil",
+    "last_name": "Chopra",
     "dojo": "Bloomfield Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
@@ -1676,8 +1676,8 @@ export let ROSTER: DojoPerson[] =
     "rank_type": "dan",
     "photo": "nikhilchopra.jpg"
   }, {
-    "first_name": "Chopra",
-    "last_name": "Niketh",
+    "first_name": "Niketh",
+    "last_name": "Chopra",
     "dojo": "Bloomfield Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
