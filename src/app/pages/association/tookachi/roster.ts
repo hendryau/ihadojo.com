@@ -1672,18 +1672,18 @@ export let ROSTER: DojoPerson[] =
     "dojo": "Bloomfield Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
-    "rank": "1",
+    "rank": "2",
     "rank_type": "dan",
-    "photo": ""
+    "photo": "nikhilchopra.jpg"
   }, {
     "first_name": "Chopra",
     "last_name": "Niketh",
     "dojo": "Bloomfield Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
-    "rank": "1",
+    "rank": "2",
     "rank_type": "dan",
-    "photo": ""
+    "photo": "nikethchopra.jpg"
   }, {
     "first_name": "Dominick",
     "last_name": "Shoha",
@@ -1692,7 +1692,7 @@ export let ROSTER: DojoPerson[] =
     "country": "USA",
     "rank": "1",
     "rank_type": "dan",
-    "photo": ""
+    "photo": "domshoha.jpg"
   }, {
     "first_name": "Lou",
     "last_name": "Shoha",
@@ -1701,7 +1701,7 @@ export let ROSTER: DojoPerson[] =
     "country": "USA",
     "rank": "7",
     "rank_type": "dan",
-    "photo": ""
+    "photo": "loushoha.jpg"
   }, {
     "first_name": "Steve",
     "last_name": "Shoha",
@@ -1710,7 +1710,7 @@ export let ROSTER: DojoPerson[] =
     "country": "USA",
     "rank": "5",
     "rank_type": "dan",
-    "photo": ""
+    "photo": "steveshoha.jpg"
   }, {
     "first_name": "Scott",
     "last_name": "Curtis",
@@ -1719,7 +1719,7 @@ export let ROSTER: DojoPerson[] =
     "country": "USA",
     "rank": "",
     "rank_type": "",
-    "photo": ""
+    "photo": "curtisscott.jpg"
   }, {
     "first_name": "Allen",
     "last_name": "Mayne",
@@ -1728,7 +1728,7 @@ export let ROSTER: DojoPerson[] =
     "country": "USA",
     "rank": "8",
     "rank_type": "",
-    "photo": ""
+    "photo": "mayneallen.jpg"
   }, {
     "first_name": "Mark",
     "last_name": "Talbot",
@@ -1737,7 +1737,7 @@ export let ROSTER: DojoPerson[] =
     "country": "USA",
     "rank": "",
     "rank_type": "",
-    "photo": ""
+    "photo": "talbotmark.jpg"
   }]
 ;
 
