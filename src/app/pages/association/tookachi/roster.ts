@@ -1669,7 +1669,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Nikhil",
     "last_name": "Chopra",
-    "dojo": "Bloomfield Shidokan",
+    "dojo": "Bloomfield Hills Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
     "rank": "2",
@@ -1678,7 +1678,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Niketh",
     "last_name": "Chopra",
-    "dojo": "Bloomfield Shidokan",
+    "dojo": "Bloomfield Hills Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
     "rank": "2",
@@ -1687,7 +1687,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Dominick",
     "last_name": "Shoha",
-    "dojo": "Bloomfield Shidokan",
+    "dojo": "Bloomfield Hills Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
     "rank": "1",
@@ -1696,7 +1696,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Lou",
     "last_name": "Shoha",
-    "dojo": "Bloomfield Shidokan",
+    "dojo": "Bloomfield Hills Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
     "rank": "7",
@@ -1705,7 +1705,7 @@ export let ROSTER: DojoPerson[] =
   }, {
     "first_name": "Steve",
     "last_name": "Shoha",
-    "dojo": "Bloomfield Shidokan",
+    "dojo": "Bloomfield Hills Shidokan",
     "city_state": "Bloomfield, Michigan",
     "country": "USA",
     "rank": "5",
