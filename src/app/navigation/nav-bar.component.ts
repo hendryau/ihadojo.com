@@ -35,13 +35,13 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
               <iha-dropdown-nav-item [routerLink]="'association/affiliate-dojos'">Affiliate Dojos</iha-dropdown-nav-item>
               <iha-dropdown-nav-item [routerLink]="'association/membership'">Become a Member</iha-dropdown-nav-item>
               <iha-dropdown-nav-item [routerLink]="'association/documents'">Documents & Forms</iha-dropdown-nav-item>
+              <h1 class="dropdown-divider"></h1>
+              <h1 class="dropdown-header">National Training Seminar</h1>
+              <iha-dropdown-nav-item [routerLink]="'association/nts'">About</iha-dropdown-nav-item>
               <div class="dropdown-divider"></div>
               <h1 class="dropdown-header">Tookachi 2019 Resources</h1>
               <a class="dropdown-item" target="_blank" href="http://ihatookachi2019.com/">Tookachi2019.com</a>
               <iha-dropdown-nav-item [routerLink]="'association/tookachi/roster'">Roster</iha-dropdown-nav-item>
-              <h1 class="dropdown-divider"></h1>
-              <h1 class="dropdown-header">National Training Seminar</h1>
-              <iha-dropdown-nav-item [routerLink]="'association/nts'">About</iha-dropdown-nav-item>
             </div>
           </li>
           <iha-nav-item [routerLink]="'events'">Events</iha-nav-item>

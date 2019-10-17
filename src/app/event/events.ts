@@ -71,10 +71,21 @@ export const EVENTS: IhaEvent[] = [
   {
     title: "Midwest Pre-Test (voting)",
     date: "09/14/2019",
+    location: "Hombu Dojo",
+  },
+  {
+    title: "Shidokan Seminar",
+    date: "2019-10-18T18:00:00",
+    endDate: "2019-10-18T20:00:00",
+    location: "Holt Junior High School Gym. 1784 Aurelius Road, Holt MI 48842",
+    content: `
+      <a href="https://events.membersolutions.com/event_register.asp?content_id=79897" target="_blank">Register here.</a>
+    `,
   },
   {
     title: "Dan Test",
     date: "10/19/2019",
+    location: "Hombu Dojo",
   },
   {
     title: "Okinawa Trip",

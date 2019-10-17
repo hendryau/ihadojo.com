@@ -4,6 +4,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <iha-section [title]="'Membership'">
+      <img src="assets/miyahira-memorial.jpg" width="100%" class="mb-3">
       <p>The Beikoku Shidokan Association encompasses active members
         training in over <a routerLink="/association/affiliate-dojos">30 affiliated dojos</a>
         located throughout North America, as well as overseas.</p>
@@ -17,6 +18,8 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         schedule to stay in touch with all of his students throughout the world.
         For your convenience, his itinerary is listed on the
         <a [routerLink]="'/events'">events page</a>.</p>
+
+      <img src="assets/tookachi-seminar.jpg" width="100%" class="mb-3">
 
       <p>In addition to regular seminars held by affiliated dojos, every summer,
         a <a [routerLink]="'/nts'">National Training Seminar</a> is sponsored by

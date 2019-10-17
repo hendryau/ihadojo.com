@@ -20,7 +20,8 @@ export class DateService {
     const yesterday = this.yesterday();
     return events
       .filter(e => new Date(e.endDate || e.date) <= yesterday)
-      .sort(this.sortEvents);
+      .sort(this.sortEvents)
+      .reverse();
   }
 
   public sortEvents(a: IhaEvent, b: IhaEvent): number {
