@@ -1,0 +1,48 @@
+iha-event {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (max-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; /*note this one isnt quite working*/
+  }
+}
+@media (max-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+button.sort-btn:hover {
+  color: #f8f9fa;
+  background-color: #6c757d;
+}
+button.sort-btn {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+button.sort-btn.active {
+  background-color: gold;
+  color: #343a40;
+}
+button.sort-btn.active:hover {
+  color: #343a40;
+  background-color: #ffe866;
+}
