@@ -50,20 +50,31 @@ export class EventComponent implements OnChanges {
   public ngOnChanges(changes: SimpleChanges): void {
     const startDate = new Date(this.date);
 
-    if (startDate.getHours() > 0) {
-      this.dateFormatString = "MMMM d, y, h:mm a";
-    } else {
-      this.dateFormatString = "MMMM d, y";
-    }
-
     if (!!this.endDate) {
       const endDate = new Date(this.endDate);
+
+      this.dateFormatString = "MMMM d";
+
+      if (endDate.getFullYear() !== startDate.getFullYear() || endDate.getDay() === startDate.getDay()) {
+        this.dateFormatString += ", y";
+      }
+
+      if (startDate.getHours() > 0) {
+        this.dateFormatString += ", h:mm a";
+      }
+
       if (startDate.getDay() === endDate.getDay() &&
           startDate.getMonth() === endDate.getMonth() &&
           startDate.getFullYear() === endDate.getFullYear()) {
         this.endDateFormatString = "h:mm a";
       } else {
         this.endDateFormatString = "MMMM d, y";
+      }
+    } else {
+      if (startDate.getHours() > 0) {
+        this.dateFormatString = "MMMM d, y, h:mm a";
+      } else {
+        this.dateFormatString = "MMMM d, y";
       }
     }
   }

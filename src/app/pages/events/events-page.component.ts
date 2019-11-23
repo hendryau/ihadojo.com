@@ -12,7 +12,7 @@ import {DateService} from "../../services/date.service";
       <p>If you're planning on travelling far to visit Sensei Iha, make sure to check below to ensure he isn't travelling abroad.</p>
       <p>If you have any questions regarding an upcoming event, or you are hosting an event and would like it added to the list,
       <a href="mailto:mail@ihadojo.com">let us know</a>.</p>
-      <iha-section [hType]="'h2'" [title]="'2019 Events'">
+      <iha-section [hType]="'h2'" [title]="'Upcoming Events'">
         <p>Events were last updated on {{lastUpdated | date:'MMMM d, y'}}.</p>
         <iha-events
           [events]="upcomingEvents"

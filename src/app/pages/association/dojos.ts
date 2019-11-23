@@ -51,7 +51,7 @@ export const DOJOS: IhaDojo[] = [
   {
     type: "shibu",
     instructors: [
-      {name: "Mason Senak", rank: "6th Dan"},
+      {name: "Mason Senak", rank: "7th Dan"},
       {name: "David Senak", rank: "8th Dan"},
       {name: "Michael Senak", rank: "8th Dan"}
     ],

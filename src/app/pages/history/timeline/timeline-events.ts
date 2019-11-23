@@ -441,5 +441,11 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
     date: "August, 2019",
     imageUrl: "assets/timeline/tookachi_logo.png",
     content: "Seikichi Iha celebrated his Tookachi (87th birthday).",
+  },
+  {
+    date: "October 31st, 2019",
+    imageUrl: "assets/timeline/shuri-fire.jpg",
+    content: `Shuri Castle fire. Barely two months after Beikoku Shidokan stood in it's courtyard, five buildings
+      in the Shuri Castle complex, including the Seidan (main building) were raised to the ground.`,
   }
 ];

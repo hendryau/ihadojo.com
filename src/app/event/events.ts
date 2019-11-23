@@ -8,7 +8,7 @@ export interface IhaEvent {
   url?: string;
 }
 
-export const LAST_UPDATED = "5/15/2019";
+export const LAST_UPDATED = "11/22/2019";
 
 export const EVENTS: IhaEvent[] = [
   {
@@ -84,11 +84,11 @@ export const EVENTS: IhaEvent[] = [
   },
   {
     title: "Dan Test",
-    date: "10/19/2019",
+    date: "2019-10-19T12:00:00",
     location: "Hombu Dojo",
   },
   {
-    title: "Okinawa Trip",
+    title: "Sensei Iha Tookachi",
     date: "8/21/2019",
     location: "Naha, Okinawa",
     endDate: "8/30/2019",
@@ -114,5 +114,45 @@ export const EVENTS: IhaEvent[] = [
     content: `Hosted by Grand River Dojo, celebrating their 25th Anniversary
       and 15 years with Beikoku Shidokan.`,
     url: "http://grandriverkarate.com",
+  },
+  {
+    title: "Miyazato Karatedo 60th Anniversary Celebration",
+    date: "11/05/2019",
+    endDate: "11/13/2019",
+    location: "Cordoba, Argentina",
+    imageUrl: "assets/events/argentina60.png",
+  },
+  {
+    title: "Dan Test",
+    location: "Michigan, TBD",
+    date: "3/28/2020",
+  },
+  {
+    title: "East Coast Seminar",
+    location: "Fairlawn, New Jersey",
+    date: "4/17/2020",
+    endDate: "4/18/2020",
+  },
+  {
+    title: "Dan Test",
+    location: "Michigan, TBD",
+    date: "07/30/2020",
+  },
+  {
+    title: "National Training Seminar (NTS)",
+    location: "Lansing, Michigan",
+    date: "07/31/2020",
+    endDate: "08/02/2020",
+  },
+  {
+    title: "Canada Seminar",
+    location: "Guelph, Canada",
+    date: "10/02/2020",
+    endDate: "10/04/2020",
+  },
+  {
+    title: "Dan Test",
+    location: "Michigan, TBD",
+    date: "11/21/2020",
   },
 ];
