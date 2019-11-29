@@ -93,7 +93,7 @@ export const EVENTS: IhaEvent[] = [
     location: "Naha, Okinawa",
     endDate: "8/30/2019",
     url: "http://ihatookachi2019.com",
-    imageUrl: "assets/events/tookachi_event.png",
+    imageUrl: "assets/events/2019/tookachi-event.png",
     content: `
       Sensei Iha's Tookachi (88th birthday) celebration.
     `,
@@ -120,7 +120,15 @@ export const EVENTS: IhaEvent[] = [
     date: "11/05/2019",
     endDate: "11/13/2019",
     location: "Cordoba, Argentina",
-    imageUrl: "assets/events/argentina60.png",
+    imageUrl: "assets/events/2019/argentina60.png",
+  },
+  {
+    title: "Shidokan Tampa Seminar",
+    date: "02/21/2020",
+    endDate: "02/22/2020",
+    location: "Bob Gilbertson Central City Family YMCA, 110 East Palm Ave., Tampa, FL 33602",
+    content: `Open to all Beikoku Shidokan members. RSVP to <a href="mailto:shidokantampa@gmail.com">shidokantampa@gmail.com</a>.`,
+    imageUrl: "assets/events/2020/tampa-seminar.jpg",
   },
   {
     title: "Dan Test",
