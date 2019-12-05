@@ -205,8 +205,8 @@ export const DOJOS: IhaDojo[] = [
   {
     type: "shibu",
     instructors: [
-      {name: "Robert Chartier", rank: "6th Dan"},
-      {name: "Laura Chartier", rank: "6th Dan"}
+      {name: "Robert Chartier", rank: "7th Dan"},
+      {name: "Laura Chartier", rank: "7th Dan"}
     ],
     name: "Okinawan Karate - Clawson Dojo",
     address: "1195 Rochester Road, Suite K, Troy, MI 48098 USA",
@@ -221,7 +221,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Mitch Cooperman", rank: "6th Dan"}],
+    instructors: [{name: "Mitch Cooperman", rank: "7th Dan"}],
     name: "Shidokan Karate of Mahwah",
     address: "300 Ridge Road, Mahwah, NJ 07430 USA",
     phone: "(201) 818-5120",
@@ -304,7 +304,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "fukushibu",
-    instructors: [{"name": "Amit Michaeli", "rank": "4th Dan"}],
+    instructors: [{"name": "Amit Michaeli", "rank": "6th Dan"}],
     name: "Shidokan Israel",
     address: "Dormitory 1, Ein Karem Campus The Hebrew University Jerusalem, 91120 Israel",
     phone: "+972-50-640-7061",

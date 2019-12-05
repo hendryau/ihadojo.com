@@ -123,6 +123,12 @@ export const EVENTS: IhaEvent[] = [
     imageUrl: "assets/events/2019/argentina60.png",
   },
   {
+    title: "St. Louis Seminar",
+    date: "12/06/2019",
+    endDate: "12/07/2019",
+    location: "St. Louis, Missouri",
+  },
+  {
     title: "Shidokan Tampa Seminar",
     date: "02/21/2020",
     endDate: "02/22/2020",
