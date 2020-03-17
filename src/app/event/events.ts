@@ -138,8 +138,9 @@ export const EVENTS: IhaEvent[] = [
   },
   {
     title: "Dan Test",
-    location: "Michigan, TBD",
     date: "3/28/2020",
+    location: "none",
+    content: `<div class="alert alert-warning">The test has been postponed due to the Corona Virus outbreak. More information soon.</div>`,
   },
   {
     title: "East Coast Seminar",

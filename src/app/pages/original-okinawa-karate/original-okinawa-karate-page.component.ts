@@ -10,6 +10,12 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
       <p>Sensei Iha has taught out of Lansing, Michigan since the 1976. He leads an <i>annual</i> Training
         Seminar in Lansing, where Karate friends from all over the globe come to visit and learn from him.
         He frequently travels to teach and share Karate around the world.</p>
+
+      <div class="alert alert-warning">
+        The Dojo is temporarily closed in compliance with the
+        <a href="https://www.michigan.gov/coronavirus/0,9753,7-406-98158-521763--,00.html" target="_blank">March 16th Executive Order</a>
+        issued by Governor Gretchen Whitmer.</div>
+
       <iha-section [title]="'Schedule'" [hType]="'h2'">
         <table class="table table-striped table-bordered table-responsive">
           <thead class="thead-light">
