@@ -140,13 +140,17 @@ export const EVENTS: IhaEvent[] = [
     title: "Dan Test",
     date: "3/28/2020",
     location: "none",
-    content: `<div class="alert alert-warning">The test has been postponed due to the Corona Virus outbreak. More information soon.</div>`,
+    content: `<div class="alert alert-warning">
+      The test has been postponed due to the Corona Virus outbreak.
+      The test will be held individually by each Shibu Dojo. Iha Sensei will view 
+      the testing via remote video.</div>`,
   },
   {
     title: "East Coast Seminar",
     location: "Fairlawn, New Jersey",
     date: "4/17/2020",
     endDate: "4/18/2020",
+    content: `<div class="alert alert-warning">The event has been cancelled due to the Corona Virus outbreak. Look for rescheduling later this year.</div>`,
   },
   {
     title: "Dan Test",
