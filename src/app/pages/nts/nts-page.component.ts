@@ -10,7 +10,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
       <!-- TODO get some photos in there -->
 
       <iha-section [title]="'NTS 2020'">
-        Regrettably, Sensei Iha has decided to cancel NTS 2020 in light of the Coronvirus Pandemic. Keep practicing and stay connected with your Karate family during this difficult time.
+        Regrettably, Sensei Iha has decided to cancel NTS 2020 in light of the coronvirus pandemic. Keep practicing and stay connected with your Karate family during this difficult time.
       </iha-section>
     </iha-section>
   `
