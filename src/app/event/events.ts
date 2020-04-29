@@ -141,8 +141,8 @@ export const EVENTS: IhaEvent[] = [
     date: "3/28/2020",
     location: "none",
     content: `<div class="alert alert-warning">
-      The test has been postponed due to the Corona Virus outbreak.
-      The test will be held individually by each Shibu Dojo. Iha Sensei will view 
+      The test has been postponed due to the Coronavirus outbreak.
+      The test will be held individually by each Shibu Dojo. Iha Sensei will view
       the testing via remote video.</div>`,
   },
   {
@@ -150,18 +150,20 @@ export const EVENTS: IhaEvent[] = [
     location: "Fairlawn, New Jersey",
     date: "4/17/2020",
     endDate: "4/18/2020",
-    content: `<div class="alert alert-warning">The event has been cancelled due to the Corona Virus outbreak. Look for rescheduling later this year.</div>`,
+    content: `<div class="alert alert-warning">The event has been cancelled due to the Coronavirus outbreak.</div>`,
   },
   {
     title: "Dan Test",
-    location: "Michigan, TBD",
+    location: "none",
     date: "07/30/2020",
+    content: `<div class="alert alert-warning">The event has been cancelled due to the Coronavirus outbreak.</div>`,
   },
   {
     title: "National Training Seminar (NTS)",
     location: "Lansing, Michigan",
     date: "07/31/2020",
     endDate: "08/02/2020",
+    content: `<div class="alert alert-warning">The event has been cancelled due to the Coronavirus outbreak.</div>`,
   },
   {
     title: "Canada Seminar",
