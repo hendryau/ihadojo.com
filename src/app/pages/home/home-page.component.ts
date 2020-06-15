@@ -22,6 +22,9 @@ import {DateService} from "../../services/date.service";
         dojo in mid-michigan since the late 70s. Born in Okinawa, Sensei Iha has taught traditional
         Okinawan Karatedo for more than 60 years all around the world (including Okinawa, Guam, the Philippines,
         and across the United States). He leads an organization of over 30 dojos from around the world.</p>
+      <p> Sensei Iha is an <i>Intangible Cultural Asset Holder</i> in the category of <i>Okinawa Karate and Kobujutsu</i>,
+        a certification granted by the Okinawa Prefectural Government. This certification has only been awarded to twenty
+        individuals, nine of who are still alive today.</p>
       <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'Sensei Iha\\'s Dojo'" [hType]="'h3'">
         <p>Original Okinawa Karate, Sensei Iha's base of operations and the home dojo of the
           North America Shidokan Association, is located in Lansing, Michigan.</p>

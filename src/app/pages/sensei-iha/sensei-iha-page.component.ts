@@ -23,7 +23,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
       cooperation, respect, friendship and healthy living through karate is
       of great importance. This philosophy is at the core of his instruction
       and daily interactions with his students.</p>
-      <p>It is Iha Sensei's hope that with the help of their training in
+      <p>Iha Sensei hopes that with the help of their training in
       karate-do, his students can learn to cope with any situation, be
       persistent, face problems with courage, take care of themselves, to
       realize their optimum potential and to feel good about themselves. He
@@ -41,7 +41,10 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         residing in the United States and is ranked a Hanshi 10th Dan by the
         Okinawa Shorin-ryu Karate-do Association of Naha, Okinawa. He teaches
         Chibana-style shorin-ryu and refers to his method as Okinawa Shorin-ryu
-        Shidokan Karatedo.</p>
+        Shidokan Karatedo. On May 19th 2020, the Okinawa Prefecture Government
+        designated him as an Intangible Cultural Asset Holder in the category of
+        <i>Okinawa Karate and Kobujutsu</i>, a designation granted to only 20
+        karateka ever.</p>
         <p>Iha Seikichi was born in Nishihara City, Okinawa Prefecture on
         July 9, 1932. He presently runs his own dojo, the Original Okinawa
         Karate Dojo, in Lansing, Michigan. He was promoted to Hanshi 10th Dan

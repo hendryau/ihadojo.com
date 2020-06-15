@@ -447,5 +447,11 @@ export const TIMELINE_EVENTS: IhaEvent[] = [
     imageUrl: "assets/timeline/shuri-fire.jpg",
     content: `Shuri Castle fire. Barely two months after Beikoku Shidokan stood in its courtyard, five buildings
       in the Shuri Castle complex, including the Seidan (main building), were razed.`,
-  }
+  },
+  {
+    date: "May 19, 2020",
+    imageUrl: "assets/timeline/seikichi-iha-intangible-cultural-asset-holder.PNG",
+    content: `Sensei Iha recognized by the Okinawa Prefectural Board of Education as an
+      Intangible Cultural Asset Holder in the category of “Okinawa Karate and Kobujutsu”.`,
+  },
 ];
