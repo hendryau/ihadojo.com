@@ -10,7 +10,21 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
       <!-- TODO get some photos in there -->
 
       <iha-section [title]="'NTS 2020'">
-        Regrettably, Sensei Iha has decided to cancel NTS 2020 in light of the coronvirus pandemic. Keep practicing and stay connected with your Karate family during this difficult time.
+        <p>This year, NTS will be hosted virtually. Iha Sensei believes now is a time when friendships are needed most. Be a part of this
+            amazing <i>worldwide</i> experience.</p>
+        <p>Sign up to access two days of educational karate webinars with top instructors who will take your karate passion to the next level.</p>
+        <p>Students (ages 13 and up) of all ranks and experience levels are encouraged to attend. There is no cost to participate (donations are welcome).</p>
+        <iha-section [title]="'Keynote Instructors'" [hType]="'h2'">
+          <p><b>Seikichi Iha</b>, 10th Dan, Beikoku Shidokan Karatedo<br>
+            <b>Masatoshi Miyazato</b>, 10th Dan, Shorinryu Shidokan Argentina</p>
+        </iha-section>
+        <iha-section [title]="'Dates'" [hType]="'h2'">
+          <p><b>Friday, July 31, 2020</b>, 6:00PM - 8:30PM EDT<br>
+            <b>Saturday, August 1st, 2020</b>, 11:00AM - 5:00PM EDT</p>
+        </iha-section>
+        <iha-section [title]="'Registration'" [hType]="'h2'">
+          <p>A registration link will be posted here soon.</p>
+        </iha-section>
       </iha-section>
     </iha-section>
   `

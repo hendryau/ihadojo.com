@@ -14,8 +14,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 > git checkout gh-pages
 > git pull origin gh-pages
 > git pull origin master
-> git add src/app/*
-> git commit -m "pull master into gh-pages"
+> git add src/*
+> git commit
 > git push origin gh-pages
 > git checkout master
 > npx ngh
