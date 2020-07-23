@@ -158,9 +158,14 @@ export const EVENTS: IhaEvent[] = [
     date: "07/31/2020",
     endDate: "08/01/2020",
     content: `
-        <div>This year NTS will be hosted virtually. A registration link will be posted shortly.
-            For more information, visit <a href="/nts">ihadojo.com/nts</a>.
-        </div>
+        This year NTS will be hosted virtually.
+        <br>
+        <br>
+        <a target="_blank" href="https://www.eventbrite.com/e/beikoku-shidokan-karatedo-virtual-national-training-seminar-nts-2020-tickets-112362194348">Registration is now available.</a>
+        <br>
+        <br>
+        For more information, visit <a href="/nts">ihadojo.com/nts</a>.
+        <br>
         <br>
         <div><b>Friday, July 31st</b> 6:30PM - 8:30PM EDT</div>
         <div><b>Saturday, August 1st</b> 11:00AM - 5:00PM EDT</div>
