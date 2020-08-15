@@ -106,7 +106,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
           <li>Do not show your ability or intention. Be modest in behavior and natural in movement.</li>
           <li>No excessive motion, just natural motion.</li>
           <li>Natural movement has no tension.</li>
-          <li>Cooperating during practice (with a partner) leads to natural movement, while small
+          <li>Cooperating during practice (with a partner) leads to natural movement that, although small
           and unseen, yields great martial benefits. It creates an elegance in movement.</li>
         </ol>
       </iha-section>
