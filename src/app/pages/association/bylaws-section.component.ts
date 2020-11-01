@@ -5,7 +5,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
   selector: "iha-bylaws",
   template: `
     <iha-section [title]="'Association Bylaws'" [hType]="'h2'">
-      <p>Restated June 1st, 2020.</p>
+      <p>Restated November 1st, 2020.</p>
       <p>
         <a href="assets/association-documents/association-bylaws.pdf">
           Association Bylaws (PDF)</a><br>
