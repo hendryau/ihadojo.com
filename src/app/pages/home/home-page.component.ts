@@ -6,9 +6,8 @@ import {DateService} from "../../services/date.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="alert alert-warning mt-2">
-      The Dojo is temporarily closed in compliance with the
-      <a href="https://www.michigan.gov/coronavirus/0,9753,7-406-98158-521763--,00.html" target="_blank">March 16th Executive Order</a>
-      issued by Governor Gretchen Whitmer.</div>
+      The Dojo is temporarily closed do to the coronavirus pandemic. However, virtual classes and seminars
+      are still taking place. Contact <a href="mailto:mail@ihadojo.com">mail@ihadojo.com</a> for more information.</div>
     <iha-section [title]="'Welcome'">
       <img src="assets/iha-shuri-castle.jpg" width="100%" class="mb-3">
       <p>Visitors are always welcome at Original Okinawa Karate (located at 2018 East Michigan Avenue),

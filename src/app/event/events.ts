@@ -8,7 +8,7 @@ export interface IhaEvent {
   url?: string;
 }
 
-export const LAST_UPDATED = "11/22/2019";
+export const LAST_UPDATED = "01/01/2021";
 
 export const EVENTS: IhaEvent[] = [
   {
@@ -176,10 +176,41 @@ export const EVENTS: IhaEvent[] = [
     location: "Guelph, Canada",
     date: "10/02/2020",
     endDate: "10/04/2020",
+    content: `<div class="alert alert-warning">This event has been cancelled due to the coronavirus pandemic.</div>`,
   },
   {
     title: "Dan Test",
-    location: "Michigan, TBD",
+    location: "Virtual",
     date: "11/21/2020",
+  },
+  {
+    title: "Instructor Class with Iha Sensei",
+    location: "Virtual",
+    date: "2021-01-16T09:30:00",
+  },
+  {
+    title: "Dan Pre Exam",
+    location: "Virtual",
+    date: "2021-01-16T12:00:00",
+  },
+  {
+    title: "Instructor Class with Iha Sensei",
+    location: "Virtual",
+    date: "2021-02-20T09:30:00",
+  },
+  {
+    title: "Dan Pre Exam (Voting)",
+    location: "Virtual",
+    date: "2021-02-20T12:00:00",
+  },
+  {
+    title: "Beikoku Shidokan Seminal with Iha Sensei",
+    location: "Virtual",
+    date: "2021-03-19T18:00:00",
+  },
+  {
+    title: "Dan Exam",
+    location: "Virtual",
+    date: "2021-03-20T10:00:00",
   },
 ];
