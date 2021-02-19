@@ -365,7 +365,7 @@ export const DOJOS: IhaDojo[] = [
 
   {
     type: "fukushibu",
-    instructors: [{"name": "Stephanie Faulkingham", "rank": "3rd Dan"}],
+    instructors: [{"name": "Stephanie Faulkingham", "rank": "4th Dan"}],
     name: "Gateway Shidokan",
     address: "PO Box 2051, Maryland Hts., MO 63043",
     phone: "(314) 643-7745",
