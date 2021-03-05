@@ -208,7 +208,7 @@ export const EVENTS: IhaEvent[] = [
     location: "Virtual",
     date: "2021-03-19T18:00:00",
     content: `
-      <a target="_blank" href="https://www.eventbrite.com/e/2021-beikoku-shidokan-karatedo-virtual-spring-seminar-tickets-144015298635?fbclid=IwAR1GAeyZMlbY5zQQGFXfYqAAQIKgf9wHZ3OCa3zGM116SdepSpQITyww7nE">Registration today!</a>
+      <a target="_blank" href="https://www.eventbrite.com/e/2021-beikoku-shidokan-karatedo-virtual-spring-seminar-tickets-144015298635?fbclid=IwAR1GAeyZMlbY5zQQGFXfYqAAQIKgf9wHZ3OCa3zGM116SdepSpQITyww7nE">Register here.</a>
     `
   },
   {
