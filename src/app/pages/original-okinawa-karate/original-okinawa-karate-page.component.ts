@@ -111,11 +111,11 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
             <a href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>.
           </p>
         </iha-section>
-        <iha-section [hType]="'h3'" [title]="'Telephone'">
-          <p>You can also call the dojo during class hours at
-            <a href="tel:5174823217">(517) 482-3217</a>.
-          </p>
-        </iha-section>
+        // <iha-section [hType]="'h3'" [title]="'Telephone'">
+        //   <p>You can also call the dojo during class hours at
+        //     <a href="tel:5174823217">(517) 482-3217</a>.
+        //   </p>
+        // </iha-section>
         <iha-section [hType]="'h3'" [title]="'Meet us in Person'">
           <p>Visitors are always welcome to stop in during class hours and observe and
             talk to an instructor, no appointment necessary. Please use the front door.</p>

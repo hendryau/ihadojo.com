@@ -216,4 +216,17 @@ export const EVENTS: IhaEvent[] = [
     location: "Virtual",
     date: "2021-03-20T10:00:00",
   },
+  {
+    title: "NTS 2021",
+    location: "none",
+    date: "2021-07-30T17:00:00",
+    endDate: "2021-07-31T19:00:00",
+    content: `
+      <p>
+        <b>Friday, July 30</b> (5 pm - 7 pm, EDT)<br/>
+        <b>Saturday, July 31</b> (9:30 am - 7 pm, EDT)
+      </p>
+      <p>More information <a href="/nts">here.</a></p>
+    `
+  }
 ];

@@ -22,10 +22,10 @@ export const DOJOS: IhaDojo[] = [
   {
     type: "hombu",
     instructors: [{name: "Seikichi Iha", rank: "Hanshi, 10th Dan"}],
-    image: "assets/ihadojo.jpg",
+    // image: "assets/ihadojo.jpg",
     name : "Original Okinawa Karate",
     address: "2018 E. Michigan Ave. Lansing, MI 48912 USA",
-    phone: "(517) 482-3217",
+    // phone: "(517) 482-3217",
     url: "ihadojo.com",
     http: "https://",
     email: "mail@ihadojo.com",

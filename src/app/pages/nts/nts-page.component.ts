@@ -4,34 +4,33 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <iha-section [hType]="'h1'" [title]="'National Training Seminar'">
-      <p>The <i>National Training Seminar</i>, also known as NTS, is an annual event where Karate Practitioners from around
-        the globe travel to Lansing, Michigan to join <a [routerLink]="'/sensei-iha'">Sensei Iha</a> for a tremendous learning opportunity.
-        NTS is a great time to reconnect with old friends and learn together with new people within the Shidokan Karate community.</p>
-      <!-- TODO get some photos in there -->
-
-      <iha-section [title]="'NTS 2020'">
-        <p>This year, NTS will be hosted virtually. Iha Sensei believes now is a time when friendships are needed most. Be a part of this
-            amazing <i>worldwide</i> experience.</p>
-        <p>Sign up to access two days of educational karate webinars with top instructors who will take your karate passion to the next level.</p>
-        <p>Students (ages 13 and up) of all ranks and experience levels are encouraged to attend. There is no cost to participate (donations are welcome).</p>
+      <img src="assets/events/2021/wide.jpg" class="w-100 mb-3">
+      <p>The National Training Seminar, also known as NTS, is an annual event where beginning to advanced karate practitioners from around the globe can join Sensei Iha and other outstanding teachers for an exceptional learning opportunity.</p>
+      <iha-section [title]="'NTS 2021: Celebrate Together!'">
+        <p>At this year’s virtual NTS 2021 event, Beikoku Shidokan Karatedo members and friends will celebrate the Association’s 45th Anniversary together!</p>
+        <p>Register to access two days of educational karate webinars with top instructors who will take your karate passion to the next level! Students (ages 13 and up) of all ranks and experience levels are encouraged to attend.</p>
+        <p>Be a part of this amazing worldwide online training weekend!</p>
+        <iha-section [title]="'Dates'" [hType]="'h2'">
+          <p>
+            <b>Friday, July 30, 2021</b> (5 pm - 7 pm, EDT)<br/>
+            <b>Saturday, July 31, 2021</b> (9:30 am - 7 pm, EDT)
+          </p>
+        </iha-section>
         <iha-section [title]="'Registration'" [hType]="'h2'">
-          <p>You can now register for NTS 2020 <a target="_blank" [href]="registrationLink">here.</a> After registering, you will receive an email containing a complete schedule
-             and Zoom Webinar details.</p>
+          <p>Link to the NTS-21 registration will be posted here as soon as it's available.</p>
         </iha-section>
         <iha-section [title]="'Keynote Instructors'" [hType]="'h2'">
-          <p><b>Seikichi Iha</b>, 10th Dan, Beikoku Shidokan Karatedo<br>
-            <b>Masatoshi Miyazato</b>, 10th Dan, Shorinryu Shidokan Argentina</p>
+          <p>Keynote sessions will feature Seikichi Iha, Hanshi, 10th Dan, Beikoku Shidokan Karatedo and other esteemed Shidokan karate teachers. Breakout training sessions will be provided by Senior Instructors from Beikoku Shidokan Association dojos.</p>
         </iha-section>
-        <iha-section [title]="'Dates'" [hType]="'h2'">
-          <p><b>Friday, July 31, 2020</b>, 6:00PM - 8:30PM EDT<br>
-            <b>Saturday, August 1st, 2020</b>, 11:00AM - 5:00PM EDT</p>
-        </iha-section>
+        <div class="text-center">
+          <img src="assets/events/2021/square.jpeg" class="w-75">    
+        </div>
       </iha-section>
     </iha-section>
   `
 })
 export class NtsPageComponent {
 
-  public registrationLink="https://www.eventbrite.com/e/beikoku-shidokan-karatedo-virtual-national-training-seminar-nts-2020-tickets-112362194348"
+//   public registrationLink="https://www.eventbrite.com/e/beikoku-shidokan-karatedo-virtual-national-training-seminar-nts-2020-tickets-112362194348"
 
 }
