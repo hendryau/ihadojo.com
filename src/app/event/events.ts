@@ -223,8 +223,8 @@ export const EVENTS: IhaEvent[] = [
     endDate: "2021-07-31T19:00:00",
     content: `
       <p>
-        <b>Friday, July 30</b> (5 pm - 7 pm, EDT)<br/>
-        <b>Saturday, July 31</b> (9:30 am - 7 pm, EDT)
+        <b>Friday, July 30</b> (5:00pm - 8:30pm, EDT)<br/>
+        <b>Saturday, July 31</b> (9:30am - 8:00pm, EDT)
       </p>
       <p>More information <a href="/nts">here.</a></p>
     `

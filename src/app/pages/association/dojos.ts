@@ -40,7 +40,6 @@ export const DOJOS: IhaDojo[] = [
     name: "Original Okinawa Karate Shidokan Detroit",
     address: "4980 Pond Circle West, West Bloomfield, MI 48323 USA",
     phone: "(248) 225-7172",
-    url: "mendersdojo.com",
     http: "https://",
     email: "robertmenders@sbcglobal.net",
     location: {
@@ -74,8 +73,6 @@ export const DOJOS: IhaDojo[] = [
     ],
     name: "Shidokan Rockland",
     phone: "(201) 341-9682",
-    http: "https://",
-    url: "jccrockland.org/fitness_class/shidokan-karate",
     email: "shidokanrockland@gmail.com",
   },
   {
@@ -84,7 +81,7 @@ export const DOJOS: IhaDojo[] = [
     name: "Virginia Okinawan Karate Dojo",
     address: "6416 Grovedale Dr., #302-B Alexandria, VA 22310",
     http: "https://",
-    url: "virginiadojo.com",
+    url: "alexandriakaratedojo.com",
     email: "robertoshidokan@gmail.com",
     location: {
       lat: 38.7773926,
@@ -212,7 +209,6 @@ export const DOJOS: IhaDojo[] = [
     address: "1195 Rochester Road, Suite K, Troy, MI 48098 USA",
     phone: "(248) 852-8810",
     http: "https://",
-    url: "clawsonkarate.com",
     email: "okidorh@wowway.com",
     location: {
       lat: 42.533077,
@@ -331,8 +327,8 @@ export const DOJOS: IhaDojo[] = [
   },
 
   {
-    type: "fukushibu",
-    instructors: [{"name": "Ray Purugganan", "rank": "4th Dan"}],
+    type: "shibu",
+    instructors: [{"name": "Ray Purugganan", "rank": "5th Dan"}],
     name: "Kenai Shidokan",
     phone: "(907) 252-7640",
     http: "https://",
@@ -372,14 +368,6 @@ export const DOJOS: IhaDojo[] = [
     http: "http://",
     url: "gatewayshidokan.com",
     email: "teacher@gatewayshidokan.com"
-    // TODO location
-  },
-
-  {
-    type: "fukushibu",
-    instructors: [{"name": "Judith M. Knupp", "rank": "2nd Dan"}],
-    name: "Atlanta Family Karate, LLC",
-    address: "1756 Yellow Creek Rd, Ball Ground, GA 30107"
     // TODO location
   },
 

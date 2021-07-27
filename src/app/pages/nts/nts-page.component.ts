@@ -2,6 +2,11 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
+  styles: [`
+    .gra { color: grey; font-weight: bold }
+    .blu { color: navy; font-weight: bold }
+    .ora { color: orange; font-weight: bold }
+  `],
   template: `
     <iha-section [hType]="'h1'" [title]="'National Training Seminar'">
       <img src="assets/events/2021/wide.jpg" class="w-100 mb-3">
@@ -30,64 +35,87 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <p><b>Canadian Orders:</b> Contact Sensei Fortunato Restagno (<a href="mailto:fortun@rogers.com">fortun@rogers.com</a>) from the Grand River Karate dojo to find out about purchasing shirts with reduced shipping and no customs fees for Canada.</p>
         </iha-section>
         <iha-section [title]="'Keynote Instructors'" [hType]="'h2'">
-          <p>Keynote sessions will feature Seikichi Iha, Hanshi, 10th Dan, Beikoku Shidokan Karatedo and other esteemed Shidokan karate teachers. Breakout training sessions will be provided by Senior Instructors from Beikoku Shidokan Association dojos.</p>
+        <div><b>Seikichi Iha, 10th Dan</b>, Beikoku Shidokan Karatedo</div>
+        <div><b>Masatoshi Miyazato, 10th Dan</b>, Karatedo Miyazato Okinawa Shorinryu Shidokan Argentina</div>
+        <div><b>Joachim Laupp, 9th Dan</b>, Okinawa Shorinryu Shidokan Karatedo Germany</div>
+        <div><b>Marcelo Yonamine, 7th Dan</b>, Shidokan Brasil</div>
+        <div><b>Mark McCloud, 8th Dan</b>, Beikoku Shidokan Karatedo</div>
+        <div><b>Paul Snader, 8th Dan</b>, Beikoku Shidokan Karatedo</div>
+        <br/>
         </iha-section>
         <iha-section [title]="'Schedule'" [hType]="'h2'">
-          <p>The schedule was last updated on 5/21/2021. More details will be added as the date of the event approaches.</p>
-          <iha-section [title]="'Friday, July 30th'" [subTitle]="'5:00pm - 8:00pm EDT'" [hType]="'h3'">
-            5:00pm (45 minutes)
-            <ul>
-              <li>Welcome</li>
-              <li>Training Segment 1</li>
-            </ul>
-            6:00pm (45 minutes)
-            <ul>
-              <li>Training Segment 2</li>
-            </ul>
-            7:00pm (60 minutes)
-            <ul>
-              <li>Training Segment 3</li>
-              <li>Closing</li>
-            </ul>
+          <p>The schedule was last updated on 7/27/2021.</p>
+          <iha-section [title]="'Friday, July 30th'" [subTitle]="'5:00pm - 8:30pm EDT'" [hType]="'h3'">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>5:00pm (30 minutes)</td>
+                  <td class="ora">Welcome / Opening message</td>
+                </tr>
+                <tr>
+                  <td>5:30pm (50 minutes)</td>
+                  <td class="blu">Sensei Iha</td>
+                </tr>
+                <tr>
+                  <td>6:30pm (50 minutes)</td>
+                  <td class="blu">Sensei Snader</td>
+                </tr>
+                <tr>
+                  <td>7:30pm (50 minutes)</td>
+                  <td class="blu">Sensei Yonamine (Brazil)</td>
+                </tr>
+                <tr>
+                  <td>8:20pm (10 minutes)</td>
+                  <td class="ora">Closing message</td>
+                </tr>
+              </tbody>
+            </table>
           </iha-section>
-          <iha-section [title]="'Saturday, July 31st'" [subTitle]="'10:00am - 6:00pm EDT'" [hType]="'h3'">
-            9:30am (45 minutes)
-            <ul>
-              <li>Training Segment 1</li>
-            </ul>
-            10:30am (45 minutes)
-            <ul>
-              <li>Training Segment 2</li>
-            </ul>
-            11:30am (90 minutes)
-            <ul>
-              <li>Lunch Break</li>
-            </ul>
-            1:00pm (45 minutes)
-            <ul>
-              <li>Training Segment 3</li>
-            </ul>
-            2:00pm (45 minutes)
-            <ul>
-              <li>Training Segment 4</li>
-            </ul>
-            3:00pm (45 minutes)
-            <ul>
-              <li>Training Segment 5</li>
-            </ul>
-            4:00pm (45 minutes)
-            <ul>
-              <li>Training Segment Six</li>
-              <li>Closing</li>
-            </ul>
-            5:00pm (120 minutes)
-            <ul>
-              <li>Dinner Break</li>
-            </ul>
-            7:00pm (60 minutes)
-            <ul>
-              <li>Freindship Celebration! (Social time with breakout rooms</li>
-            </ul>
+          <iha-section [title]="'Saturday, July 31st'" [subTitle]="'9:00am - 8:00pm EDT'" [hType]="'h3'">
+          <table class="table">
+              <tbody>
+                <tr>
+                  <td>9:00am (30 minutes)</td>
+                  <td class="ora">Weclome</td>
+                </tr>
+                <tr>
+                  <td>9:30am (50 minutes)</td>
+                  <td class="blu">Sensei Iha</td>
+                </tr>
+                <tr>
+                  <td>10:30am (50 minutes)</td>
+                  <td class="blu">Sensei McCloud</td>
+                </tr>
+                <tr>
+                  <td>11:30am (90 minutes)</td>
+                  <td class="gra">Lunch break</td>
+                </tr>
+                <tr>
+                  <td>1:00pm (50 minutes)</td>
+                  <td class="blu">Sensei Laupp (Germany)</td>
+                </tr>
+                <tr>
+                  <td>2:00pm (50 minutes)</td>
+                  <td class="blu">Sensei Miyazato (Argentina)</td>
+                </tr>
+                <tr>
+                  <td>3:00pm (50 minutes)</td>
+                  <td class="blu">Sensei Iha</td>
+                </tr>
+                <tr>
+                  <td>4:00pm (60 minutes)</td>
+                  <td class="ora">Sensei Iha Celebration</td>
+                </tr>
+                <tr>
+                  <td>5:00pm (120 minutes)</td>
+                  <td class="gra">Dinner break</td>
+                </tr>
+                <tr>
+                  <td>7:00pm (60 minutes)</td>
+                  <td class="ora">Friendship Celebration</td>
+                </tr>
+              </tbody>
+            </table>
           </iha-section>
         </iha-section>
         <div class="text-center">
