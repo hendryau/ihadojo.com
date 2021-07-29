@@ -17,22 +17,13 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <p>Be a part of this amazing worldwide online training weekend!</p>
         <iha-section [title]="'Dates'" [hType]="'h2'">
           <p>
-            <b>Friday, July 30, 2021</b> (5:00pm - 7:00pm, EDT)<br/>
-            <b>Saturday, July 31, 2021</b> (9:30 am - 7:00pm, EDT)
+            <b>Friday, July 30, 2021</b> (5:00pm - 8:30pm, EDT)<br/>
+            <b>Saturday, July 31, 2021</b> (9:00 am - 8:00pm, EDT)
           </p>
         </iha-section>
         <iha-section [title]="'Registration'" [hType]="'h2'">
           <p>Registration is now open! Discounted early registration is available until <b>June 30.</b></p>
           <p><a target="_blank" href="{{registrationLink}}">{{registrationLink}}</a>
-        </iha-section>
-        <iha-section [title]="'T-Shirts'" [hType]="'h2'">
-        <p>Order an NTS 2021 T-shirt and celebrate Beikoku Shidokan's 45th anniversary in style!</p>
-
-        <p><b>ORDERING DEADLINE: JUNE 10</b></p>
-
-        <p><b>US &amp; International Orders</b>: Order from our Custom Ink group site (<a href="{{tShirtLink}}" target="_blank">{{tShirtLink}}</a>) by the <b>June 10th deadline</b>. Your order will be shipped directly to the address you specify. All Custom Ink shirts will be shipped the same time; est. 2 week delivery in US and 4-5 weeks for International. Orders shipped outside of the US will have additional shipping and customs costs.</p>
-        
-        <p><b>Canadian Orders:</b> Contact Sensei Fortunato Restagno (<a href="mailto:fortun@rogers.com">fortun@rogers.com</a>) from the Grand River Karate dojo to find out about purchasing shirts with reduced shipping and no customs fees for Canada.</p>
         </iha-section>
         <iha-section [title]="'Keynote Instructors'" [hType]="'h2'">
         <div><b>Seikichi Iha, 10th Dan</b>, Beikoku Shidokan Karatedo</div>

@@ -283,21 +283,6 @@ export const DOJOS: IhaDojo[] = [
       lng: -71.38279,
     }
   },
-  // {
-  //   type: "shibu",
-  //   instructors: [{name: "Austin Hendry", rank: "4th Dan"}],
-  //   name: "A2 Karate",
-  //   url: "a2karate.com",
-  //   email: "contact@a2karate.com",
-  //   address: "Ann Arbor, MI USA",
-  // },
-  {
-    type: "shibu",
-    instructors: [{name: "Josh Wald-Kerr", rank: "4th Dan"}],
-    name: "Michigan State Shidokan Karate",
-    email: "jhwaldkerr@gmail.com",
-    // TODO location
-  },
   {
     type: "fukushibu",
     instructors: [{"name": "Amit Michaeli", "rank": "6th Dan"}],
