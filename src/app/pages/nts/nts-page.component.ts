@@ -22,7 +22,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
           </p>
         </iha-section>
         <iha-section [title]="'Registration'" [hType]="'h2'">
-          <p>Registration is now open! Discounted early registration is available until <b>June 30.</b></p>
+          <p>Registration here:</p>
           <p><a target="_blank" href="{{registrationLink}}">{{registrationLink}}</a>
         </iha-section>
         <iha-section [title]="'Keynote Instructors'" [hType]="'h2'">
