@@ -18,11 +18,11 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <iha-section [title]="'Dates'" [hType]="'h2'">
           <p>
             <b>Friday, July 30, 2021</b> (5:00pm - 8:30pm, EDT)<br/>
-            <b>Saturday, July 31, 2021</b> (9:00 am - 8:00pm, EDT)
+            <b>Saturday, July 31, 2021</b> (9:00am - 8:00pm, EDT)
           </p>
         </iha-section>
         <iha-section [title]="'Registration'" [hType]="'h2'">
-          <p>Registration here:</p>
+          <p>Register here:</p>
           <p><a target="_blank" href="{{registrationLink}}">{{registrationLink}}</a>
         </iha-section>
         <iha-section [title]="'Keynote Instructors'" [hType]="'h2'">
