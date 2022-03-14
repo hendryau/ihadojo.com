@@ -14,9 +14,9 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
       <iha-section [title]="'Class Schedule'" [hType]="'h2'">
         <p>Classes are currently available for ages 14 and up. Joining the dojo allows you to attend any/every class you choose.</p>
         <ul>
-          <li>Monday: 6-7 PM<</li>
+          <li>Monday: 6-7 PM</li>
           <li>Wednesday: 6-7 PM</li>
-          <li>Friday: Noon - 1 PM</li>
+          <li>Friday: Noon-1 PM</li>
           <li>Saturday: 10-11 AM</li>
         </ul>
         <p>A Kobudo Bo (5 to 6-foot wooden staff) class is also available (instructor approval required to attend; location may change seasonally to a local outdoor park).</p>
