@@ -11,89 +11,19 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         Seminar in Lansing, where Karate friends from all over the globe come to visit and learn from him.
         He frequently travels to teach and share Karate around the world.</p>
 
-      <iha-section [title]="'Schedule'" [hType]="'h2'">
-        <table class="table table-striped table-bordered table-responsive">
-          <thead class="thead-light">
-          <tr>
-            <th></th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-            <th>Sunday</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr class="thead-light">
-            <th>Youth Class</th>
-            <td></td>
-            <td>4:30 - 5:30PM</td>
-            <td></td>
-            <td>4:30 - 5:30PM</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="thead-light">
-            <th>Adult Noon Class</th>
-            <td>12:00 - 1:00PM</td>
-            <td></td>
-            <td>12:00 - 1:00PM</td>
-            <td></td>
-            <td>12:00 - 1:00PM</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="thead-light">
-            <th>Adult Evening Class</th>
-            <td>5:30 - 6:30PM</td>
-            <td>5:30 - 6:30PM</td>
-            <td>5:30 - 6:30PM</td>
-            <td>5:30 - 6:30PM</td>
-            <td>5:30 - 6:30PM</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="thead-light">
-            <th>Adult Morning Class</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>9:00 - 10:30AM</td>
-            <td></td>
-          </tr>
-          <tr class="thead-light">
-            <th>Kobudo Class</th>
-            <td></td>
-            <td>6:30 - 7:30PM</td>
-            <td></td>
-            <td>6:30 - 7:30PM</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          </tbody>
-        </table>
-        <iha-section [hType]="'h3'" [title]="'Adult Classes'">
-          <p>9 classes are held per week, Monday to Saturday. Joining the dojo allows
-            you to attend any/every class you choose.</p>
-        </iha-section>
-        <iha-section [hType]="'h3'" [title]="'Youth Classes'">
-          <p>Youth classes are held Tuesdays and Thursday from 4:30-5:30 pm. The recommended age range is 8-13, but exceptions
-          can be made for younger, eager students.</p>
-        </iha-section>
-        <iha-section [hType]="'h3'" [title]="'Kobudo (Weapons) Classes'">
-          <p>Kobudo classes are held Tuesday and Thursday evening immediately following the regular class.
-            Weapons practiced include Bo and Sai.</p>
-        </iha-section>
+      <iha-section [title]="'Class Schedule'" [hType]="'h2'">
+        <p>Classes are currently available for ages 14 and up. Joining the dojo allows you to attend any/every class you choose.</p>
+        <ul>
+          <li>Monday: 6-7 PM<</li>
+          <li>Wednesday: 6-7 PM</li>
+          <li>Friday: Noon - 1 PM</li>
+          <li>Saturday: 10-11 AM</li>
+        </ul>
+        <p>A Kobudo Bo (5 to 6-foot wooden staff) class is also available (instructor approval required to attend; location may change seasonally to a local outdoor park).</p>
+
       </iha-section>
       <iha-section [title]="'Location'" [hType]="'h2'">
-        <p>Original Okinawa Karate is located at</p>
-        <p><b>2018 East Michigan Avenue, Lansing MI 48912</b>.</p>
+        <p>Original Okinawa Karate is located at <b>2018 East Michigan Avenue, Lansing MI 48912</b>.</p>
         <p>If this is not near you, Sensei Iha has over 30 branch dojos across
           the USA, check the list of <a routerLink="/association/affiliate-dojos">affiliate dojos</a>
           to find your closest dojo.
@@ -106,17 +36,9 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
             <a href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>.
           </p>
         </iha-section>
-        // <iha-section [hType]="'h3'" [title]="'Telephone'">
-        //   <p>You can also call the dojo during class hours at
-        //     <a href="tel:5174823217">(517) 482-3217</a>.
-        //   </p>
-        // </iha-section>
-        <iha-section [hType]="'h3'" [title]="'Meet us in Person'">
-          <p>Visitors are always welcome to stop in during class hours and observe and
-            talk to an instructor, no appointment necessary. Please use the front door.</p>
-          <p>If this is your first time to the dojo, feel free to just watch, or bring comfortable clothing
-            if you want to participate in a <b>trial class</b>. If you are interested in taking a trial class,
-            please arrive at least ten minutes before class begins so that we can meet you and get you situated.</p>
+        <iha-section [hType]="'h3'" [title]="'Schedule a Visit'">
+        You may arrange to visit a class at the dojo by sending a request to <a href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>.
+        If this is your first dojo visit, feel free to just watch, or bring comfortable clothing if you want to participate in a trial class. If you are interested in taking a trial class, please arrive at least ten minutes before class begins so that we can meet you and get you situated.
         </iha-section>
       </iha-section>
     </iha-section>

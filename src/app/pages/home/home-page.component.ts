@@ -5,13 +5,13 @@ import {DateService} from "../../services/date.service";
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <iha-section [title]="'Welcome'">
-      <img src="assets/iha-shuri-castle.jpg" width="100%" class="mb-3">
+    <img src="assets/iha-shuri-castle.jpg" width="100%" class="mb-3 mt-3">
+    <!--<iha-section [title]="'Welcome'">
       <p>Visitors are always welcome at Original Okinawa Karate (located at 2018 East Michigan Avenue),
         whether you are a prospective new student, traveling Shidokan student, pre-dan test student,
         or just interested in observing. Visitors are always welcome to participate in a Karate class. The dojo
         weekly schedule is <a routerLink="original-okinawa-karate">available here</a>.</p>
-    </iha-section>
+    </iha-section>-->
     <iha-section [title]="'About'">
       <p><img src="assets/iha-miyahira.jpg" width="40%" class="float-left mr-3">
         This is the official website of Seikichi Iha, Hanshi 10th Dan. Sensei Iha has operated his
@@ -21,9 +21,9 @@ import {DateService} from "../../services/date.service";
       <p> Sensei Iha is an <i>Intangible Cultural Asset Holder</i> in the category of <i>Okinawa Karate and Kobujutsu</i>,
         a certification granted by the Okinawa Prefectural Government. This certification has only been awarded to twenty
         individuals, nine of who are still alive today.</p>
-      <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'Sensei Iha\\'s Dojo'" [hType]="'h3'">
-        <p>Original Okinawa Karate, Sensei Iha's base of operations and the home dojo of the
-          North America Shidokan Association, is located in Lansing, Michigan.</p>
+      <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'2018 East Michigan Avenue, Lansing MI'" [hType]="'h3'">
+        <p>Original Okinawa Karate is owned and operated by Seikichi Iha, Hanshi, 10th Dan, the only Okinawa-born Karate master currently living in the USA.</p>
+        <p>Sensei Iha has been teaching Karate in Lansing, Michigan since 1976. He also leads an annual Training Seminar from Lansing, where Karate friends from all over the globe are invited to learn from him.</p>
       </iha-section>
       <iha-section [title]="'Beikoku Shidokan'" [subTitle]="'North America Shidokan'" [hType]="'h3'">
         <p>Sensei Iha has over 30 dojos that report to him from around the world. Check the list of
