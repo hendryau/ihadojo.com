@@ -5,7 +5,7 @@ export interface DojoPerson {
   city_state: string;
   country: string;
   dojo: string;
-  rank?: string;
+  rank: string;
   rank_type?: "kyu" | "dan" | "jr dan" | "";
 }
 

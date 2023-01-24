@@ -22,6 +22,7 @@ import {FilterComponent} from "../../../filter/filter.component";
     >
       <ng-template #sortButtons>
         <button
+          *ngIf="filterComponent"
           (click)="sortType = 'rank'; filterComponent.applyFilter()"
           (keyup.enter)="sortType = 'rank'; filterComponent.applyFilter()"
           class="btn sort-btn"
@@ -29,6 +30,7 @@ import {FilterComponent} from "../../../filter/filter.component";
           Rank <i *ngIf ="sortType === 'rank'" class="fa fa-sort-desc"></i>
         </button>
         <button
+          *ngIf="filterComponent"
           (click)="sortType = 'dojo'; filterComponent.applyFilter()"
           (keyup.enter)="sortType = 'dojo'; filterComponent.applyFilter()"
           class="btn sort-btn"
@@ -36,6 +38,7 @@ import {FilterComponent} from "../../../filter/filter.component";
           Dojo <i *ngIf="sortType === 'dojo'" class="fa fa-sort-desc"></i>
         </button>
         <button
+          *ngIf="filterComponent"
           (click)="sortType = 'name'; filterComponent.applyFilter()"
           (keyup.enter)="sortType = 'name'; filterComponent.applyFilter()"
           class="btn sort-btn"
@@ -66,7 +69,7 @@ export class RosterPageComponent {
   public sortType: "dojo" | "name" | "rank" = "rank";
 
   @ViewChild(FilterComponent)
-  public filterComponent: FilterComponent<DojoPerson>;
+  public filterComponent?: FilterComponent<DojoPerson>;
 
   public filterRoster = (text: string, person: DojoPerson): boolean => {
     let filterString = "";
@@ -128,6 +131,8 @@ export class RosterPageComponent {
         }
       }
       return dojo;
+    } else {
+      return 0;
     }
   }
 
@@ -180,6 +185,8 @@ export class RosterPageComponent {
       }
       return 0;
     }
+
+    return 0;
   }
 
 }

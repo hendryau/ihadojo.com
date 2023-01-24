@@ -8,18 +8,18 @@ import {FormControl} from "@angular/forms";
 })
 export class FilterComponent<T> implements OnChanges {
 
-  @Input() public array: T[];
+  @Input() public array: T[] = [];
   @Input() public filterTitle: string = "Filter";
   @Input() public nothingFoundMessage = "Nothing Found";
-  @Input() public itemTemplate: TemplateRef<any>;
-  @Input() public buttonTemplate: TemplateRef<any>;
-  @Input() public compareFunc: (item1: T, item2: T) => number;
-  @Input() public filterFunc: (text: string, item: T, i?: number, arr?: T[]) => boolean;
-  @Input() public arrayDivClass: string;
+  @Input() public itemTemplate!: TemplateRef<any>;
+  @Input() public buttonTemplate?: TemplateRef<any>;
+  @Input() public compareFunc: (item1: T, item2: T) => number = () => 0;
+  @Input() public filterFunc: (text: string, item: T, i?: number, arr?: T[]) => boolean = () => false;
+  @Input() public arrayDivClass: string = "";
   @Input() public filterPlaceholderText = "Find";
 
   public readonly filterControl = new FormControl();
-  public filteredArray: T[];
+  public filteredArray: T[] = [];
 
   constructor() {
     this.filterControl.valueChanges.subscribe(text => this.applyFilter(text));
@@ -36,13 +36,13 @@ export class FilterComponent<T> implements OnChanges {
       text = this.filterControl.value;
     }
 
-    text = text.toLowerCase().trim();
+    text = (text || "").toLowerCase().trim();
 
     this.filteredArray = this.array.slice();
 
     if (this.filterFunc) {
       this.filteredArray = this.filteredArray.filter(
-        (item: T, i: number, arr: T[]) => this.filterFunc(text, item, i, arr));
+        (item: T, i: number, arr: T[]) => this.filterFunc(text!, item, i, arr));
     }
 
     if (this.compareFunc) {

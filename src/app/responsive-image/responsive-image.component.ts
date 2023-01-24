@@ -15,25 +15,25 @@ import {ResponsiveService} from "../services/responsive.service";
 })
 export class ResponsiveImageComponent implements OnInit {
 
-  @Input() url: string;
+  @Input() url: string = "";
 
-  @Input() imageSrc: string;
-  @Input() imageAlt: string;
+  @Input() imageSrc: string = "";
+  @Input() imageAlt: string = "";
 
-  @Input() public xlWidth: number;
-  @Input() public lWidth: number;
-  @Input() public mWidth: number;
-  @Input() public sWidth: number;
-  @Input() public xsWidth: number;
+  @Input() public xlWidth: number = 0;
+  @Input() public lWidth: number = 0;
+  @Input() public mWidth: number = 0;
+  @Input() public sWidth: number = 0;
+  @Input() public xsWidth: number = 0;
 
-  public currentWidth: number;
+  public currentWidth: number = 0;
 
   constructor(
     private responsiveService: ResponsiveService
   ) {}
 
   @HostListener('window:resize', ['$event'])
-  public getScreenSize(event?): void {
+  public getScreenSize(event?: any): void {
     this.setImageWidth();
   }
 

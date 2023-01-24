@@ -7,12 +7,12 @@ import {ChangeDetectionStrategy, Component, Input, TemplateRef} from "@angular/c
     <section [ngSwitch]="hType">
       <ng-template #headerContent>
         <ng-container *ngIf="title">{{title}}</ng-container>
-        <ng-container [ngTemplateOutlet]="titleTemplate"></ng-container>
+        <ng-container *ngIf="titleTemplate" [ngTemplateOutlet]="titleTemplate"></ng-container>
         <ng-container *ngIf="subTitle || subTitleTemplate">
           <br>
           <small *ngIf="subTitle || subTitleTemplate" class="text-black-50">
             <ng-container *ngIf="subTitle">{{subTitle}}</ng-container>
-            <ng-container [ngTemplateOutlet]="subTitleTemplate"></ng-container>
+            <ng-container *ngIf="subTitleTemplate" [ngTemplateOutlet]="subTitleTemplate"></ng-container>
           </small>
         </ng-container>
       </ng-template>
@@ -27,14 +27,14 @@ import {ChangeDetectionStrategy, Component, Input, TemplateRef} from "@angular/c
 })
 export class SectionComponent {
 
-  @Input() public title: string;
+  @Input() public title: string = "";
 
-  @Input() public titleTemplate: TemplateRef<any>;
+  @Input() public titleTemplate?: TemplateRef<any>;
 
-  @Input() public subTitle: string;
+  @Input() public subTitle: string = "";
 
-  @Input() public subTitleTemplate: TemplateRef<any>;
+  @Input() public subTitleTemplate?: TemplateRef<any>;
 
-  @Input() public hType: "h1" | "h2" | "h3" | "h4" = "h1";
+  @Input() public hType: "h1" | "h2" | "h3" | "h4" | "h5" = "h1";
 
 }

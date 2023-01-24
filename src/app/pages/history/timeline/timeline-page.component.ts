@@ -38,6 +38,7 @@ import {EventComponent} from "../../../event/event.component";
       <ng-container *ngFor="let evt of events; let i = index">
         <div class="timeline">
           <iha-event
+            *ngIf="evt.content && evt.imageUrl"
             [title]="getTitle(evt)"
             [content]="evt.content"
             [location]="'none'"
@@ -86,14 +87,14 @@ export class TimelinePageComponent implements AfterViewInit {
   public events: IhaEvent[] = TIMELINE_EVENTS;
 
   @ViewChildren(EventComponent)
-  private eventRefs: QueryList<EventComponent>;
+  private eventRefs?: QueryList<EventComponent>;
 
   public ngAfterViewInit(): void {
     this.cdr.markForCheck();
   }
 
   @HostListener('window:resize', ['$event'])
-  public onResize(event): void {
+  public onResize(event: any): void {
     this.cdr.markForCheck();
   }
 
@@ -125,7 +126,7 @@ export class TimelinePageComponent implements AfterViewInit {
 
       const currEventComponent = this.eventRefs.find((x, i2) => i2 === i);
 
-      if (!!previousEventComponent) {
+      if (!!previousEventComponent && currEventComponent && currEventComponent.cardRef) {
         const margin = previousEventComponent.elementRef.nativeElement.offsetHeight  * .34;
 
         const marginString = clear ? "0px" : `-${margin}px`;

@@ -31,11 +31,11 @@ import {DOJOS, IhaDojo} from "./dojos";
 })
 export class DojosComponent implements OnInit {
 
-  @Input() public type: "hombu" | "shibu" | "fukushibu" | "junshibu";
+  @Input() public type?: "hombu" | "shibu" | "fukushibu" | "junshibu";
 
   @Input() public hType: "h1" | "h2" | "h3" | "h4" = "h1";
 
-  public dojos: IhaDojo[];
+  public dojos: IhaDojo[] = [];
 
   public ngOnInit(): void {
     this.dojos = DOJOS.filter(d => d.type === this.type);

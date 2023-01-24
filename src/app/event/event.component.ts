@@ -29,19 +29,19 @@ import {ChangeDetectionStrategy, Component, ElementRef, Input, OnChanges, Simple
 })
 export class EventComponent implements OnChanges {
 
-  @Input() public title: string;
-  @Input() public date: string;
-  @Input() public time: string;
-  @Input() public location: string;
-  @Input() public endDate: string;
-  @Input() public content: string;
-  @Input() public url: string;
-  @Input() public imageUrl: string;
+  @Input() public title: string = "";
+  @Input() public date: string  = "";
+  @Input() public time: string  = "";
+  @Input() public location: string  = "";
+  @Input() public endDate: string  = "";
+  @Input() public content: string = "";
+  @Input() public url: string = "";
+  @Input() public imageUrl: string = "";
 
-  @ViewChild("cardRef") cardRef: ElementRef;
+  @ViewChild("cardRef") cardRef?: ElementRef;
 
-  public dateFormatString: string;
-  public endDateFormatString: string;
+  public dateFormatString: string = "";
+  public endDateFormatString: string = "";
 
   constructor(
     public elementRef: ElementRef,

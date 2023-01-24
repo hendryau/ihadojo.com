@@ -13,6 +13,6 @@ import {ChangeDetectionStrategy, Component, Input} from "@angular/core";
 })
 export class NavItemComponent {
 
-  @Input() public routerLink: string;
+  @Input() public routerLink?: string;
 
 }
