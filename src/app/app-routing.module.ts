@@ -18,6 +18,7 @@ import {ChibanaPageComponent} from "./pages/history/biographies/chibana-page.com
 import {MiyahiraPageComponent} from "./pages/history/biographies/miyahira-page.component";
 import {GlossaryPageComponent} from "./pages/glossary/glossary-page.component";
 import {RosterPageComponent} from "./pages/association/tookachi/roster-page.component";
+import { MasterDanRankPageComponent } from "./pages/association/master-dan-rank/master-dan-rank.component";
 
 const appRoutes = [
   // home
@@ -51,6 +52,10 @@ const appRoutes = [
     path: "association.html", // legacy route
     redirectTo: "association/membership",
     pathMatch: "full"
+  },
+  {
+    path: "master-dan-rank",
+    component: MasterDanRankPageComponent,
   },
   {
     path: "association", // legacy route

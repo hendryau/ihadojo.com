@@ -37,6 +37,7 @@ import {DateService} from "./services/date.service";
 import {NavItemComponent} from "./navigation/nav-item.component";
 import {DropdownNavItemComponent} from "./navigation/dropdown-nav-item.component";
 import {NumSuffixPipe} from "./pipes/num-suffix.pipe";
+import { MasterDanRankPageComponent } from "./pages/association/master-dan-rank/master-dan-rank.component";
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import {NumSuffixPipe} from "./pipes/num-suffix.pipe";
     SenseiIhaPageComponent,
     GlossaryPageComponent,
     RosterPageComponent,
+    MasterDanRankPageComponent,
     NumSuffixPipe,
   ],
   imports: [

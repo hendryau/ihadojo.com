@@ -34,7 +34,7 @@ import {NavigationEnd, Router} from "@angular/router";
       <div class="row">
         <div class="col-12 text-center">
           <h1 class="iha-title">Original Okinawa Karate
-            <small>Beikoku Shidokan Association</small>
+            <small>Beikoku Shidokan Karatedo Association</small>
           </h1>
         </div>
       </div>
@@ -50,7 +50,7 @@ import {NavigationEnd, Router} from "@angular/router";
       </div>
       <div class="row">
         <div class="
-            offset-xl-2 col-xl-8
+            offset-xl-1 col-xl-10
             offset-lg-1 col-lg-10
             offset-md-2 col-md-8
             offset-sm-2 col-sm-8
