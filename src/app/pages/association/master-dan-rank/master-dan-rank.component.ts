@@ -4,7 +4,13 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush,
   styles: [
     `
-      .list { text-align: center; }
+      .list { 
+        text-align: center;
+        background-image: url('/assets/beikoku-shidokan-vertical.png');
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-position: center 60px;
+      }
       .rank-kanji {
         margin-top: 20px;
       }
@@ -149,7 +155,6 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Vincent Bolognini</div>
         <div>Alex Agbay</div>
         <div>David McCreight</div>
-        <div>Anthony Russo</div>
         <div>Sucheta Shoha</div>
         <div>Lawrence Cowlan</div>
         <div>John Bono</div>
