@@ -54,4 +54,11 @@ button.sort-btn.active:hover {
   h2 {
     font-size: 1.4em !important;
   }
+  .small-br {
+    display: block;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
 }

@@ -61,8 +61,8 @@ import {NavigationEnd, Router} from "@angular/router";
     </main>
     <footer class="bg-dark p-1">
       <div class="text-center text-white-50">
-        <span>Beikoku Shidokan © {{currentYear}}</span>
-        <a class="text-white" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
+        <span class="nowrap">Beikoku Shidokan © {{currentYear}}</span>
+        <a class="text-white small-br" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
       </div>
     </footer>
     <!--
