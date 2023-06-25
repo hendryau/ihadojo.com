@@ -8,7 +8,7 @@ export interface IhaEvent {
   url?: string;
 }
 
-export const LAST_UPDATED = "01/01/2021";
+export const LAST_UPDATED = "06/25/2023";
 
 export const EVENTS: IhaEvent[] = [
   {
@@ -227,6 +227,15 @@ export const EVENTS: IhaEvent[] = [
         <b>Saturday, July 31</b> (9:30am - 8:00pm, EDT)
       </p>
       <p>More information <a href="/nts">here.</a></p>
+    `
+  },
+  { 
+    title: "NTS 2023",
+    location: "Lansing Center, Lansing MI",
+    date: "08/04/2023",
+    endDate: "08/05/2023",
+    content: `
+      <a target="_blank" href="https://www.eventbrite.com/e/beikoku-shidokan-karatedo-national-training-seminar-nts-2023-registration-636295997457?fbclid=IwAR21z9pH-Oxci4KzO9_L0obT-pQ2k8KnStAypERnM_NmgdUht-ZTPpTwqJk">Register.</a>
     `
   }
 ];

@@ -19,9 +19,9 @@ import {ChangeDetectionStrategy, Component, ElementRef, Input, OnChanges, Simple
           </ng-template>
         </div>
         <div class="card-text mb-2" [innerHtml]="content"></div>
-        <a *ngIf="location !== 'none'" class="card-link">
+        <div *ngIf="location !== 'none'" class="card-link">
           {{location || 'Location to be determined'}}
-        </a>
+        </div>
         <a *ngIf="url" href="{{url}}" class="card-link">{{url}}</a>
       </div>
     </div>

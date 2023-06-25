@@ -46,3 +46,12 @@ button.sort-btn.active:hover {
   color: #343a40;
   background-color: #ffe866;
 }
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.6em !important;
+  }
+  h2 {
+    font-size: 1.4em !important;
+  }
+}

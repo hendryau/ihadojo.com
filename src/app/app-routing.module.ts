@@ -4,7 +4,7 @@ import {NgModule} from "@angular/core";
 import {HomePageComponent} from "./pages/home/home-page.component";
 import {EventsPageComponent} from "./pages/events/events-page.component";
 import {OriginalOkinawaKaratePageComponent} from "./pages/original-okinawa-karate/original-okinawa-karate-page.component";
-import {NtsPageComponent} from "./pages/nts/nts-page.component";
+import {NtsPageComponent} from "./pages/nts/nts-page.2023.component";
 import {DocumentsPageComponent} from "./pages/association/documents/documents-page.component";
 import {SenseiIhaPageComponent} from "./pages/sensei-iha/sensei-iha-page.component";
 import {AffiliateDojosPageComponent} from "./pages/association/affiliate-dojos/affiliate-dojos-page.component";
