@@ -110,6 +110,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Kirt Butler</div>
         <div>Roy Paul</div>
         <div>Frank Samples</div>
+        <div>Pauline Lee</div>
         <div>Louis Shoha</div>
         <div>Michael Dantuma</div>
         <div>Matthew Hubinger</div>
@@ -122,19 +123,22 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Sharon Basinger</div>
         <div>Harold Armour Jr.</div>
         <div>Ken Carpenter</div>
+        <div>Marian Reiter</div>
         <div>Thomas Pavlik</div>
         <div>Daniel Kasischke</div>
         <div>Mitchel Cooperman</div>
-        <div>Pauline Lee</div>
         <div>Margaret Paul</div>
         <div>Caryl Akamichi</div>
         <div>Anthony Buscemi</div>
         <div>Yujiro Uza</div>
+        <div>Vicent Bolognini</div>
         <div>Laura Chartier</div>
         <div>Robert Chartier</div>
         <div>Scott Morey</div>
         <div>Mark Talbot</div>
+        <div>Amit Michaeli</div>
         <div>Mason Senak</div>
+        <div>Michael Powers</div>
       </div>
 
       <div class="group">
@@ -145,14 +149,12 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Tetua Ioane</div>
         <div>Michael Nugent</div>
         <div>Randall Hall</div>
-        <div>Marian Reiter</div>
         <div>David Wolf</div>
         <div>Alan Sevrey</div>
         <div>Abby Schwartz</div>
         <div>Stuart McCracken</div>
         <div>Lonnie Schwartz</div>
         <div>Fortunato Restagno</div>
-        <div>Vincent Bolognini</div>
         <div>Alex Agbay</div>
         <div>David McCreight</div>
         <div>Sucheta Shoha</div>
@@ -160,11 +162,10 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>John Bono</div>
         <div>Donald Smith</div>
         <div>Thomas Fitzpatrick</div>
-        <div>Amit Michaeli</div>
+        <div>AnnMarie Snader</div>
         <div>Andre Cabaero</div>
         <div>Gary Newton</div>
         <div>Matthew Senak</div>
-        <div>Michael Powers</div>
       </div>
     </div>
     <div class="disclaimer">Students are listed by rank and then age.</div>
