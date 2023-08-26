@@ -36,7 +36,7 @@ export const DOJOS: IhaDojo[] = [
   } ,
   {
     type: "shibu",
-    instructors: [{name: "Robert Menders", rank: "8th Dan"}],
+    instructors: [{name: "Robert Menders", rank: "9th Dan"}],
     name: "Original Okinawa Karate Shidokan Detroit",
     address: "4980 Pond Circle West, West Bloomfield, MI 48323 USA",
     phone: "(248) 225-7172",
@@ -51,8 +51,8 @@ export const DOJOS: IhaDojo[] = [
     type: "shibu",
     instructors: [
       {name: "Mason Senak", rank: "7th Dan"},
-      {name: "David Senak", rank: "8th Dan"},
-      {name: "Michael Senak", rank: "8th Dan"}
+      {name: "David Senak", rank: "9th Dan"},
+      {name: "Michael Senak", rank: "9th Dan"}
     ],
     name: "Maywood Academy of Okinawan Karate",
     address: "47 W. Pleasant Ave PO Box 1161 Maywood, NJ 07607 USA",
@@ -68,8 +68,8 @@ export const DOJOS: IhaDojo[] = [
   {
     type: "shibu",
     instructors: [
-      {name: "Lawrence Schwartz", rank: "8th Dan"},
-      {name: "Lisa Schwartz", rank: "8th Dan"}
+      {name: "Lawrence Schwartz", rank: "9th Dan"},
+      {name: "Lisa Schwartz", rank: "9th Dan"}
     ],
     name: "Shidokan Rockland",
     phone: "(201) 341-9682",
@@ -77,7 +77,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Roberto Curtis", rank: "8th Dan"}],
+    instructors: [{name: "Roberto Curtis", rank: "9th Dan"}],
     name: "Virginia Okinawan Karate Dojo",
     address: "6416 Grovedale Dr., #302-B Alexandria, VA 22310",
     http: "https://",
@@ -91,8 +91,8 @@ export const DOJOS: IhaDojo[] = [
   {
     type: "shibu",
     instructors: [
-      {name: "Allen Mayne", rank:  "8th Dan"},
-      {name: "Michael Dantuma", rank:  "7th Dan"}
+      {name: "Allen Mayne", rank:  "9th Dan"},
+      {name: "Michael Dantuma", rank:  "8th Dan"}
     ],
     name: "Original Okinawa Karate",
     address: "5260 Division Ave. SE Grand Rapids, MI 49548 USA",
@@ -107,7 +107,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Paul Snader", rank: "8th Dan"}],
+    instructors: [{name: "Paul Snader", rank: "9th Dan"}],
     name: "The Shidokan Karate Dojo",
     address: "12-68 River Rd., Fairlawn, NJ 07412 USA",
     phone: "(201) 794-1679",
@@ -121,7 +121,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Jim Kass", rank: "8th Dan"}],
+    instructors: [{name: "Jim Kass", rank: "9th Dan"}],
     name: "Original Okinawa Karate, Shidokan Alaska Dojo",
     address: "815 Set Net Drive, Kenai, AK 99611 USA",
     email: "jrk.kassu@ak.net",
@@ -132,7 +132,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Mark McCloud", rank: "8th Dan"}],
+    instructors: [{name: "Mark McCloud", rank: "9th Dan"}],
     name: "Original Okinawan Karate of Holt, LLC",
     address: "2002 N. Cedar Street, Holt, MI 48842 USA",
     phone: "(517) 694-5001",
@@ -158,7 +158,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Lou Shoha", rank: "7th Dan"}],
+    instructors: [{name: "Lou Shoha", rank: "8th Dan"}],
     name: "Bloomfield Hills Shidokan",
     address: "Bloomfield MI USA",
     email: "shoha@comcast.net",
@@ -169,8 +169,8 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Roy Paul", rank: "7th Dan"},
-      {name: "Margaret Paul", rank: "6th Dan"}],
+    instructors: [{name: "Roy Paul", rank: "8th Dan"},
+      {name: "Margaret Paul", rank: "7th Dan"}],
     name: "Shidokan Canada",
     address: "6920 Wellington Road 124, Guelph, Ontario N1H 6J4, Canada",
     phone: "(519) 362-7745",
@@ -185,7 +185,7 @@ export const DOJOS: IhaDojo[] = [
   {
     type: "shibu",
     instructors: [
-      {name: "Sharon Basinger", rank: "6th Dan"},
+      {name: "Sharon Basinger", rank: "7th Dan"},
       {name: "Gordon Basinger", rank: "4th Dan 1940-2002"}
     ],
     name: "Karate STL Okinawan Shidokan Shorinryu",
@@ -230,7 +230,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Yujiro Uza", rank: "6th Dan"}],
+    instructors: [{name: "Yujiro Uza", rank: "7th Dan"}],
     name: "Okinawa Shorinryu Karate Chicago",
     address: "1295 N. Rand Road, Prospect Heights, IL 60070",
     phone: "(972) 351-6405",
@@ -258,7 +258,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Fortunato Restagno", rank: "6th Dan"}],
+    instructors: [{name: "Fortunato Restagno", rank: "7th Dan"}],
     name: "Grand River Karate",
     address: "211 St Ann Avenue, St. Agatha, Ontario Canada N0B 2L0",
     http: "https://",
@@ -285,7 +285,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "fukushibu",
-    instructors: [{"name": "Amit Michaeli", "rank": "6th Dan"}],
+    instructors: [{"name": "Amit Michaeli", "rank": "7th Dan"}],
     name: "Shidokan Israel",
     address: "Dormitory 1, Ein Karem Campus The Hebrew University Jerusalem, 91120 Israel",
     phone: "+972-50-640-7061",

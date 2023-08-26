@@ -130,6 +130,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Margaret Paul</div>
         <div>Caryl Akamichi</div>
         <div>Anthony Buscemi</div>
+        <div>Fortunato Restagno</div>
         <div>Yujiro Uza</div>
         <div>Vicent Bolognini</div>
         <div>Laura Chartier</div>
@@ -154,7 +155,6 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Abby Schwartz</div>
         <div>Stuart McCracken</div>
         <div>Lonnie Schwartz</div>
-        <div>Fortunato Restagno</div>
         <div>Alex Agbay</div>
         <div>David McCreight</div>
         <div>Sucheta Shoha</div>
