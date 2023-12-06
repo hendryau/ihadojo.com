@@ -98,7 +98,6 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Robert Menders</div>
         <div>Paul Snader</div>
         <div>Mark McCloud</div>
-        <div>Allen Mayne</div>
       </div>
 
       <div class="group">
@@ -112,7 +111,6 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Frank Samples</div>
         <div>Pauline Lee</div>
         <div>Louis Shoha</div>
-        <div>Michael Dantuma</div>
         <div>Matthew Hubinger</div>
       </div>
 
@@ -135,8 +133,6 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <div>Vicent Bolognini</div>
         <div>Laura Chartier</div>
         <div>Robert Chartier</div>
-        <div>Scott Morey</div>
-        <div>Mark Talbot</div>
         <div>Amit Michaeli</div>
         <div>Mason Senak</div>
         <div>Michael Powers</div>

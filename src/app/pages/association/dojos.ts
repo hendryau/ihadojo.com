@@ -81,28 +81,11 @@ export const DOJOS: IhaDojo[] = [
     name: "Virginia Okinawan Karate Dojo",
     address: "6416 Grovedale Dr., #302-B Alexandria, VA 22310",
     http: "https://",
-    url: "alexandriakaratedojo.com",
+    url: "www.robertoshidokan.com",
     email: "robertoshidokan@gmail.com",
     location: {
       lat: 38.7773926,
       lng: -77.298465
-    }
-  },
-  {
-    type: "shibu",
-    instructors: [
-      {name: "Allen Mayne", rank:  "9th Dan"},
-      {name: "Michael Dantuma", rank:  "8th Dan"}
-    ],
-    name: "Original Okinawa Karate",
-    address: "5260 Division Ave. SE Grand Rapids, MI 49548 USA",
-    phone: "(616) 965-6932",
-    http: "http://",
-    url: "grandrapidsdojo.com",
-    email: "info@grandrapidsdojo.com",
-    location: {
-      lat: 42.867875,
-      lng: -85.663639
     }
   },
   {
@@ -242,22 +225,6 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [
-      {name: "Patrick Perfetti", rank: "5th Dan"},
-      {name: "Amy Bond", rank: "3rd Dan"}
-    ],
-    name: "Original Okinawa Karate - Cortland",
-    address: "Cortland YWCA 14 Clayton Ave. Cortland NY 13045 USA",
-    phone: "(607) 857-5180",
-    email: "pperfetti@twcny.rr.com",
-    email2: "amy.nyshidokan@gmail.com",
-    location: {
-      lat: 42.598332,
-      lng: -76.181376,
-    }
-  },
-  {
-    type: "shibu",
     instructors: [{name: "Fortunato Restagno", rank: "7th Dan"}],
     name: "Grand River Karate",
     address: "211 St Ann Avenue, St. Agatha, Ontario Canada N0B 2L0",
@@ -300,7 +267,7 @@ export const DOJOS: IhaDojo[] = [
 
   {
     type: "fukushibu",
-    instructors: [{"name": "Jason Azzarone", "rank": "4th Dan"}],
+    instructors: [{"name": "Jason Azzarone", "rank": "5th Dan"}],
     name: "Shidokan Tampa",
     address: "Tampa, Florida USA",
     phone: "(813) 789-9005",
@@ -327,7 +294,7 @@ export const DOJOS: IhaDojo[] = [
 
   {
     type: "fukushibu",
-    instructors: [{"name": "J.J. Martinez", "rank": "4th Dan"}],
+    instructors: [{"name": "J.J. Martinez", "rank": "5th Dan"}],
     name: "Shidokan Colombia",
     address: "Bogota, Colombia",
     email: "jjmartinezt@gmail.com"
@@ -335,10 +302,10 @@ export const DOJOS: IhaDojo[] = [
 
   {
     type: "fukushibu",
-    instructors: [{"name": "Ameer Syed", "rank": "4th Dan"}],
-    name: "The Arch Shidokan",
-    address: "St. Peters, MO; Mailing Address: 12595 Marine Ave, Ste A, St. Louis, MO 63146 USA",
-    phone: "(314) 473-5694",
+    instructors: [{"name": "Ameer Syed", "rank": "5th Dan"}],
+    name: "The Arch Shidokan Karate",
+    address: "12595 Marine Ave, Ste A, St. Louis, MO 63146 USA",
+    phone: "(314) 201-1623",
     http: "http://",
     url: "stlshidokan.com",
     email: "teacher@stlshidokan.com"
@@ -355,19 +322,25 @@ export const DOJOS: IhaDojo[] = [
     email: "teacher@gatewayshidokan.com"
     // TODO location
   },
-
   {
     type: "fukushibu",
-    instructors: [{"name": "Yishay Haspel", "rank": "2nd Dan"}],
-    name: "Shidokan Tel Aviv",
-    address: "Hagefen 8 Ramat Gan, 52546, Israel",
-    phone: "+972-54-494-8084",
+    instructors: [{"name": "Dan Spatt", "rank": "4th Dan"},{"name": "Kaela Olson", "rank": "4th Dan"}],
+    name: "Ichiban Karate and Fitness",
+    address: "228 Robinson St. Wakefield, RI 02879",
+    phone: "(401) 789-3380",
     http: "http://",
-    url: "shidokanisrael.com",
-    email: "yishay@shidokanisrael.com",
-    location: {
-      lat: 32.085300,
-      lng: 34.781768
-    }
-  }
+    url: "www.ichibankarateandfitness.com",
+    // TODO location
+  },
+  {
+    type: "fukushibu",
+    instructors: [{"name": "Jeff Marcus", "rank": "2nd Dan"}],
+    name: "Bucks County Okinawan Karate",
+    address: "490 Lincoln Highway Suite, Fairless Hills, PA 19030",
+    phone: "(267) 685-9610",
+    http: "https://",
+    url: "bcokarate.com",
+    email: "contact@bcokarate.com",
+    // TODO location
+  },
 ];
