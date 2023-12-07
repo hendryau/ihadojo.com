@@ -238,7 +238,7 @@ export const DOJOS: IhaDojo[] = [
   },
   {
     type: "shibu",
-    instructors: [{name: "Jeremy Brousseau", rank: "4th Dan"}],
+    instructors: [{name: "Jeremy Brousseau", rank: "5th Dan"}],
     name: "New England Shidokan Karate",
     address: "751 West Shore Rd.  Warwick, RI 02889",
     phone: "(401) 408-1620",
@@ -323,7 +323,7 @@ export const DOJOS: IhaDojo[] = [
     // TODO location
   },
   {
-    type: "fukushibu",
+    type: "junshibu",
     instructors: [{"name": "Dan Spatt", "rank": "4th Dan"},{"name": "Kaela Olson", "rank": "4th Dan"}],
     name: "Ichiban Karate and Fitness",
     address: "228 Robinson St. Wakefield, RI 02879",
@@ -333,7 +333,7 @@ export const DOJOS: IhaDojo[] = [
     // TODO location
   },
   {
-    type: "fukushibu",
+    type: "junshibu",
     instructors: [{"name": "Jeff Marcus", "rank": "2nd Dan"}],
     name: "Bucks County Okinawan Karate",
     address: "490 Lincoln Highway Suite, Fairless Hills, PA 19030",
