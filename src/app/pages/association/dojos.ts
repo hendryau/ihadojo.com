@@ -230,7 +230,7 @@ export const DOJOS: IhaDojo[] = [
     address: "211 St Ann Avenue, St. Agatha, Ontario Canada N0B 2L0",
     http: "https://",
     url: "grandriverkarate.com",
-    email: "fortunato@grandriverkarate.com",
+    email: "fortun@rogers.com",
     location: {
       lat: 43.462075,
       lng: -80.51714,
