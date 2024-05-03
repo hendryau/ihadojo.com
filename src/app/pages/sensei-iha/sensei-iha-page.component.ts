@@ -31,7 +31,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
       most important part of karate."</p>
       <iha-section [title]="'The Iha Dojo'" [hType]="'h2'">
         <!-- TODO get a photo here -->
-        <p>Sensei Iha's dojo is located at 2018 East Michigan Ave., in Lansing,
+        <p>Sensei Iha's dojo is located at 2013 East Michigan Ave., in Lansing,
         Michigan USA. Sensei has taught at the Lansing location since
         1975. Class schedules and information can be found
         <a routerLink="/original-okinawa-karate">here</a>.</p>

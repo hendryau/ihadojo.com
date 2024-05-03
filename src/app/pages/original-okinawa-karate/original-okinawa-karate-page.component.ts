@@ -3,7 +3,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'2018 East Michigan Avenue, Lansing MI'">
+    <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'2013 East Michigan Avenue, Lansing MI'">
       <p>Original Okinawa Karate is owned and operated by Seikichi Iha, Hanshi, 10th Dan, the
         only Okinawa-born Karate master currently living in the USA.</p>
 
@@ -24,7 +24,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 
       </iha-section>
       <iha-section [title]="'Location'" [hType]="'h2'">
-        <p>Original Okinawa Karate is located at <b>2018 East Michigan Avenue, Lansing MI 48912</b>.</p>
+        <p>Original Okinawa Karate is located at <b>2013 East Michigan Avenue, Lansing MI 48912</b>.</p>
         <p>If this is not near you, Sensei Iha has over 30 branch dojos across
           the USA, check the list of <a routerLink="/association/affiliate-dojos">affiliate dojos</a>
           to find your closest dojo.

@@ -24,7 +24,7 @@ export const DOJOS: IhaDojo[] = [
     instructors: [{name: "Seikichi Iha", rank: "Hanshi, 10th Dan"}],
     // image: "assets/ihadojo.jpg",
     name : "Original Okinawa Karate",
-    address: "2018 E. Michigan Ave. Lansing, MI 48912 USA",
+    address: "2013 E. Michigan Ave. Lansing, MI 48912 USA",
     // phone: "(517) 482-3217",
     url: "ihadojo.com",
     http: "https://",

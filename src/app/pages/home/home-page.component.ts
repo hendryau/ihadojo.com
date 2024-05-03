@@ -12,6 +12,7 @@ import {DateService} from "../../services/date.service";
         or just interested in observing. Visitors are always welcome to participate in a Karate class. The dojo
         weekly schedule is <a routerLink="original-okinawa-karate">available here</a>.</p>
     </iha-section>-->
+    <p>Find more info on Facebook: </p>
     <iha-section [title]="'About'">
       <p><img src="assets/iha-miyahira.jpg" width="40%" class="float-left mr-3">
         This is the official website of Seikichi Iha, Hanshi 10th Dan. Sensei Iha has operated his
@@ -21,7 +22,7 @@ import {DateService} from "../../services/date.service";
       <p> Sensei Iha is an <i>Intangible Cultural Asset Holder</i> in the category of <i>Okinawa Karate and Kobujutsu</i>,
         a certification granted by the Okinawa Prefectural Government. This certification has only been awarded to twenty
         individuals, nine of who are still alive today.</p>
-      <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'2018 East Michigan Avenue, Lansing MI'" [hType]="'h3'">
+      <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'2013 East Michigan Avenue, Lansing MI'" [hType]="'h3'">
         <p>Original Okinawa Karate is owned and operated by Seikichi Iha, Hanshi, 10th Dan, the only Okinawa-born Karate master currently living in the USA.</p>
         <p>Sensei Iha has been teaching Karate in Lansing, Michigan since 1976. He also leads an annual Training Seminar from Lansing, where Karate friends from all over the globe are invited to learn from him.</p>
       </iha-section>
@@ -33,11 +34,14 @@ import {DateService} from "../../services/date.service";
           <a href="mailto:mail@ihadojo.com">Let us know.</a>
         </p>
       </iha-section>
+      <iha-section [title]="'Events and Info'" [hType]="'h3'">
+        Find articles, the latest news/event info, and our online community at <a href="https://facebook.com/OriginalOkinawaKarateIhaDojo" target="_blank">facebook.com/OriginalOkinawaKarateIhaDojo</a>.
+      </iha-section>
     </iha-section>
-    <iha-section [title]="'Upcoming Events'">
+    <!-- <iha-section [title]="'Upcoming Events'">
       <iha-events [events]="events"></iha-events>
       <p>Events for the entire year can be <a routerLink="events">found here</a>.</p>
-    </iha-section>
+    </iha-section> -->
   `
 })
 export class HomePageComponent {
