@@ -14,7 +14,7 @@ import {ResponsiveService} from "./services/responsive.service";
 
 import {EventsPageComponent} from "./pages/events/events-page.component";
 import {HomePageComponent} from "./pages/home/home-page.component";
-import {NtsPageComponent} from "./pages/nts/nts-page.2023.component";
+import {NtsPageComponent} from "./pages/nts/nts-page.2024.component";
 import {OriginalOkinawaKaratePageComponent} from "./pages/original-okinawa-karate/original-okinawa-karate-page.component";
 import {DocumentsPageComponent} from "./pages/association/documents/documents-page.component";
 import {SenseiIhaPageComponent} from "./pages/sensei-iha/sensei-iha-page.component";

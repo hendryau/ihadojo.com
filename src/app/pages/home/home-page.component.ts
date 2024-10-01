@@ -12,7 +12,6 @@ import {DateService} from "../../services/date.service";
         or just interested in observing. Visitors are always welcome to participate in a Karate class. The dojo
         weekly schedule is <a routerLink="original-okinawa-karate">available here</a>.</p>
     </iha-section>-->
-    <p>Find more info on Facebook: </p>
     <iha-section [title]="'About'">
       <p><img src="assets/iha-miyahira.jpg" width="40%" class="float-left mr-3">
         This is the official website of Seikichi Iha, Hanshi 10th Dan. Sensei Iha has operated his
@@ -38,10 +37,11 @@ import {DateService} from "../../services/date.service";
         Find articles, the latest news/event info, and our online community at <a href="https://facebook.com/OriginalOkinawaKarateIhaDojo" target="_blank">facebook.com/OriginalOkinawaKarateIhaDojo</a>.
       </iha-section>
     </iha-section>
-    <!-- <iha-section [title]="'Upcoming Events'">
+    <br/>
+    <iha-section [title]="'Upcoming Events'" [hType]="'h3'">
       <iha-events [events]="events"></iha-events>
       <p>Events for the entire year can be <a routerLink="events">found here</a>.</p>
-    </iha-section> -->
+    </iha-section>
   `
 })
 export class HomePageComponent {

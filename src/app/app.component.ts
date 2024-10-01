@@ -29,42 +29,44 @@ import {NavigationEnd, Router} from "@angular/router";
     }
   `],
   template: `
-    <iha-navbar></iha-navbar>
-    <main class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 class="iha-title">Original Okinawa Karate
-            <small>Beikoku Shidokan Karatedo Association</small>
-          </h1>
+    <div class="wrapper">
+      <iha-navbar></iha-navbar>
+      <main class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="iha-title">Original Okinawa Karate
+              <small>Beikoku Shidokan Karatedo Association</small>
+            </h1>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center">
-          <iha-responsive-image
-            [xlWidth]="200" [mWidth]="100"
-            [imageSrc]="'assets/ropes.png'"
-            [imageAlt]="'Beikoku Shidokan Logo'"
-            [url]="'/'"
-          ></iha-responsive-image>
+        <div class="row">
+          <div class="col-12 text-center">
+            <iha-responsive-image
+              [xlWidth]="200" [mWidth]="100"
+              [imageSrc]="'assets/ropes.png'"
+              [imageAlt]="'Beikoku Shidokan Logo'"
+              [url]="'/'"
+            ></iha-responsive-image>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="
-            offset-xl-1 col-xl-10
-            offset-lg-1 col-lg-10
-            offset-md-2 col-md-8
-            offset-sm-2 col-sm-8
-        ">
-          <router-outlet></router-outlet>
+        <div class="row">
+          <div class="
+              offset-xl-1 col-xl-10
+              offset-lg-1 col-lg-10
+              offset-md-2 col-md-8
+              offset-sm-2 col-sm-8
+          ">
+            <router-outlet></router-outlet>
+          </div>
         </div>
-      </div>
-    </main>
-    <footer class="bg-dark p-1">
-      <div class="text-center text-white-50">
-        <span class="nowrap">Beikoku Shidokan © {{currentYear}}</span>
-        <a class="text-white small-br" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
-      </div>
-    </footer>
+      </main>
+      <footer class="bg-dark p-1">
+        <div class="text-center text-white-50">
+          <span class="nowrap">Beikoku Shidokan © {{currentYear}}</span>
+          <a class="text-white small-br" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
+        </div>
+      </footer>
+    </div>
     <!--
       youth karate
       kids karate

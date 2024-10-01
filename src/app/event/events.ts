@@ -237,5 +237,14 @@ export const EVENTS: IhaEvent[] = [
     content: `
       <a target="_blank" href="https://www.eventbrite.com/e/beikoku-shidokan-karatedo-national-training-seminar-nts-2023-registration-636295997457?fbclid=IwAR21z9pH-Oxci4KzO9_L0obT-pQ2k8KnStAypERnM_NmgdUht-ZTPpTwqJk">Register.</a>
     `
+  },
+  { 
+    title: "NTS 2024",
+    location: "Lansing Center, Lansing MI",
+    date: "07/26/2024",
+    endDate: "07/27/2024",
+    content: `
+      <a target="_blank" href="https://www.eventbrite.com/e/beikoku-shidokan-karatedo-national-training-seminar-nts-2024-registration-876964302837?aff=oddtdtcreator">Register here.</a>
+    `
   }
 ];

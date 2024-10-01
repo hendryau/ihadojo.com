@@ -44,7 +44,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
         <p><a href="assets/association-documents/member-application.pdf">
           Download your application today</a>.</p>
       </iha-section>
-      <iha-bylaws></iha-bylaws>
+      <!-- <iha-bylaws></iha-bylaws> -->
     </iha-section>
   `
 })

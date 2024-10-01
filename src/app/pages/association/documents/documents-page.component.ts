@@ -23,7 +23,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
           <a href="/assets/association-documents/kyu-application.docx">Download (docx)</a>
         </p>
       </iha-section>
-      <iha-bylaws></iha-bylaws>
+      <!-- <iha-bylaws></iha-bylaws> -->
     </iha-section>
   `
 })
