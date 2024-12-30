@@ -25,20 +25,16 @@ import {DOJOS, IhaDojo} from "./dojos";
       </div>
     </ng-container>
     <ng-container *ngIf="dojos.length === 0">
-      <p>No {{type | titlecase}} Dojos on record.</p>
+      <p>No Dojos on record.</p>
     </ng-container>
   `
 })
 export class DojosComponent implements OnInit {
 
-  @Input() public type?: "hombu" | "shibu" | "fukushibu" | "junshibu";
-
-  @Input() public hType: "h1" | "h2" | "h3" | "h4" = "h1";
-
   public dojos: IhaDojo[] = [];
 
   public ngOnInit(): void {
-    this.dojos = DOJOS.filter(d => d.type === this.type);
+    this.dojos = DOJOS;
   }
 
 }

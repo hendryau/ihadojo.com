@@ -21,7 +21,9 @@ export interface IhaDojo {
 export const DOJOS: IhaDojo[] = [
   {
     type: "hombu",
-    instructors: [{name: "Seikichi Iha", rank: "Hanshi, 10th Dan"}],
+    instructors: [
+      // {name: "Seikichi Iha", rank: "Hanshi, 10th Dan"}
+    ],
     // image: "assets/ihadojo.jpg",
     name : "Original Okinawa Karate",
     address: "2013 E. Michigan Ave. Lansing, MI 48912",
