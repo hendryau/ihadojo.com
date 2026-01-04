@@ -38,6 +38,9 @@ import {NavItemComponent} from "./navigation/nav-item.component";
 import {DropdownNavItemComponent} from "./navigation/dropdown-nav-item.component";
 import {NumSuffixPipe} from "./pipes/num-suffix.pipe";
 import { MasterDanRankPageComponent } from "./pages/association/master-dan-rank/master-dan-rank.component";
+import { TrainingBenefitsPageComponent } from "./pages/training-benefits/training-benefits-page.component";
+import { OurDojoStoryPageComponent } from "./pages/our-dojo-story/our-dojo-story-page.component";
+import { ExternalRedirectComponent } from "./pages/redirect/external-redirect.component";
 
 @NgModule({
   declarations: [
@@ -70,6 +73,9 @@ import { MasterDanRankPageComponent } from "./pages/association/master-dan-rank/
     GlossaryPageComponent,
     RosterPageComponent,
     MasterDanRankPageComponent,
+    TrainingBenefitsPageComponent,
+    OurDojoStoryPageComponent,
+    ExternalRedirectComponent,
     NumSuffixPipe,
   ],
   imports: [

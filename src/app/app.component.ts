@@ -34,9 +34,7 @@ import {NavigationEnd, Router} from "@angular/router";
       <main class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="iha-title">Original Okinawa Karate
-              <small>Beikoku Shidokan Karatedo Association</small>
-            </h1>
+            <h1 class="iha-title">ORIGINAL OKINAWAN KARATE</h1>
           </div>
         </div>
         <div class="row">
@@ -60,10 +58,22 @@ import {NavigationEnd, Router} from "@angular/router";
           </div>
         </div>
       </main>
-      <footer class="bg-dark p-1">
+      <footer class="bg-dark p-3">
         <div class="text-center text-white-50">
-          <span class="nowrap">Beikoku Shidokan © {{currentYear}}</span>
-          <a class="text-white small-br" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
+          <p class="mb-2"><strong>Original Okinawan Karate, LLC</strong></p>
+          <p class="mb-2">1013 E. Michigan Ave.<br>Lansing, MI 48912</p>
+          <p class="mb-2">
+            Email: <a class="text-white" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
+          </p>
+          <p class="mb-3">
+            Facebook: <a class="text-white" href="https://www.facebook.com/OriginalOkinawaKarateIhaDojo" target="_blank">https://www.facebook.com/OriginalOkinawaKarateIhaDojo</a>
+          </p>
+          <p class="mb-2">
+            <a href="https://www.beikokushidokan.com" target="_blank">
+              <img src="assets/ropes.png" alt="Beikoku Shidokan" style="height: 40px;">
+            </a>
+          </p>
+          <p class="mb-0">© {{currentYear}} Original Okinawan Karate, LLC</p>
         </div>
       </footer>
     </div>

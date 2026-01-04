@@ -3,7 +3,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <iha-section [title]="'Gusukuma Shinpan'" [subTitle]="'1890-1954'">
+    <iha-section [title]="'Shinpan Gusukuma'" [subTitle]="'1890-1954'">
       <p>One of Yasutsune "Ankoh" Itosu's students was Gusukuma Shinpan
         who was also a peer of Chibana Choshin. Gusukuma, also called Shinpan
         Shiroma by the Japanese, is virtually unknown due to the fact that he

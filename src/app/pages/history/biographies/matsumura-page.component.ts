@@ -3,7 +3,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <iha-section [title]="'Matsumura Sokon'" [subTitle]="'1809-1899'">
+    <iha-section [title]="'Sokon Matsumura'" [subTitle]="'1809-1899'">
       <p>"Bushi" Sokon Matsumura, close advisor to three Ryukyuan kings,
         provided many of the foundations for the karate-do studied today. He
         was noted for his study of the physical as well as metaphysical
