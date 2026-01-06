@@ -3,7 +3,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <iha-section [title]="'Miyahira Katsuya'" [subTitle]="'1918-2010'">
+    <iha-section [title]="'Katsuya Miyahira'" [subTitle]="'1918-2010'">
       <div class="text-center">
         <img src="assets/biographies/miyahira/formal.jpg" class="mb-3 rounded">
       </div>

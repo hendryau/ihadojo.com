@@ -3,7 +3,7 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <iha-section [title]="'Itosu Anko'" [subTitle]="'1831-1915'">
+    <iha-section [title]="'Anko Itosu'" [subTitle]="'1831-1915'">
       <p>A foremost disciple of Bushi Matsumura, Yasutsune "Anko" Itosu
         was educated in the Chinese classics and art of calligraphy and held
         the position of Secretary for the Administrative Office of the Ryukyu

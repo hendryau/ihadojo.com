@@ -3,45 +3,37 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <iha-section [title]="'Original Okinawa Karate'" [subTitle]="'2013 East Michigan Avenue, Lansing MI'">
-      <p>Original Okinawa Karate is owned and operated by Seikichi Iha, Hanshi, 10th Dan, the
-        only Okinawa-born Karate master currently living in the USA.</p>
+    <iha-section [title]="'Classes & Instructors'">
 
-      <p>Sensei Iha has taught out of Lansing, Michigan since the 1976. He leads an <i>annual</i> Training
-        Seminar in Lansing, where Karate friends from all over the globe come to visit and learn from him.
-        He frequently travels to teach and share Karate around the world.</p>
+      <iha-section [title]="'Our Classes'" [hType]="'h2'">
 
-      <iha-section [title]="'Class Schedule'" [hType]="'h2'">
-        <p>Classes are currently available for ages 14 and up. Joining the dojo allows you to attend any/every class you choose. Contact the dojo at <a href="mailto:mail@ihadojo.com">mail@ihadojo.com</a> to receive a current schedule.</p>
-        <!-- <p>Classes are currently available for ages 14 and up. Joining the dojo allows you to attend any/every class you choose.</p>
-        <ul>
-          <li>Monday: 6-7 PM</li>
-          <li>Wednesday: 6-7 PM</li>
-          <li>Friday: Noon-1 PM</li>
-          <li>Saturday: 10-11 AM</li>
-        </ul>
-        <p>A Kobudo Bo (5 to 6-foot wooden staff) class is also available (instructor approval required to attend; location may change seasonally to a local outdoor park).</p> -->
-
-      </iha-section>
-      <iha-section [title]="'Location'" [hType]="'h2'">
-        <p>Original Okinawa Karate is located at <b>2013 East Michigan Avenue, Lansing MI 48912</b>.</p>
-        <p>If this is not near you, Sensei Iha has over 30 branch dojos across
-          the USA, check the list of <a routerLink="/association/affiliate-dojos">affiliate dojos</a>
-          to find your closest dojo.
-        </p>
-        <!-- TODO MAP -->
-      </iha-section>
-      <iha-section [title]="'Contact Us'" [hType]="'h2'">
-        <iha-section [hType]="'h3'" [title]="'Email'">
-          <p>The best way to contact the dojo is via email at
-            <a href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>.
-          </p>
+        <iha-section [title]="'What should I do the first time I visit the dojo?'" [hType]="'h3'">
+          <p>If this is your first dojo visit, you are welcome to just watch class, or if you'd like to participate in a free trial class, bring comfortable clothing. Please arrive at least ten minutes before class is scheduled to begin so that we can meet you and help get you situated. The instructor will show you what to do during class and answer any questions you might have.</p>
         </iha-section>
-        <iha-section [hType]="'h3'" [title]="'Schedule a Visit'">
-        You may arrange to visit a class at the dojo by sending a request to <a href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>.
-        If this is your first dojo visit, feel free to just watch, or bring comfortable clothing if you want to participate in a trial class. If you are interested in taking a trial class, please arrive at least ten minutes before class begins so that we can meet you and get you situated.
+
+        <iha-section [title]="'What is a typical class like?'" [hType]="'h3'">
+          <p>Classes at the dojo include students of all learning levels working together in a friendly, cooperative and respectful environment. The senior instructor organizes each class based on the curriculum developed by our founder, Iha Sensei, taking into account the learning needs of every student.</p>
+
+          <p>Class begins with the instructor signaling everyone to line up by "obi" (belt) level then the class respectfully bows towards the dojo's "shomen" (wall where images of the historical teachers from our lineage are displayed.) Bowing shows respect for our teachers – past and present -- and to each other. It also helps quiet our minds in preparation for learning.</p>
+
+          <p>Next are basic warmup exercises followed by group "kata" practice (historical forms containing foundational movements and techniques of the Shorin Ryu Shidokan karate.) The kata are practiced in order from beginning to advanced. When students have done all the kata for their obi level with the larger group, they step to the side and wait for the instructor to assign a senior to work with them.</p>
+
+          <p>Following kata practice, the instructor guides students through partnered training appropriate for their learning level — such as basic kicking, punching and blocking drills, 2-person "kumite" (pre-arranged sparring drills) or multi-person "bunkai" (the analysis of kata applications).</p>
+
+          <p>Class ends as it began with the instructor asking students to line up and then all bow out together. This is a good time for each student to silently reflect on what was learned in class — what you did well and what you could work on so you can do better next time. ("Homework" to practice on your own.)<br>
+          After class formally ends, everyone in the dojo jumps in and participates in "soji" (cleaning) to take care of our training space.</p>
+
+          <p>There's a great feeling generated when everyone in the dojo has been working hard and doing their best while training together during class! We look forward to what the next class may bring – opportunities to learn or refine our skills; sharing classes with new, old or visiting dojo members; building friendships through our karate practice. As our founder, Iha Sensei would often say, the feeling that "every day is a good day!"</p>
         </iha-section>
+
       </iha-section>
+
+      <iha-section [title]="'Our Instructor Team'" [hType]="'h2'">
+        <p>The dojo's instructor team is a dedicated group of long term senior students of our dojo's founder, Seikichi Iha, Hanshi, 10th Dan. Each senior instructor offers unique insights from their decades of training experience with Iha Sensei and time assisting in running dojo classes under his guidance. All dojo instructors volunteer their time and expertise to collectively support the dojo's mission of carrying forward the teachings of our founder, Iha Sensei.</p>
+
+        <p><a href="https://www.beikokushidokan.com/kip-bio" target="_blank">Kip Barker, Hanshi 10th Dan</a>, Iha Sensei's most senior student, who taught with him at the dojo for decades, now serves as the senior advisor to the <a href="https://www.beikokushidokan.com" target="_blank">Beikoku Shidokan Karatedo Association</a>. "Sensei Kip" continues to be a valued source of knowledge and inspiration to all our instructors.</p>
+      </iha-section>
+
     </iha-section>
   `
 })

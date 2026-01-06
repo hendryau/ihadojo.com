@@ -24,8 +24,32 @@ import {NavigationEnd, Router} from "@angular/router";
       display: block;
     }
 
-    footer * {
-      padding: 5px 15px 5px 15px;
+    footer {
+      font-size: 14px;
+    }
+
+    footer > div > div {
+      padding: 5px 10px;
+    }
+
+    @media (max-width: 576px) {
+      footer {
+        font-size: 12px;
+      }
+
+      footer > div > div {
+        padding: 3px 5px;
+      }
+
+      footer a {
+        word-break: break-word;
+      }
+    }
+
+    @media (min-width: 577px) {
+      footer {
+        font-size: 14px;
+      }
     }
   `],
   template: `
@@ -34,9 +58,7 @@ import {NavigationEnd, Router} from "@angular/router";
       <main class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="iha-title">Original Okinawa Karate
-              <small>Beikoku Shidokan Karatedo Association</small>
-            </h1>
+            <h1 class="iha-title">ORIGINAL OKINAWAN KARATE</h1>
           </div>
         </div>
         <div class="row">
@@ -60,10 +82,21 @@ import {NavigationEnd, Router} from "@angular/router";
           </div>
         </div>
       </main>
-      <footer class="bg-dark p-1">
+      <footer class="bg-dark p-3">
         <div class="text-center text-white-50">
-          <span class="nowrap">Beikoku Shidokan © {{currentYear}}</span>
-          <a class="text-white small-br" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
+          <div>Original Okinawan Karate, LLC<br/>1013 E. Michigan Ave.<br>Lansing, MI 48912</div>
+          <div>
+            Email: <a class="text-white" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
+          </div>
+          <div>
+            Facebook: <a class="text-white" href="https://www.facebook.com/OriginalOkinawaKarateIhaDojo" target="_blank">facebook.com/OrignalOkinawaKarateIhaDojo</a>
+          </div>
+          <div>
+            <a href="https://www.beikokushidokan.com" target="_blank">
+              <img src="assets/ropes.png" alt="Beikoku Shidokan" style="height: 130px;">
+            </a>
+          </div>
+          <div>© {{currentYear}} Original Okinawan Karate, LLC</div>
         </div>
       </footer>
     </div>

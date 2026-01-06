@@ -19,6 +19,9 @@ import {MiyahiraPageComponent} from "./pages/history/biographies/miyahira-page.c
 import {GlossaryPageComponent} from "./pages/glossary/glossary-page.component";
 import {RosterPageComponent} from "./pages/association/tookachi/roster-page.component";
 import { MasterDanRankPageComponent } from "./pages/association/master-dan-rank/master-dan-rank.component";
+import { TrainingBenefitsPageComponent } from "./pages/training-benefits/training-benefits-page.component";
+import { OurDojoStoryPageComponent } from "./pages/our-dojo-story/our-dojo-story-page.component";
+import { ExternalRedirectComponent } from "./pages/redirect/external-redirect.component";
 
 const appRoutes = [
   // home
@@ -47,7 +50,17 @@ const appRoutes = [
     path: "",
   },
 
-  // // association
+  // new dojo pages
+  {
+    component: TrainingBenefitsPageComponent,
+    path: "training-benefits",
+  },
+  {
+    component: OurDojoStoryPageComponent,
+    path: "our-dojo-story",
+  },
+
+  // // association - redirect to beikokushidokan.com
   // {
   //   path: "association.html", // legacy route
   //   redirectTo: "association/membership",
@@ -55,33 +68,23 @@ const appRoutes = [
   // },
   {
     path: "master-dan-rank",
-    component: MasterDanRankPageComponent,
+    component: ExternalRedirectComponent,
   },
-  // {
-  //   path: "association", // legacy route
-  //   redirectTo: "association/membership",
-  //   pathMatch: "full"
-  // },
   {
-    component: MembershipPageComponent,
     path: "association/membership",
+    component: ExternalRedirectComponent,
   },
-  // {
-  //   path: "association/documents.html", // legacy route
-  //   redirectTo: "association/documents",
-  //   pathMatch: "full"
-  // },
   {
-    component: DocumentsPageComponent,
     path: "association/documents",
+    component: ExternalRedirectComponent,
   },
   {
-    component: AffiliateDojosPageComponent,
     path: "association/affiliate-dojos",
+    component: ExternalRedirectComponent,
   },
   {
-    component: RosterPageComponent,
     path: "association/tookachi/roster",
+    component: ExternalRedirectComponent,
   },
 
   // // history
@@ -184,14 +187,14 @@ const appRoutes = [
     path: "history/miyahira-katsuya",
   },
 
-  // // nts
+  // // nts - redirect to beikokushidokan.com
   // {
   //   path: "nts.html", // legacy route
   //   redirectTo: "nts",
   //   pathMatch: "full"
   // },
   {
-    component: NtsPageComponent,
+    component: ExternalRedirectComponent,
     path: "nts",
   },
 

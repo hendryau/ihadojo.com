@@ -6,12 +6,12 @@ import {ChangeDetectionStrategy, Component, Input, TemplateRef} from "@angular/c
   template: `
     <section [ngSwitch]="hType">
       <ng-template #headerContent>
-        <ng-container *ngIf="title">{{title}}</ng-container>
+        <span *ngIf="title" [innerHTML]="title"></span>
         <ng-container *ngIf="titleTemplate" [ngTemplateOutlet]="titleTemplate"></ng-container>
         <ng-container *ngIf="subTitle || subTitleTemplate">
           <br>
           <small *ngIf="subTitle || subTitleTemplate" class="text-black-50">
-            <ng-container *ngIf="subTitle">{{subTitle}}</ng-container>
+            <span *ngIf="subTitle" [innerHTML]="subTitle"></span>
             <ng-container *ngIf="subTitleTemplate" [ngTemplateOutlet]="subTitleTemplate"></ng-container>
           </small>
         </ng-container>
