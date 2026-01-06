@@ -4,8 +4,28 @@ import {NavigationEnd, Router} from "@angular/router";
 @Component({
   selector: 'app-root',
   styles: [`
+    h1.iha-title.main {
+      font-size: 70px !important;
+    }
+    @media (max-width: 900px) {
+      h1.iha-title.main {
+        font-size: 40px !important;
+      }
+    }
+    @media (max-width: 500px) {
+      h1.iha-title.main {
+        font-size: 25px !important;
+      }
+    }
+    @media (max-width: 310px) {
+      h1.iha-title.main {
+        font-size: 20px !important;
+      }
+    }
     h1.iha-title {
       font-size: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     @media (min-width: 768px) {
@@ -58,7 +78,7 @@ import {NavigationEnd, Router} from "@angular/router";
       <main class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="iha-title">ORIGINAL OKINAWAN KARATE</h1>
+            <h1 class="iha-title main">Original Okinawan Karate</h1>
           </div>
         </div>
         <div class="row">
@@ -75,7 +95,7 @@ import {NavigationEnd, Router} from "@angular/router";
           <div class="
               offset-xl-1 col-xl-10
               offset-lg-1 col-lg-10
-              offset-md-2 col-md-8
+              offset-md-0 col-md-12
               offset-sm-2 col-sm-8
           ">
             <router-outlet></router-outlet>
@@ -89,7 +109,7 @@ import {NavigationEnd, Router} from "@angular/router";
             Email: <a class="text-white" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
           </div>
           <div>
-            Facebook: <a class="text-white" href="https://www.facebook.com/OriginalOkinawaKarateIhaDojo" target="_blank">facebook.com/OrignalOkinawaKarateIhaDojo</a>
+            Facebook: <a class="text-white" href="https://www.facebook.com/OriginalOkinawaKarateIhaDojo" target="_blank">facebook.com/OriginalOkinawaKarateIhaDojo</a>
           </div>
           <div>
             <a href="https://www.beikokushidokan.com" target="_blank">

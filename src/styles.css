@@ -49,7 +49,7 @@ button.sort-btn.active:hover {
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 1.6em !important;
+    font-size: 22px !important;
   }
   h2 {
     font-size: 1.4em !important;
@@ -73,4 +73,19 @@ body {
 }
 main {
   flex: 1;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .full-width-on-small {
+    width: 100% !important;
+  }
+}
+
+img {
+  max-width: 100%;
 }

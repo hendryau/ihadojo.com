@@ -3,8 +3,26 @@ import {ChangeDetectionStrategy, Component, Input, TemplateRef} from "@angular/c
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: "iha-section",
+  styles: [`
+    .image-container-left {
+      margin-bottom: 1rem;
+    }
+    .image-container-right {
+      margin-bottom: 1rem;
+    }
+    @media (min-width: 992px) {
+      .image-container-left {
+        margin-right: 1.5rem;
+        margin-bottom: 0;
+      }
+      .image-container-right {
+        margin-left: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+  `],
   template: `
-    <section [ngSwitch]="hType">
+    <section>
       <ng-template #headerContent>
         <span *ngIf="title" [innerHTML]="title"></span>
         <ng-container *ngIf="titleTemplate" [ngTemplateOutlet]="titleTemplate"></ng-container>
@@ -16,12 +34,22 @@ import {ChangeDetectionStrategy, Component, Input, TemplateRef} from "@angular/c
           </small>
         </ng-container>
       </ng-template>
-      <h1 *ngSwitchCase="'h1'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h1>
-      <h2 *ngSwitchCase="'h2'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h2>
-      <h3 *ngSwitchCase="'h3'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h3>
-      <h4 *ngSwitchCase="'h4'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h4>
-      <h5 *ngSwitchCase="'h5'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h5>
-      <ng-content></ng-content>
+
+      <div [ngClass]="imagePosition ? 'd-flex flex-column flex-lg-row align-items-lg-start' : ''" [class.flex-lg-row-reverse]="imagePosition === 'right'">
+        <div *ngIf="imagePosition" class="flex-shrink-0 text-center text-lg-start order-2 order-lg-0" [ngClass]="{'image-container-left': imagePosition === 'left', 'image-container-right': imagePosition === 'right', 'd-none d-lg-block': hideImageOnSmall}">
+          <ng-content select="[slot=image]"></ng-content>
+        </div>
+        <div [ngClass]="imagePosition ? 'flex-grow-1 order-0 order-lg-0' : ''">
+          <ng-container [ngSwitch]="hType">
+            <h1 *ngSwitchCase="'h1'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h1>
+            <h2 *ngSwitchCase="'h2'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h2>
+            <h3 *ngSwitchCase="'h3'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h3>
+            <h4 *ngSwitchCase="'h4'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h4>
+            <h5 *ngSwitchCase="'h5'"><ng-container [ngTemplateOutlet]="headerContent"></ng-container></h5>
+          </ng-container>
+          <ng-content></ng-content>
+        </div>
+      </div>
     </section>
   `
 })
@@ -36,5 +64,9 @@ export class SectionComponent {
   @Input() public subTitleTemplate?: TemplateRef<any>;
 
   @Input() public hType: "h1" | "h2" | "h3" | "h4" | "h5" = "h1";
+
+  @Input() public imagePosition?: "left" | "right";
+
+  @Input() public hideImageOnSmall: boolean = false;
 
 }
