@@ -104,7 +104,7 @@ import {NavigationEnd, Router} from "@angular/router";
       </main>
       <footer class="bg-dark p-3">
         <div class="text-center text-white-50">
-          <div>Original Okinawan Karate, LLC<br/>1013 E. Michigan Ave.<br>Lansing, MI 48912</div>
+          <div>Original Okinawan Karate, LLC<br/>2013 E. Michigan Ave.<br>Lansing, MI 48912</div>
           <div>
             Email: <a class="text-white" href="mailto:mail@ihadojo.com">mail@ihadojo.com</a>
           </div>
